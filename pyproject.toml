@@ -1,11 +1,26 @@
 [project]
 name = "dejevu"
 version = "0.1.0"
-description = "A browser agent that decides in one glance: one model call per step, any OpenAI-compatible model, self-launched Chrome."
+description = "Jev? Deja vu. Browser agents that run on instinct: one look at the page, one call to any open model, one action."
 readme = "README.md"
 license = "MIT"
 requires-python = ">=3.12"
+keywords = ["browser-agent", "browser-automation", "llm", "jev", "chrome-devtools-protocol"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Internet :: WWW/HTTP :: Browsers",
+]
 dependencies = ["websockets>=13,<17", "httpx[http2]>=0.28,<1"]
+
+[project.urls]
+Homepage = "https://github.com/idovmamane/dejevu"
+Issues = "https://github.com/idovmamane/dejevu/issues"
+Changelog = "https://github.com/idovmamane/dejevu/blob/main/CHANGELOG.md"
 
 [project.scripts]
 dejevu = "dejevu.cli:main"

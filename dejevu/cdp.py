@@ -30,6 +30,7 @@ CHROME_CANDIDATES = {
         "/Applications/Microsoft Edge.app/Contents/MacOS/Microsoft Edge",
     ],
     "Linux": [
+        "chrome",
         "google-chrome",
         "google-chrome-stable",
         "chromium",
@@ -93,6 +94,8 @@ class Chrome:
             ]
             if headless:
                 args.append("--headless=new")
+            if os.environ.get("CI") or getattr(os, "geteuid", lambda: 1)() == 0:
+                args += ["--no-sandbox", "--disable-dev-shm-usage"]  # no sandbox in containers or as root
             args += list(extra_args) + ["about:blank"]
             self.proc = subprocess.Popen(args, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
             self.http = f"http://127.0.0.1:{port}"

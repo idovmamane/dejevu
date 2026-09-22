@@ -429,3 +429,22 @@ def test_repeated_stale_decisions_get_feedback_and_a_stop():
         loop.step()
     assert loop.status == "blocked" and "kept changing" in loop.reason
     assert policy.notes[0] is None and policy.notes[2] and "could not be executed" in policy.notes[2]
+
+
+def test_cli_without_a_key_exits_with_a_hint(monkeypatch):
+    from dejevu import cli
+
+    monkeypatch.setattr("dejevu.config.load_env", lambda: None)
+    for name in ("OPENROUTER_API_KEY", "DEJEVU_API_KEY", "okey"):
+        monkeypatch.delenv(name, raising=False)
+    with pytest.raises(SystemExit) as stop:
+        cli.main(["--task", "wikipedia"])
+    assert "doctor" in str(stop.value) and "OPENROUTER_API_KEY" in str(stop.value)
+
+
+def test_cli_without_arguments_shows_help_and_exits(capsys):
+    from dejevu import cli
+
+    with pytest.raises(SystemExit):
+        cli.main([])
+    assert "examples:" in capsys.readouterr().out

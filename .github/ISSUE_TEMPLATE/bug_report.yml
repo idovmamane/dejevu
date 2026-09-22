@@ -1,0 +1,28 @@
+name: Bug report
+description: Something did not work. Attach the trace and we can usually see why.
+labels: [bug]
+body:
+  - type: input
+    id: command
+    attributes:
+      label: Command
+      placeholder: uv run dejevu --task flights --json run.json
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened, what you expected
+    validations:
+      required: true
+  - type: textarea
+    id: trace
+    attributes:
+      label: Trace
+      description: Run again with --json run.json and paste the file, or the last 20 lines of the terminal output. Remove anything private.
+      render: json
+  - type: input
+    id: env
+    attributes:
+      label: Environment
+      placeholder: macOS 15, Chrome 153, Python 3.12, model llama-3.3-70b on Groq

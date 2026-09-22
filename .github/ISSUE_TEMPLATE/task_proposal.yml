@@ -1,0 +1,28 @@
+name: Task proposal
+description: A new reference task with an independent check.
+labels: [task]
+body:
+  - type: input
+    id: url
+    attributes:
+      label: Start URL
+    validations:
+      required: true
+  - type: textarea
+    id: goal
+    attributes:
+      label: Goal in plain language
+      description: Exactly what the agent would be told. No site specific hints.
+    validations:
+      required: true
+  - type: textarea
+    id: check
+    attributes:
+      label: How code can verify the outcome on the final page
+      description: URL pattern, field values, visible text. The check must not trust the model's DONE.
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: What this task exercises that Flights and Wikipedia do not

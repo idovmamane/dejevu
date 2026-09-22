@@ -1,5 +1,7 @@
 # dejevu
 
+[![ci](https://github.com/idovmamane/dejevu/actions/workflows/ci.yml/badge.svg)](https://github.com/idovmamane/dejevu/actions/workflows/ci.yml) [![python 3.12+](https://img.shields.io/badge/python-3.12%2B-blue)](pyproject.toml) [![license MIT](https://img.shields.io/badge/license-MIT-green)](LICENSE)
+
 **Jev? Déjà vu.** Browser agents that run on instinct, no Jev needed. One look at the page. One call to any open model. One action.
 
 Jev is the model everyone is talking about: TypeSafe's System One model that answers with a choice instead of text, in about 200 ms. browser-use built [jev-ultrafast](https://github.com/browser-use/jev-ultrafast) on it and booked a Google Flights search in 7.1 seconds. dejevu does the same search in 5.6 seconds with a plain open model, 10 model calls instead of 17, and 5.6x fewer tokens. No special decision API. No second model for typing. No browser daemon. One API key.
@@ -11,6 +13,18 @@ Zurich to London on Google Flights, real time, 6.07 s from the first decision to
 ![Wikipedia, open the Godel incompleteness theorems article in 1.5 s](docs/wikipedia.gif)
 
 Wikipedia, from the main page to the exact article in 1.5 s. Two model calls. One typed action with Enter.
+
+## Try it in 60 seconds
+
+```bash
+git clone https://github.com/idovmamane/dejevu.git && cd dejevu
+uv sync
+cp .env.example .env         # put your OPENROUTER_API_KEY in it
+uv run dejevu --doctor       # checks Chrome, the key and one model call
+uv run dejevu --task wikipedia
+```
+
+You need Python 3.12 or newer, [uv](https://docs.astral.sh/uv/), Google Chrome, and one API key. OpenRouter is the default, any OpenAI compatible endpoint works. The Wikipedia run takes about two seconds and costs a quarter of a cent.
 
 ## Jev versus dejevu on the same task
 
@@ -71,16 +85,14 @@ Measured 2026-09-22 on a MacBook Pro M3 Pro, headless Chrome 153, models through
 
 Open shadow roots and same origin frames are traversed. Their controls are listed, clicked and filled with correct frame offsets. `scripts/check_browser.py` proves it on a local page with no model calls.
 
-## Run it
+## All the ways to run it
 
 ```bash
-git clone https://github.com/idovmamane/dejevu.git
-cd dejevu
-uv sync
-cp .env.example .env    # add OPENROUTER_API_KEY, or DEJEVU_BASE_URL plus DEJEVU_API_KEY for any OpenAI compatible endpoint
-uv run dejevu --task wikipedia
-uv run dejevu --task flights --record artifacts/flights
+uv run dejevu --task flights --record artifacts/flights          # the benchmark, with a screencast
 uv run dejevu --url https://example.com --goal "Open the pricing page"
+uv run dejevu --preset balanced --task flights                    # another model route
+uv run dejevu --model vendor/model --provider Provider --task wikipedia
+uv run dejevu --help                                              # every option, with examples
 ```
 
 `--preset fast|balanced|gemini|cheap` picks a route, `--model` and `--provider` override it, `--headed` shows the window, `--cdp-url http://127.0.0.1:9222` attaches to a Chrome you started with `--remote-debugging-port=9222` so it uses your logins. `--record DIR` saves a screencast and a trace, and `scripts/render_gif.py DIR out.gif` renders it at 1x with the elapsed time overlay. `--json out.json` writes the full trace and verification.
@@ -129,6 +141,29 @@ node --check dejevu/snapshot.js
 | `dejevu/policy.py` | `LLMPolicy` for any chat endpoint and `TypeSafePolicy` for Jev |
 | `dejevu/tasks.py` | reference tasks with independent checks |
 | `dejevu/measure.py` | repeated runs written as comparable JSON |
+
+## Contribute
+
+The repo is small on purpose, about two thousand lines, and every claim in it has a trace behind it. The most useful things you can add:
+
+- **A model row.** Measure a model we have not tried and send the numbers with the `bench/final` folder. A model that fails is a result too.
+- **A Jev head to head.** If you have a TypeSafe key, `--backend typesafe` runs the Jev arrangement on the same machine as the open model. We have not been able to run it ourselves.
+- **A new task** with an independent check, on a site that is not Google or Wikipedia.
+- **A page where the reader misses a control.** Closed shadow roots, cross origin frames and canvas are known gaps.
+
+[CONTRIBUTING.md](CONTRIBUTING.md) has the commands. Issues have templates for bugs, model results and task proposals. Discussions are open for everything else.
+
+## Questions people ask
+
+**Is it cheaper than Jev?** Per token, no. Jev bills $0.042 per million input tokens and the fast open model routes cost 8x to 14x more. dejevu sends 5.6x fewer tokens, so a Flights run costs about 2.5x Jev at list price. On a self hosted or cheaper endpoint the token saving is the cost saving.
+
+**Why does my model fail the Flights task?** The nine step form separates models. The common failure is declaring DONE inside the calendar. Try `--preset fast`, then `--record` to watch what it did, then send the result.
+
+**Can it use my logged in Chrome?** Yes. Start Chrome with `--remote-debugging-port=9222` and pass `--cdp-url http://127.0.0.1:9222`. Then the agent acts with your sessions, so only give it goals you trust.
+
+**Why is there a consent page in the traces?** A fresh headless profile meets Google's consent page first. The agent dismisses it by itself and the clock starts on the Flights page.
+
+**Does it work on Linux or Windows?** Linux yes, CI runs the browser checks on Ubuntu. Windows should work with Chrome installed, but it is not tested yet. A report either way is welcome.
 
 ## Limits
 

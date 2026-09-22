@@ -1,0 +1,36 @@
+name: Model result
+description: You measured a model on a reference task. Share the numbers, pass or fail.
+labels: [model-result]
+body:
+  - type: input
+    id: model
+    attributes:
+      label: Model and provider
+      placeholder: vendor/model on Provider, reasoning off
+    validations:
+      required: true
+  - type: dropdown
+    id: task
+    attributes:
+      label: Task
+      options: [flights, wikipedia, other]
+    validations:
+      required: true
+  - type: input
+    id: result
+    attributes:
+      label: Verified runs and median time
+      placeholder: 3 of 3 verified, median 6.1 s, 11 model calls, 16k input tokens, $0.010 per run
+    validations:
+      required: true
+  - type: textarea
+    id: summary
+    attributes:
+      label: summary.json
+      description: Paste bench/final/<task>-<slug>/summary.json from python -m dejevu.measure. A pull request with the folder is even better.
+      render: json
+  - type: textarea
+    id: notes
+    attributes:
+      label: How it failed, if it failed
+      placeholder: declares DONE inside the calendar, loops on a covered element, 3 s per call

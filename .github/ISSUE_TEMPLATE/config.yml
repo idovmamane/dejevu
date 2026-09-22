@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Question or idea
+    url: https://github.com/idovmamane/dejevu/discussions
+    about: Ask, propose, or show what you built. Discussions are the right place for anything that is not a bug or a result.
