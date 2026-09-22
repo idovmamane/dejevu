@@ -1,6 +1,6 @@
 # jevless
 
-**Browser agents that run on jevless. No Jev needed.** One look at the page. One call to any open model. One action.
+**Browser agents that run on instinct. No Jev needed.** One look at the page. One call to any open model. One action.
 
 Jev is the model everyone is talking about: TypeSafe's System One model that answers with a choice instead of text, in about 200 ms. browser-use built [jev-ultrafast](https://github.com/browser-use/jev-ultrafast) on it and booked a Google Flights search in 7.1 seconds. jevless does the same search in 5.6 seconds with a plain open model, 10 model calls instead of 17, and 5.6x fewer tokens. No special decision API. No second model for typing. No browser daemon. One API key.
 
