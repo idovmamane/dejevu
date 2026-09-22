@@ -35,7 +35,8 @@ Google Flights: find one way flights from Zurich to London on a given Sunday, on
 | **jev-ultrafast, Jev 1.13 + Mercury 2.5** (published) | 3 of 3 | 7.09 s | 17 | 13 | 84,650 | about $0.0036 at list price |
 | **dejevu, llama-3.3-70b on Groq** | 3 of 3 | **5.63 s** | **10** | 9 | **15,071** | $0.0092 |
 | dejevu, gpt-oss-120b on Cerebras | 1 of 2 | 7.92 s | 12 | 9 | 20,506 | $0.0083 |
-| dejevu, gpt-oss-20b on Groq | 1 of 1 | 11.5 s | 14 | 12 | 23,189 | $0.0020 |
+| dejevu, llama-3.3-70b on DeepInfra | 2 of 2 | 37.5 s | 12 | 10 | 18,490 | **$0.0020** |
+| dejevu, gpt-oss-20b on Groq | 1 of 4 | 11.5 s | 14 | 12 | 23,189 | $0.0020 |
 | dejevu, gemini-2.5-flash | 0 of 2 | stops too early | | | | $0.0046 |
 | dejevu, gemini-2.5-flash-lite | 0 of 1 | stops too early | | | | $0.0016 |
 | dejevu, qwen3-next-80b | 0 of 1 | stops too early | | | | $0.0024 |
@@ -60,7 +61,7 @@ What this says:
 
 - The harness is model agnostic. Seven of eight models finish the Wikipedia task in one typed action.
 - The nine step Flights form separates models. Llama 3.3 70b on Groq is the one that passes every time. gpt-oss-120b passes some of the time. Smaller and cheaper models tend to declare victory inside the calendar.
-- Jev is still the cheapest per token by far. dejevu sends 5.6x fewer tokens, but the fast open model routes cost 8x to 14x more per token, so the Flights run costs about 2.5x more than Jev at list price. On a self hosted or cheaper endpoint the token saving is the cost saving.
+- Jev is still the cheapest per token by far. dejevu sends 5.6x fewer tokens, but the fastest open model route today, Groq at $0.59 per million, makes the Flights run about 2.5x Jev's price. Break even is a provider at $0.24 per million for the same model. The same llama-3.3-70b on DeepInfra at $0.10 per million passed 2 of 2 at $0.0020 per run, cheaper than Jev, but took 37 s per run the day we measured. Speed and price are a provider choice, the token count is the design.
 - Zero wasted calls. jev-ultrafast throws away 4 to 6 of its 17 calls per run because the page changed under them. dejevu waits for the page to settle before it asks.
 
 Measured 2026-09-22 on a MacBook Pro M3 Pro, headless Chrome 153, models through OpenRouter. jev-ultrafast numbers are its own published measurements on its author's machine and Chrome profile. Their task date, September 20 2026, has passed, so this repo searches Sunday October 18 2026 with the same wording and the same checks. A fresh profile also meets Google's consent page first. The agent dismisses it by itself and the clock starts on the Flights page, the same boundary jev-ultrafast uses. Raw traces for every run are in `bench/final`.
@@ -155,7 +156,7 @@ The repo is small on purpose, about two thousand lines, and every claim in it ha
 
 ## Questions people ask
 
-**Is it cheaper than Jev?** Per token, no. Jev bills $0.042 per million input tokens and the fast open model routes cost 8x to 14x more. dejevu sends 5.6x fewer tokens, so a Flights run costs about 2.5x Jev at list price. On a self hosted or cheaper endpoint the token saving is the cost saving.
+**Is it cheaper than Jev?** It depends on the provider, because dejevu sends 5.6x fewer tokens but Jev charges only $0.042 per million. On Groq, the fastest route, a Flights run is about 2.5x Jev's list price. On DeepInfra the same model is cheaper than Jev and much slower. Any provider under $0.24 per million for a fast 70b model makes dejevu both faster and cheaper. Self hosted, the token count is the whole bill.
 
 **Why does my model fail the Flights task?** The nine step form separates models. The common failure is declaring DONE inside the calendar. Try `--preset fast`, then `--record` to watch what it did, then send the result.
 

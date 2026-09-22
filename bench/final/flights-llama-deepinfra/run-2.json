@@ -1,0 +1,716 @@
+{
+  "goal": "Find one-way flights from Zurich to London on October 18, 2026, for one adult in economy. Stop when matching flight options are visible. Do not select or book a flight.",
+  "policy": "meta-llama/llama-3.3-70b-instruct@DeepInfra",
+  "status": "done",
+  "reason": "model's call",
+  "elapsed_ms": 43644,
+  "url": "https://www.google.com/travel/flights/search?tfs=CBwQAhooEgoyMDI2LTEwLTE4agwIAxIIL20vMDg5NjZyDAgDEggvbS8wNGpwbEABSAFwAYIBCwj___________8BmAEC&hl=en",
+  "title": "Z\u00fcrich to London | Google Flights",
+  "elements": 75,
+  "history": [
+    {
+      "step": 1,
+      "op": "SCROLL_DOWN",
+      "kind": "scroll",
+      "label": "scroll down",
+      "target": null,
+      "text": null,
+      "option": null,
+      "key": null,
+      "confidence": null,
+      "latency_ms": 3420,
+      "url": "https://consent.google.com/m?continue=https://www.google.com/travel/flights?hl%3Den&gl=FR&m=0&pc=flt&cm=2&hl=en&src=1",
+      "executed_ms": 0,
+      "page_changed": true,
+      "elapsed_ms": 0
+    },
+    {
+      "step": 2,
+      "op": "CLICK",
+      "kind": "click",
+      "label": "Reject all",
+      "target": 1,
+      "text": null,
+      "option": null,
+      "key": null,
+      "confidence": null,
+      "latency_ms": 1724,
+      "url": "https://www.google.com/travel/flights?hl=en",
+      "executed_ms": 0,
+      "page_changed": true,
+      "elapsed_ms": 0
+    },
+    {
+      "step": 3,
+      "op": "CLICK",
+      "kind": "click",
+      "label": "Change ticket type. Round trip",
+      "target": 12,
+      "text": null,
+      "option": null,
+      "key": null,
+      "confidence": null,
+      "latency_ms": 1708,
+      "url": "https://www.google.com/travel/flights?hl=en",
+      "executed_ms": 1770,
+      "page_changed": true,
+      "elapsed_ms": 1909
+    },
+    {
+      "step": 4,
+      "op": "CLICK",
+      "kind": "click",
+      "label": "One way",
+      "target": 2,
+      "text": null,
+      "option": null,
+      "key": null,
+      "confidence": null,
+      "latency_ms": 2421,
+      "url": "https://www.google.com/travel/flights?tfs=CBwQARoOagwIAhIIL20vMDVxdGpAAUgBcAGCAQsI____________AZgBAg&tfu=KgIIAw&hl=en",
+      "executed_ms": 4471,
+      "page_changed": true,
+      "elapsed_ms": 4800
+    },
+    {
+      "step": 5,
+      "op": "TYPE",
+      "kind": "fill",
+      "label": "Where from? + Enter",
+      "target": 15,
+      "text": "Zurich",
+      "option": null,
+      "key": "Enter",
+      "confidence": null,
+      "latency_ms": 2165,
+      "url": "https://www.google.com/travel/flights?tfs=CBwQARoOagwIAxIIL20vMDg5NjZAAUgBcAGCAQsI____________AZgBAg&tfu=KgIIAw&hl=en",
+      "executed_ms": 7040,
+      "page_changed": true,
+      "elapsed_ms": 7347
+    },
+    {
+      "step": 6,
+      "op": "TYPE",
+      "kind": "fill",
+      "label": "Where to? + Enter",
+      "target": 16,
+      "text": "London",
+      "option": null,
+      "key": "Enter",
+      "confidence": null,
+      "latency_ms": 4008,
+      "url": "https://www.google.com/travel/flights?tfs=CBwQARocagwIAxIIL20vMDg5NjZyDAgDEggvbS8wNGpwbEABSAFwAYIBCwj___________8BmAEC&tfu=KgIIAw&hl=en",
+      "executed_ms": 11500,
+      "page_changed": true,
+      "elapsed_ms": 11907
+    },
+    {
+      "step": 7,
+      "op": "CLICK",
+      "kind": "click",
+      "label": "Departure",
+      "target": 18,
+      "text": null,
+      "option": null,
+      "key": null,
+      "confidence": null,
+      "latency_ms": 4963,
+      "url": "https://www.google.com/travel/flights?tfs=CBwQARocagwIAxIIL20vMDg5NjZyDAgDEggvbS8wNGpwbEABSAFwAYIBCwj___________8BmAEC&tfu=KgIIAw&hl=en",
+      "executed_ms": 16930,
+      "page_changed": true,
+      "elapsed_ms": 17146
+    },
+    {
+      "step": 8,
+      "op": "CLICK",
+      "kind": "click",
+      "label": "Sunday, October 18, 2026 , 50 euros, Cheapest price",
+      "target": 29,
+      "text": null,
+      "option": null,
+      "key": null,
+      "confidence": null,
+      "latency_ms": 10168,
+      "url": "https://www.google.com/travel/flights?tfs=CBwQARocagwIAxIIL20vMDg5NjZyDAgDEggvbS8wNGpwbEABSAFwAYIBCwj___________8BmAEC&tfu=KgIIAw&hl=en",
+      "executed_ms": 33383,
+      "page_changed": true,
+      "elapsed_ms": 33619
+    },
+    {
+      "step": 9,
+      "op": "CLICK",
+      "kind": "click",
+      "label": "Done. Search for one-way flights, departing on October 18, 2026",
+      "target": 50,
+      "text": null,
+      "option": null,
+      "key": null,
+      "confidence": null,
+      "latency_ms": 2238,
+      "url": "https://www.google.com/travel/flights?tfs=CBwQARooEgoyMDI2LTEwLTE4agwIAxIIL20vMDg5NjZyDAgDEggvbS8wNGpwbEABSAFwAYIBCwj___________8BmAEC&tfu=KgIIAw&hl=en",
+      "executed_ms": 35908,
+      "page_changed": true,
+      "elapsed_ms": 36261
+    },
+    {
+      "step": 10,
+      "op": "CLICK",
+      "kind": "click",
+      "label": "Search",
+      "target": 19,
+      "text": null,
+      "option": null,
+      "key": null,
+      "confidence": null,
+      "latency_ms": 2185,
+      "url": "https://www.google.com/travel/flights/search?tfs=CBwQAhooEgoyMDI2LTEwLTE4agwIAxIIL20vMDg5NjZyDAgDEggvbS8wNGpwbEABSAFwAYIBCwj___________8BmAEC&hl=en",
+      "executed_ms": 38511,
+      "page_changed": true,
+      "elapsed_ms": 39983
+    }
+  ],
+  "decisions": [
+    {
+      "op": "SCROLL_DOWN",
+      "target": null,
+      "text": null,
+      "option": null,
+      "key": null,
+      "probabilities": {},
+      "confidence": null,
+      "latency_ms": 3420,
+      "usage": {
+        "prompt_tokens": 1106,
+        "completion_tokens": 29,
+        "total_tokens": 1135,
+        "cost": 0.00011988,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00011988,
+          "upstream_inference_prompt_cost": 0.0001106,
+          "upstream_inference_completions_cost": 9.28e-06
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "cost": 0.00011988,
+      "model": "meta-llama/llama-3.3-70b-instruct",
+      "provider": "DeepInfra",
+      "raw": "{\"op\": \"SCROLL_DOWN\", \"target\": null, \"text\": null, \"option\": null, \"key\": null}",
+      "request_chars": 4837,
+      "fingerprint": "84f80792194f2c422674545622f1c5efe7155f563aa20fc7b85a9e773f37362b",
+      "elapsed_ms": 0,
+      "valid": true,
+      "outcome": "executed"
+    },
+    {
+      "op": "CLICK",
+      "target": 1,
+      "text": null,
+      "option": null,
+      "key": null,
+      "probabilities": {},
+      "confidence": null,
+      "latency_ms": 1724,
+      "usage": {
+        "prompt_tokens": 1084,
+        "completion_tokens": 28,
+        "total_tokens": 1112,
+        "cost": 0.00011736,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00011736,
+          "upstream_inference_prompt_cost": 0.0001084,
+          "upstream_inference_completions_cost": 8.96e-06
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "cost": 0.00011736,
+      "model": "meta-llama/llama-3.3-70b-instruct",
+      "provider": "DeepInfra",
+      "raw": "{\"op\": \"CLICK\", \"target\": 1, \"text\": null, \"option\": null, \"key\": null}",
+      "request_chars": 4724,
+      "fingerprint": "ddd4c5f7acefc3a261dcc18d0936b3fbee5df49273acf0a803c1fb1d333af130",
+      "elapsed_ms": 0,
+      "valid": true,
+      "outcome": "executed"
+    },
+    {
+      "op": "CLICK",
+      "target": 12,
+      "text": null,
+      "option": null,
+      "key": null,
+      "probabilities": {},
+      "confidence": null,
+      "latency_ms": 1708,
+      "usage": {
+        "prompt_tokens": 1352,
+        "completion_tokens": 28,
+        "total_tokens": 1380,
+        "cost": 0.00014416,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00014416,
+          "upstream_inference_prompt_cost": 0.0001352,
+          "upstream_inference_completions_cost": 8.96e-06
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "cost": 0.00014416,
+      "model": "meta-llama/llama-3.3-70b-instruct",
+      "provider": "DeepInfra",
+      "raw": "{\"op\": \"CLICK\", \"target\": 12, \"text\": null, \"option\": null, \"key\": null}",
+      "request_chars": 5389,
+      "fingerprint": "790e11e881dd10e0ce4b3c746fbdbf7f34fccee81df6e16dd9852350fe2b8922",
+      "elapsed_ms": 1708,
+      "valid": true,
+      "outcome": "executed"
+    },
+    {
+      "op": "CLICK",
+      "target": 2,
+      "text": null,
+      "option": null,
+      "key": null,
+      "probabilities": {},
+      "confidence": null,
+      "latency_ms": 2421,
+      "usage": {
+        "prompt_tokens": 830,
+        "completion_tokens": 28,
+        "total_tokens": 858,
+        "cost": 9.196e-05,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 9.196e-05,
+          "upstream_inference_prompt_cost": 8.3e-05,
+          "upstream_inference_completions_cost": 8.96e-06
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "cost": 9.196e-05,
+      "model": "meta-llama/llama-3.3-70b-instruct",
+      "provider": "DeepInfra",
+      "raw": "{\"op\": \"CLICK\", \"target\": 2, \"text\": null, \"option\": null, \"key\": null}",
+      "request_chars": 3535,
+      "fingerprint": "f8419764ef30c83a35f16cac8e426a47f6eb0a637d6e7dabcb74dc3bbbc3c087",
+      "elapsed_ms": 4330,
+      "valid": true,
+      "outcome": "executed"
+    },
+    {
+      "op": "TYPE",
+      "target": 15,
+      "text": "Zurich",
+      "option": null,
+      "key": "Enter",
+      "probabilities": {},
+      "confidence": null,
+      "latency_ms": 2165,
+      "usage": {
+        "prompt_tokens": 1406,
+        "completion_tokens": 32,
+        "total_tokens": 1438,
+        "cost": 0.00015084,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00015084,
+          "upstream_inference_prompt_cost": 0.0001406,
+          "upstream_inference_completions_cost": 1.024e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "cost": 0.00015084,
+      "model": "meta-llama/llama-3.3-70b-instruct",
+      "provider": "DeepInfra",
+      "raw": "{\"op\": \"TYPE\", \"target\": 15, \"text\": \"Zurich\", \"option\": null, \"key\": \"Enter\"}",
+      "request_chars": 5480,
+      "fingerprint": "38adf463dc64022d3190eec42063f7bff61b117a5804daa0c5a33fef88b427cc",
+      "elapsed_ms": 6965,
+      "valid": true,
+      "outcome": "executed"
+    },
+    {
+      "op": "TYPE",
+      "target": 16,
+      "text": "London",
+      "option": null,
+      "key": "Enter",
+      "probabilities": {},
+      "confidence": null,
+      "latency_ms": 4008,
+      "usage": {
+        "prompt_tokens": 1430,
+        "completion_tokens": 30,
+        "total_tokens": 1460,
+        "cost": 0.0001526,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0001526,
+          "upstream_inference_prompt_cost": 0.000143,
+          "upstream_inference_completions_cost": 9.6e-06
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "cost": 0.0001526,
+      "model": "meta-llama/llama-3.3-70b-instruct",
+      "provider": "DeepInfra",
+      "raw": "{\"op\": \"TYPE\", \"target\": 16, \"text\": \"London\", \"option\": null, \"key\": \"Enter\"}",
+      "request_chars": 5546,
+      "fingerprint": "384b8fbfa7e531d9af9143d2efc4f975f46dbf3c0e551a5dc9585498acbe2fd5",
+      "elapsed_ms": 11355,
+      "valid": true,
+      "outcome": "executed"
+    },
+    {
+      "op": "CLICK",
+      "target": 18,
+      "text": null,
+      "option": null,
+      "key": null,
+      "probabilities": {},
+      "confidence": null,
+      "latency_ms": 4963,
+      "usage": {
+        "prompt_tokens": 1470,
+        "completion_tokens": 28,
+        "total_tokens": 1498,
+        "cost": 0.00015596,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00015596,
+          "upstream_inference_prompt_cost": 0.000147,
+          "upstream_inference_completions_cost": 8.96e-06
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "cost": 0.00015596,
+      "model": "meta-llama/llama-3.3-70b-instruct",
+      "provider": "DeepInfra",
+      "raw": "{\"op\": \"CLICK\", \"target\": 18, \"text\": null, \"option\": null, \"key\": null}",
+      "request_chars": 5661,
+      "fingerprint": "2cd72c5bd91a02713f2dcb5fd1f08384bf1afbd33d90d7e9c68848ab1a2387f8",
+      "elapsed_ms": 16870,
+      "valid": true,
+      "outcome": "executed"
+    },
+    {
+      "op": "CLICK",
+      "target": 29,
+      "text": null,
+      "option": null,
+      "key": null,
+      "probabilities": {},
+      "confidence": null,
+      "latency_ms": 5687,
+      "usage": {
+        "prompt_tokens": 1740,
+        "completion_tokens": 28,
+        "total_tokens": 1768,
+        "cost": 0.00018296,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00018296,
+          "upstream_inference_prompt_cost": 0.000174,
+          "upstream_inference_completions_cost": 8.96e-06
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "cost": 0.00018296,
+      "model": "meta-llama/llama-3.3-70b-instruct",
+      "provider": "DeepInfra",
+      "raw": "{\"op\": \"CLICK\", \"target\": 29, \"text\": null, \"option\": null, \"key\": null}",
+      "request_chars": 5876,
+      "fingerprint": "32a829c9ad14549829099dae0df91a950bb7c0ae05240292382f7596cc1c2187",
+      "elapsed_ms": 22834,
+      "valid": true,
+      "outcome": "stale: Page changed since this decision"
+    },
+    {
+      "op": "CLICK",
+      "target": 29,
+      "text": null,
+      "option": null,
+      "key": null,
+      "probabilities": {},
+      "confidence": null,
+      "latency_ms": 10168,
+      "usage": {
+        "prompt_tokens": 2060,
+        "completion_tokens": 28,
+        "total_tokens": 2088,
+        "cost": 0.00021496,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00021496,
+          "upstream_inference_prompt_cost": 0.000206,
+          "upstream_inference_completions_cost": 8.96e-06
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "cost": 0.00021496,
+      "model": "meta-llama/llama-3.3-70b-instruct",
+      "provider": "DeepInfra",
+      "raw": "{\"op\": \"CLICK\", \"target\": 29, \"text\": null, \"option\": null, \"key\": null}",
+      "request_chars": 6666,
+      "fingerprint": "253249aa5d2006bd69b55c10f051dfa37926cf71a5abfc63bd1bfc392f47f9e6",
+      "elapsed_ms": 33158,
+      "valid": true,
+      "outcome": "executed"
+    },
+    {
+      "op": "CLICK",
+      "target": 50,
+      "text": null,
+      "option": null,
+      "key": null,
+      "probabilities": {},
+      "confidence": null,
+      "latency_ms": 2238,
+      "usage": {
+        "prompt_tokens": 2127,
+        "completion_tokens": 28,
+        "total_tokens": 2155,
+        "cost": 0.00022166,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00022166,
+          "upstream_inference_prompt_cost": 0.0002127,
+          "upstream_inference_completions_cost": 8.96e-06
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "cost": 0.00022166,
+      "model": "meta-llama/llama-3.3-70b-instruct",
+      "provider": "DeepInfra",
+      "raw": "{\"op\": \"CLICK\", \"target\": 50, \"text\": null, \"option\": null, \"key\": null}",
+      "request_chars": 6873,
+      "fingerprint": "74e1d2d623382d1383766e432b627c68af33eb3c7a81533a0328688c3b89f0ed",
+      "elapsed_ms": 35857,
+      "valid": true,
+      "outcome": "executed"
+    },
+    {
+      "op": "CLICK",
+      "target": 19,
+      "text": null,
+      "option": null,
+      "key": null,
+      "probabilities": {},
+      "confidence": null,
+      "latency_ms": 2185,
+      "usage": {
+        "prompt_tokens": 1538,
+        "completion_tokens": 28,
+        "total_tokens": 1566,
+        "cost": 0.00016276,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00016276,
+          "upstream_inference_prompt_cost": 0.0001538,
+          "upstream_inference_completions_cost": 8.96e-06
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "cost": 0.00016276,
+      "model": "meta-llama/llama-3.3-70b-instruct",
+      "provider": "DeepInfra",
+      "raw": "{\"op\": \"CLICK\", \"target\": 19, \"text\": null, \"option\": null, \"key\": null}",
+      "request_chars": 5859,
+      "fingerprint": "7b3dbbfff6186c3ba25cf0883cf22a68d102f423a37304eba091b4fded547cf5",
+      "elapsed_ms": 38447,
+      "valid": true,
+      "outcome": "executed"
+    },
+    {
+      "op": "DONE",
+      "target": null,
+      "text": null,
+      "option": null,
+      "key": null,
+      "probabilities": {},
+      "confidence": null,
+      "latency_ms": 3621,
+      "usage": {
+        "prompt_tokens": 2719,
+        "completion_tokens": 27,
+        "total_tokens": 2746,
+        "cost": 0.00028054,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00028054,
+          "upstream_inference_prompt_cost": 0.0002719,
+          "upstream_inference_completions_cost": 8.64e-06
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "cost": 0.00028054,
+      "model": "meta-llama/llama-3.3-70b-instruct",
+      "provider": "DeepInfra",
+      "raw": "{\"op\": \"DONE\", \"target\": null, \"text\": null, \"option\": null, \"key\": null}",
+      "request_chars": 10308,
+      "fingerprint": "aba4a0c57f4dc5234984cf3ea479275817fe5374e573505a182c86b742bcf90c",
+      "elapsed_ms": 43604,
+      "valid": true,
+      "outcome": "executed"
+    }
+  ],
+  "totals": {
+    "requests": 12,
+    "actions": 10,
+    "waits": 0,
+    "stale": 1,
+    "invalid": 0,
+    "model_ms": 44308,
+    "model_median_ms": 2920,
+    "input_tokens": 18862,
+    "output_tokens": 342,
+    "cost_usd": 0.001996,
+    "request_chars": 70754,
+    "cdp_calls": 110
+  },
+  "error": null,
+  "verification": {
+    "passed": true,
+    "checks": {
+      "search_page": true,
+      "one_way": true,
+      "origin": true,
+      "destination": true,
+      "date": true,
+      "year": true,
+      "results": true
+    },
+    "visible_flights": [
+      "From 50 euros.This price does not include overhead bin access. Nonstop flight with easyJet. Leaves Zurich Airport at 8:55 PM on Sunday, October 18 and arrives at London Luton Airport at 9:40 PM on Sun",
+      "From 87 euros. Nonstop flight with British Airways. Leaves Zurich Airport at 7:45 PM on Sunday, October 18 and arrives at Heathrow Airport at 8:30 PM on Sunday, October 18. Total duration 1 hr 45 min.",
+      "From 121 euros. Nonstop flight with SWISS. Operated by Helvetic. Leaves Zurich Airport at 4:50 PM on Sunday, October 18 and arrives at London City Airport at 5:25 PM on Sunday, October 18. Total durat",
+      "From 69 euros.This price does not include overhead bin access. Nonstop flight with easyJet. Leaves Zurich Airport at 8:40 PM on Sunday, October 18 and arrives at London Gatwick Airport at 9:20 PM on S",
+      "From 81 euros.This price does not include overhead bin access. Nonstop flight with easyJet. Leaves Zurich Airport at 4:45 PM on Sunday, October 18 and arrives at London Gatwick Airport at 5:35 PM on S"
+    ]
+  },
+  "final_url": "https://www.google.com/travel/flights/search?tfs=CBwQAhooEgoyMDI2LTEwLTE4agwIAxIIL20vMDg5NjZyDAgDEggvbS8wNGpwbEABSAFwAYIBCwj___________8BmAEC&hl=en",
+  "wall_ms": 51280,
+  "setup_ms": 1120,
+  "browser": "Chrome/153.0.8010.53"
+}

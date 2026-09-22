@@ -89,6 +89,7 @@ def make_policy(*, backend=None, preset=None, model=None, provider=None, logprob
         provider=chosen.get("provider"),
         logprobs=chosen.get("logprobs", False),
         reasoning=chosen.get("reasoning"),
+        text_chars=int(os.environ.get("DEJEVU_TEXT_CHARS", "4000")),
         max_tokens=chosen.get("max_tokens", 600 if chosen.get("reasoning") in ("low", "medium") else 160),
     )
 
