@@ -56,6 +56,19 @@ Presets live in `dejevu/config.py`. A preset is a model id, an optional pinned p
 - Retries of browser mutations. A click that may or may not have happened is never retried by code.
 - Timing claims without a `bench/final` folder behind them.
 
+## Layout
+
+| File | Job |
+|---|---|
+| `dejevu/agent.py` | the loop: observe, decide, validate, guard, act, settle, plus budgets, loop breakers and the trace |
+| `dejevu/snapshot.js` | one in page read: elements across shadow roots and frames, visible text, guards, hit testing |
+| `dejevu/browser.py` | one tab over CDP: settle, observe, freshness, execution, screencast |
+| `dejevu/cdp.py` | launch or attach to Chrome, one websocket, events |
+| `dejevu/state.py` | the page view the model sees and validation of its answer against what was observed |
+| `dejevu/policy.py` | `LLMPolicy` for any chat endpoint and `TypeSafePolicy` for Jev |
+| `dejevu/tasks.py` | reference and hold out tasks with independent checks |
+| `dejevu/measure.py` | repeated runs written as comparable JSON |
+
 ## Style
 
 Ruff at 130 columns, formatted with `ruff format`. Comments explain why, not what. Keep the loop small: page, elements, one decision, one action.
