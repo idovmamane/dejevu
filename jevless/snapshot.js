@@ -1,9 +1,9 @@
-// Instinct page snapshot. Evaluated in the page as one expression; returns the observation, or null before <body>.
-// Pierces open shadow roots and same-origin frames. Node identity lives in window.__instinct (a WeakMap), so the
+// Jevless page snapshot. Evaluated in the page as one expression; returns the observation, or null before <body>.
+// Pierces open shadow roots and same-origin frames. Node identity lives in window.__jevless (a WeakMap), so the
 // model only ever names observed elements by number and the executor resolves the real node at execution time.
 (() => {
   if (!document.body) return null;
-  const S = (window.__instinct ||= { ids: new WeakMap(), nodes: new Map(), next: 1 });
+  const S = (window.__jevless ||= { ids: new WeakMap(), nodes: new Map(), next: 1 });
   const identity = (e) => {
     if (!S.ids.has(e)) S.ids.set(e, S.next++);
     const id = S.ids.get(e);
