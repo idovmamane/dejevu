@@ -45,7 +45,7 @@ Wikipedia: from the main page, find and open the article about Godel's incomplet
 What this says:
 
 - The harness is model agnostic. Seven of eight models finish the Wikipedia task in one typed action.
-- The nine step Flights form separates models. Llama 3.3 70b on Groq is the one that passes every time. gpt-oss-120b passes most of the time. Smaller and cheaper models tend to declare victory inside the calendar.
+- The nine step Flights form separates models. Llama 3.3 70b on Groq is the one that passes every time. gpt-oss-120b passes some of the time. Smaller and cheaper models tend to declare victory inside the calendar.
 - Jev is still the cheapest per token by far. instinct sends 5.6x fewer tokens, but the fast open model routes cost 8x to 14x more per token, so the Flights run costs about 2.5x more than Jev at list price. On a self hosted or cheaper endpoint the token saving is the cost saving.
 - Zero wasted calls. jev-ultrafast throws away 4 to 6 of its 17 calls per run because the page changed under them. instinct waits for the page to settle before it asks.
 
