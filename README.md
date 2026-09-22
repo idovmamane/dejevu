@@ -14,6 +14,8 @@ Zurich to London on Google Flights, real time, 6.07 s from the first decision to
 
 Wikipedia, from the main page to the exact article in 1.5 s. Two model calls. One typed action with Enter.
 
+Side by side with jev-ultrafast's own published demo, clocks aligned, real speed: [docs/race.mp4](docs/race.mp4). Each counter freezes when that side finishes, 7073 ms against 6070 ms.
+
 ## Try it in 60 seconds
 
 ```bash
