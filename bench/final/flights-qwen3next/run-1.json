@@ -1,0 +1,536 @@
+{
+  "goal": "Find one-way flights from Zurich to London on October 18, 2026, for one adult in economy. Stop when matching flight options are visible. Do not select or book a flight.",
+  "policy": "qwen/qwen3-next-80b-a3b-instruct@Google",
+  "status": "done",
+  "reason": "model's call",
+  "elapsed_ms": 9119,
+  "url": "https://www.google.com/travel/flights?tfs=CBwQARocagwIAxIIL20vMDg5NjZyDAgDEggvbS8wNGpwbEABSAFwAYIBCwj___________8BmAEC&tfu=KgIIAw&hl=en",
+  "title": "Find Cheap Flights Worldwide & Book Your Ticket - Google Flights",
+  "elements": 50,
+  "history": [
+    {
+      "step": 1,
+      "op": "CLICK",
+      "kind": "click",
+      "label": "Reject all",
+      "target": 4,
+      "text": null,
+      "option": null,
+      "key": null,
+      "confidence": null,
+      "latency_ms": 759,
+      "url": "https://www.google.com/travel/flights?hl=en",
+      "executed_ms": 0,
+      "page_changed": true,
+      "elapsed_ms": 0
+    },
+    {
+      "step": 2,
+      "op": "CLICK",
+      "kind": "click",
+      "label": "Change ticket type. Round trip",
+      "target": 12,
+      "text": null,
+      "option": null,
+      "key": null,
+      "confidence": null,
+      "latency_ms": 963,
+      "url": "https://www.google.com/travel/flights?hl=en",
+      "executed_ms": 983,
+      "page_changed": true,
+      "elapsed_ms": 1262
+    },
+    {
+      "step": 3,
+      "op": "CLICK",
+      "kind": "click",
+      "label": "One way",
+      "target": 2,
+      "text": null,
+      "option": null,
+      "key": null,
+      "confidence": null,
+      "latency_ms": 720,
+      "url": "https://www.google.com/travel/flights?tfs=CBwQARoOagwIAhIIL20vMDVxdGpAAUgBcAGCAQsI____________AZgBAg&tfu=KgIIAw&hl=en",
+      "executed_ms": 2022,
+      "page_changed": true,
+      "elapsed_ms": 2321
+    },
+    {
+      "step": 4,
+      "op": "TYPE",
+      "kind": "fill",
+      "label": "Where from? + Enter",
+      "target": 15,
+      "text": "Zurich",
+      "option": null,
+      "key": "Enter",
+      "confidence": null,
+      "latency_ms": 1059,
+      "url": "https://www.google.com/travel/flights?tfs=CBwQARoOagwIAxIIL20vMDg5NjZAAUgBcAGCAQsI____________AZgBAg&tfu=KgIIAw&hl=en",
+      "executed_ms": 3433,
+      "page_changed": true,
+      "elapsed_ms": 3754
+    },
+    {
+      "step": 5,
+      "op": "TYPE",
+      "kind": "fill",
+      "label": "Where to? + Enter",
+      "target": 16,
+      "text": "London",
+      "option": null,
+      "key": "Enter",
+      "confidence": null,
+      "latency_ms": 817,
+      "url": "https://www.google.com/travel/flights?tfs=CBwQARocagwIAxIIL20vMDg5NjZyDAgDEggvbS8wNGpwbEABSAFwAYIBCwj___________8BmAEC&tfu=KgIIAw&hl=en",
+      "executed_ms": 4625,
+      "page_changed": true,
+      "elapsed_ms": 5054
+    },
+    {
+      "step": 6,
+      "op": "CLICK",
+      "kind": "click",
+      "label": "Departure",
+      "target": 18,
+      "text": null,
+      "option": null,
+      "key": null,
+      "confidence": null,
+      "latency_ms": 1075,
+      "url": "https://www.google.com/travel/flights?tfs=CBwQARocagwIAxIIL20vMDg5NjZyDAgDEggvbS8wNGpwbEABSAFwAYIBCwj___________8BmAEC&tfu=KgIIAw&hl=en",
+      "executed_ms": 6167,
+      "page_changed": true,
+      "elapsed_ms": 6421
+    },
+    {
+      "step": 7,
+      "op": "CLICK",
+      "kind": "click",
+      "label": "Sunday, October 18, 2026 , 50 euros, Cheapest price",
+      "target": 29,
+      "text": null,
+      "option": null,
+      "key": null,
+      "confidence": null,
+      "latency_ms": 822,
+      "url": "https://www.google.com/travel/flights?tfs=CBwQARocagwIAxIIL20vMDg5NjZyDAgDEggvbS8wNGpwbEABSAFwAYIBCwj___________8BmAEC&tfu=KgIIAw&hl=en",
+      "executed_ms": 8097,
+      "page_changed": true,
+      "elapsed_ms": 8249
+    }
+  ],
+  "decisions": [
+    {
+      "op": "CLICK",
+      "target": 4,
+      "text": null,
+      "option": null,
+      "key": null,
+      "probabilities": {},
+      "confidence": null,
+      "latency_ms": 759,
+      "usage": {
+        "prompt_tokens": 1109,
+        "completion_tokens": 13,
+        "total_tokens": 1122,
+        "cost": 0.00018195,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00018195,
+          "upstream_inference_prompt_cost": 0.00016635,
+          "upstream_inference_completions_cost": 1.56e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "cost": 0.00018195,
+      "model": "qwen/qwen3-next-80b-a3b-instruct",
+      "provider": "Google",
+      "raw": "{\"op\": \"CLICK\", \"target\": 4}",
+      "request_chars": 4837,
+      "fingerprint": "84f80792194f2c422674545622f1c5efe7155f563aa20fc7b85a9e773f37362b",
+      "elapsed_ms": 0,
+      "valid": true,
+      "outcome": "executed"
+    },
+    {
+      "op": "CLICK",
+      "target": 12,
+      "text": null,
+      "option": null,
+      "key": null,
+      "probabilities": {},
+      "confidence": null,
+      "latency_ms": 963,
+      "usage": {
+        "prompt_tokens": 1375,
+        "completion_tokens": 18,
+        "total_tokens": 1393,
+        "cost": 0.00022785,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00022785,
+          "upstream_inference_prompt_cost": 0.00020625,
+          "upstream_inference_completions_cost": 2.16e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "cost": 0.00022785,
+      "model": "qwen/qwen3-next-80b-a3b-instruct",
+      "provider": "Google",
+      "raw": "{\n  \"op\": \"CLICK\",\n  \"target\": 12\n}",
+      "request_chars": 5359,
+      "fingerprint": "790e11e881dd10e0ce4b3c746fbdbf7f34fccee81df6e16dd9852350fe2b8922",
+      "elapsed_ms": 963,
+      "valid": true,
+      "outcome": "executed"
+    },
+    {
+      "op": "CLICK",
+      "target": 2,
+      "text": null,
+      "option": null,
+      "key": null,
+      "probabilities": {},
+      "confidence": null,
+      "latency_ms": 720,
+      "usage": {
+        "prompt_tokens": 824,
+        "completion_tokens": 13,
+        "total_tokens": 837,
+        "cost": 0.0001392,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0001392,
+          "upstream_inference_prompt_cost": 0.0001236,
+          "upstream_inference_completions_cost": 1.56e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "cost": 0.0001392,
+      "model": "qwen/qwen3-next-80b-a3b-instruct",
+      "provider": "Google",
+      "raw": "{\"op\": \"CLICK\", \"target\": 2}",
+      "request_chars": 3505,
+      "fingerprint": "f8419764ef30c83a35f16cac8e426a47f6eb0a637d6e7dabcb74dc3bbbc3c087",
+      "elapsed_ms": 1983,
+      "valid": true,
+      "outcome": "executed"
+    },
+    {
+      "op": "TYPE",
+      "target": 15,
+      "text": "Zurich",
+      "option": null,
+      "key": "Enter",
+      "probabilities": {},
+      "confidence": null,
+      "latency_ms": 1059,
+      "usage": {
+        "prompt_tokens": 1429,
+        "completion_tokens": 34,
+        "total_tokens": 1463,
+        "cost": 0.00025515,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00025515,
+          "upstream_inference_prompt_cost": 0.00021435,
+          "upstream_inference_completions_cost": 4.08e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "cost": 0.00025515,
+      "model": "qwen/qwen3-next-80b-a3b-instruct",
+      "provider": "Google",
+      "raw": "{\n  \"op\": \"TYPE\",\n  \"target\": 15,\n  \"text\": \"Zurich\",\n  \"key\": \"Enter\"\n}",
+      "request_chars": 5450,
+      "fingerprint": "38adf463dc64022d3190eec42063f7bff61b117a5804daa0c5a33fef88b427cc",
+      "elapsed_ms": 3381,
+      "valid": true,
+      "outcome": "executed"
+    },
+    {
+      "op": "TYPE",
+      "target": 16,
+      "text": "London",
+      "option": null,
+      "key": "Enter",
+      "probabilities": {},
+      "confidence": null,
+      "latency_ms": 817,
+      "usage": {
+        "prompt_tokens": 1453,
+        "completion_tokens": 26,
+        "total_tokens": 1479,
+        "cost": 0.00024915,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00024915,
+          "upstream_inference_prompt_cost": 0.00021795,
+          "upstream_inference_completions_cost": 3.12e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "cost": 0.00024915,
+      "model": "qwen/qwen3-next-80b-a3b-instruct",
+      "provider": "Google",
+      "raw": "{\"op\": \"TYPE\", \"target\": 16, \"text\": \"London\", \"key\": \"Enter\"}",
+      "request_chars": 5516,
+      "fingerprint": "384b8fbfa7e531d9af9143d2efc4f975f46dbf3c0e551a5dc9585498acbe2fd5",
+      "elapsed_ms": 4572,
+      "valid": true,
+      "outcome": "executed"
+    },
+    {
+      "op": "CLICK",
+      "target": 18,
+      "text": null,
+      "option": null,
+      "key": null,
+      "probabilities": {},
+      "confidence": null,
+      "latency_ms": 1075,
+      "usage": {
+        "prompt_tokens": 1494,
+        "completion_tokens": 14,
+        "total_tokens": 1508,
+        "cost": 0.0002409,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0002409,
+          "upstream_inference_prompt_cost": 0.0002241,
+          "upstream_inference_completions_cost": 1.68e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "cost": 0.0002409,
+      "model": "qwen/qwen3-next-80b-a3b-instruct",
+      "provider": "Google",
+      "raw": "{\"op\": \"CLICK\", \"target\": 18}",
+      "request_chars": 5631,
+      "fingerprint": "2cd72c5bd91a02713f2dcb5fd1f08384bf1afbd33d90d7e9c68848ab1a2387f8",
+      "elapsed_ms": 6130,
+      "valid": true,
+      "outcome": "executed"
+    },
+    {
+      "op": "CLICK",
+      "target": 29,
+      "text": null,
+      "option": null,
+      "key": null,
+      "probabilities": {},
+      "confidence": null,
+      "latency_ms": 619,
+      "usage": {
+        "prompt_tokens": 1934,
+        "completion_tokens": 14,
+        "total_tokens": 1948,
+        "cost": 0.0003069,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0003069,
+          "upstream_inference_prompt_cost": 0.0002901,
+          "upstream_inference_completions_cost": 1.68e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "cost": 0.0003069,
+      "model": "qwen/qwen3-next-80b-a3b-instruct",
+      "provider": "Google",
+      "raw": "{\"op\": \"CLICK\", \"target\": 29}",
+      "request_chars": 5846,
+      "fingerprint": "32a829c9ad14549829099dae0df91a950bb7c0ae05240292382f7596cc1c2187",
+      "elapsed_ms": 7040,
+      "valid": true,
+      "outcome": "stale: Page changed since this decision"
+    },
+    {
+      "op": "CLICK",
+      "target": 29,
+      "text": null,
+      "option": null,
+      "key": null,
+      "probabilities": {},
+      "confidence": null,
+      "latency_ms": 822,
+      "usage": {
+        "prompt_tokens": 2364,
+        "completion_tokens": 14,
+        "total_tokens": 2378,
+        "cost": 0.0003714,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0003714,
+          "upstream_inference_prompt_cost": 0.0003546,
+          "upstream_inference_completions_cost": 1.68e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "cost": 0.0003714,
+      "model": "qwen/qwen3-next-80b-a3b-instruct",
+      "provider": "Google",
+      "raw": "{\"op\": \"CLICK\", \"target\": 29}",
+      "request_chars": 6636,
+      "fingerprint": "5a65953986c11e969ddc4e7db87077f40af8c9fa3c38181860082cc323cd6354",
+      "elapsed_ms": 8038,
+      "valid": true,
+      "outcome": "executed"
+    },
+    {
+      "op": "DONE",
+      "target": null,
+      "text": null,
+      "option": null,
+      "key": null,
+      "probabilities": {},
+      "confidence": null,
+      "latency_ms": 848,
+      "usage": {
+        "prompt_tokens": 2441,
+        "completion_tokens": 7,
+        "total_tokens": 2448,
+        "cost": 0.00037455,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00037455,
+          "upstream_inference_prompt_cost": 0.00036615,
+          "upstream_inference_completions_cost": 8.4e-06
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "cost": 0.00037455,
+      "model": "qwen/qwen3-next-80b-a3b-instruct",
+      "provider": "Google",
+      "raw": "{\"op\": \"DONE\"}",
+      "request_chars": 6843,
+      "fingerprint": "e6b0f0584f9ae2dc6e78da31ac367233936567192c052e9445b44342f671ef13",
+      "elapsed_ms": 9098,
+      "valid": true,
+      "outcome": "executed"
+    }
+  ],
+  "totals": {
+    "requests": 9,
+    "actions": 7,
+    "waits": 0,
+    "stale": 1,
+    "invalid": 0,
+    "model_ms": 7682,
+    "model_median_ms": 822,
+    "input_tokens": 14423,
+    "output_tokens": 153,
+    "cost_usd": 0.002347,
+    "request_chars": 49623,
+    "cdp_calls": 81
+  },
+  "error": null,
+  "verification": {
+    "passed": false,
+    "checks": {
+      "search_page": false,
+      "one_way": false,
+      "origin": false,
+      "destination": false,
+      "date": true,
+      "year": false,
+      "results": false
+    },
+    "visible_flights": []
+  },
+  "final_url": "https://www.google.com/travel/flights?tfs=CBwQARocagwIAxIIL20vMDg5NjZyDAgDEggvbS8wNGpwbEABSAFwAYIBCwj___________8BmAEC&tfu=KgIIAw&hl=en",
+  "wall_ms": 11728,
+  "setup_ms": 908,
+  "browser": "Chrome/153.0.8010.53"
+}

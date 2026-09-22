@@ -1,0 +1,832 @@
+{
+  "goal": "Find one-way flights from Zurich to London on October 18, 2026, for one adult in economy. Stop when matching flight options are visible. Do not select or book a flight.",
+  "policy": "openai/gpt-oss-20b@Groq",
+  "status": "done",
+  "reason": "model's call",
+  "elapsed_ms": 11513,
+  "url": "https://www.google.com/travel/flights/search?tfs=CBwQAhooEgoyMDI2LTEwLTE4agwIAxIIL20vMDg5NjZyDAgDEggvbS8wNGpwbEABSAFwAYIBCwj___________8BmAEC&hl=en",
+  "title": "Z\u00fcrich to London | Google Flights",
+  "elements": 78,
+  "history": [
+    {
+      "step": 1,
+      "op": "SCROLL_DOWN",
+      "kind": "scroll",
+      "label": "scroll down",
+      "target": null,
+      "text": null,
+      "option": null,
+      "key": null,
+      "confidence": null,
+      "latency_ms": 1269,
+      "url": "https://consent.google.com/m?continue=https://www.google.com/travel/flights?hl%3Den&gl=FR&m=0&pc=flt&cm=2&hl=en&src=1",
+      "executed_ms": 0,
+      "page_changed": true,
+      "elapsed_ms": 0
+    },
+    {
+      "step": 2,
+      "op": "CLICK",
+      "kind": "click",
+      "label": "Accept all",
+      "target": 2,
+      "text": null,
+      "option": null,
+      "key": null,
+      "confidence": null,
+      "latency_ms": 463,
+      "url": "https://www.google.com/travel/flights?hl=en",
+      "executed_ms": 0,
+      "page_changed": true,
+      "elapsed_ms": 0
+    },
+    {
+      "step": 3,
+      "op": "CLICK",
+      "kind": "click",
+      "label": "Change ticket type. Round trip",
+      "target": 12,
+      "text": null,
+      "option": null,
+      "key": null,
+      "confidence": null,
+      "latency_ms": 602,
+      "url": "https://www.google.com/travel/flights?hl=en",
+      "executed_ms": 635,
+      "page_changed": true,
+      "elapsed_ms": 907
+    },
+    {
+      "step": 4,
+      "op": "CLICK",
+      "kind": "click",
+      "label": "One way",
+      "target": 2,
+      "text": null,
+      "option": null,
+      "key": null,
+      "confidence": null,
+      "latency_ms": 534,
+      "url": "https://www.google.com/travel/flights?tfs=CBwQARoOagwIAhIIL20vMDVxdGpAAUgBcAGCAQsI____________AZgBAg&tfu=KgIIAw&hl=en",
+      "executed_ms": 1483,
+      "page_changed": true,
+      "elapsed_ms": 1839
+    },
+    {
+      "step": 5,
+      "op": "SCROLL_DOWN",
+      "kind": "scroll",
+      "label": "scroll down",
+      "target": null,
+      "text": null,
+      "option": null,
+      "key": null,
+      "confidence": null,
+      "latency_ms": 496,
+      "url": "https://www.google.com/travel/flights?tfs=CBwQARoOagwIAhIIL20vMDVxdGpAAUgBcAGCAQsI____________AZgBAg&tfu=KgIIAw&hl=en",
+      "executed_ms": 2361,
+      "page_changed": true,
+      "elapsed_ms": 2499
+    },
+    {
+      "step": 6,
+      "op": "SCROLL_UP",
+      "kind": "scroll",
+      "label": "scroll up",
+      "target": null,
+      "text": null,
+      "option": null,
+      "key": null,
+      "confidence": null,
+      "latency_ms": 553,
+      "url": "https://www.google.com/travel/flights?tfs=CBwQARoOagwIAhIIL20vMDVxdGpAAUgBcAGCAQsI____________AZgBAg&tfu=KgIIAw&hl=en",
+      "executed_ms": 3076,
+      "page_changed": true,
+      "elapsed_ms": 3235
+    },
+    {
+      "step": 7,
+      "op": "TYPE",
+      "kind": "fill",
+      "label": "Where from? + Enter",
+      "target": 15,
+      "text": "Zurich",
+      "option": null,
+      "key": "Enter",
+      "confidence": null,
+      "latency_ms": 975,
+      "url": "https://www.google.com/travel/flights?tfs=CBwQARoOagwIAxIIL20vMDg5NjZAAUgBcAGCAQsI____________AZgBAg&tfu=KgIIAw&hl=en",
+      "executed_ms": 4278,
+      "page_changed": true,
+      "elapsed_ms": 4578
+    },
+    {
+      "step": 8,
+      "op": "TYPE",
+      "kind": "fill",
+      "label": "Where to? + Enter",
+      "target": 16,
+      "text": "London",
+      "option": null,
+      "key": "Enter",
+      "confidence": null,
+      "latency_ms": 435,
+      "url": "https://www.google.com/travel/flights?tfs=CBwQARocagwIAxIIL20vMDg5NjZyDAgDEggvbS8wNGpwbEABSAFwAYIBCwj___________8BmAEC&tfu=KgIIAw&hl=en",
+      "executed_ms": 5083,
+      "page_changed": true,
+      "elapsed_ms": 5496
+    },
+    {
+      "step": 9,
+      "op": "CLICK",
+      "kind": "click",
+      "label": "Departure",
+      "target": 18,
+      "text": null,
+      "option": null,
+      "key": null,
+      "confidence": null,
+      "latency_ms": 269,
+      "url": "https://www.google.com/travel/flights?tfs=CBwQARocagwIAxIIL20vMDg5NjZyDAgDEggvbS8wNGpwbEABSAFwAYIBCwj___________8BmAEC&tfu=KgIIAw&hl=en",
+      "executed_ms": 5820,
+      "page_changed": true,
+      "elapsed_ms": 6055
+    },
+    {
+      "step": 10,
+      "op": "CLICK",
+      "kind": "click",
+      "label": "Sunday, October 18, 2026 , 50 euros, Cheapest price",
+      "target": 29,
+      "text": null,
+      "option": null,
+      "key": null,
+      "confidence": null,
+      "latency_ms": 394,
+      "url": "https://www.google.com/travel/flights?tfs=CBwQARocagwIAxIIL20vMDg5NjZyDAgDEggvbS8wNGpwbEABSAFwAYIBCwj___________8BmAEC&tfu=KgIIAw&hl=en",
+      "executed_ms": 7418,
+      "page_changed": true,
+      "elapsed_ms": 7654
+    },
+    {
+      "step": 11,
+      "op": "CLICK",
+      "kind": "click",
+      "label": "Done. Search for one-way flights, departing on October 18, 2026",
+      "target": 50,
+      "text": null,
+      "option": null,
+      "key": null,
+      "confidence": null,
+      "latency_ms": 738,
+      "url": "https://www.google.com/travel/flights?tfs=CBwQARooEgoyMDI2LTEwLTE4agwIAxIIL20vMDg5NjZyDAgDEggvbS8wNGpwbEABSAFwAYIBCwj___________8BmAEC&tfu=KgIIAw&hl=en",
+      "executed_ms": 8436,
+      "page_changed": true,
+      "elapsed_ms": 8786
+    },
+    {
+      "step": 12,
+      "op": "CLICK",
+      "kind": "click",
+      "label": "Search",
+      "target": 19,
+      "text": null,
+      "option": null,
+      "key": null,
+      "confidence": null,
+      "latency_ms": 419,
+      "url": "https://www.google.com/travel/flights/search?tfs=CBwQAhooEgoyMDI2LTEwLTE4agwIAxIIL20vMDg5NjZyDAgDEggvbS8wNGpwbEABSAFwAYIBCwj___________8BmAEC&hl=en",
+      "executed_ms": 9259,
+      "page_changed": true,
+      "elapsed_ms": 10550
+    }
+  ],
+  "decisions": [
+    {
+      "op": "SCROLL_DOWN",
+      "target": null,
+      "text": null,
+      "option": null,
+      "key": null,
+      "probabilities": {},
+      "confidence": null,
+      "latency_ms": 1269,
+      "usage": {
+        "prompt_tokens": 1192,
+        "completion_tokens": 50,
+        "total_tokens": 1242,
+        "cost": 8.52e-05,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 512,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 8.52e-05,
+          "upstream_inference_prompt_cost": 7.02e-05,
+          "upstream_inference_completions_cost": 1.5e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 18,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "cost": 8.52e-05,
+      "model": "openai/gpt-oss-20b",
+      "provider": "Groq",
+      "raw": "{\"op\":\"SCROLL_DOWN\",\"target\":null,\"text\":null,\"option\":null,\"key\":\"null\"}",
+      "request_chars": 4837,
+      "fingerprint": "84f80792194f2c422674545622f1c5efe7155f563aa20fc7b85a9e773f37362b",
+      "elapsed_ms": 0,
+      "valid": true,
+      "outcome": "executed"
+    },
+    {
+      "op": "CLICK",
+      "target": 2,
+      "text": null,
+      "option": null,
+      "key": null,
+      "probabilities": {},
+      "confidence": null,
+      "latency_ms": 463,
+      "usage": {
+        "prompt_tokens": 1175,
+        "completion_tokens": 38,
+        "total_tokens": 1213,
+        "cost": 8.0325e-05,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 512,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 8.0325e-05,
+          "upstream_inference_prompt_cost": 6.8925e-05,
+          "upstream_inference_completions_cost": 1.14e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 8,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "cost": 8.0325e-05,
+      "model": "openai/gpt-oss-20b",
+      "provider": "Groq",
+      "raw": "{\"op\":\"CLICK\",\"target\":2,\"text\":null,\"option\":null,\"key\":null}",
+      "request_chars": 4724,
+      "fingerprint": "ddd4c5f7acefc3a261dcc18d0936b3fbee5df49273acf0a803c1fb1d333af130",
+      "elapsed_ms": 0,
+      "valid": true,
+      "outcome": "executed"
+    },
+    {
+      "op": "CLICK",
+      "target": 12,
+      "text": null,
+      "option": null,
+      "key": null,
+      "probabilities": {},
+      "confidence": null,
+      "latency_ms": 602,
+      "usage": {
+        "prompt_tokens": 1431,
+        "completion_tokens": 300,
+        "total_tokens": 1731,
+        "cost": 0.000197325,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.000197325,
+          "upstream_inference_prompt_cost": 0.000107325,
+          "upstream_inference_completions_cost": 9e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 270,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "cost": 0.000197325,
+      "model": "openai/gpt-oss-20b",
+      "provider": "Groq",
+      "raw": "{\"op\":\"CLICK\",\"target\":12,\"text\":null,\"option\":null,\"key\":null}",
+      "request_chars": 5389,
+      "fingerprint": "790e11e881dd10e0ce4b3c746fbdbf7f34fccee81df6e16dd9852350fe2b8922",
+      "elapsed_ms": 602,
+      "valid": true,
+      "outcome": "executed"
+    },
+    {
+      "op": "CLICK",
+      "target": 2,
+      "text": null,
+      "option": null,
+      "key": null,
+      "probabilities": {},
+      "confidence": null,
+      "latency_ms": 534,
+      "usage": {
+        "prompt_tokens": 919,
+        "completion_tokens": 42,
+        "total_tokens": 961,
+        "cost": 5.2725e-05,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 768,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 5.2725e-05,
+          "upstream_inference_prompt_cost": 4.0125e-05,
+          "upstream_inference_completions_cost": 1.26e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 12,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "cost": 5.2725e-05,
+      "model": "openai/gpt-oss-20b",
+      "provider": "Groq",
+      "raw": "{\"op\":\"CLICK\",\"target\":2,\"text\":null,\"option\":null,\"key\":null}",
+      "request_chars": 3535,
+      "fingerprint": "f8419764ef30c83a35f16cac8e426a47f6eb0a637d6e7dabcb74dc3bbbc3c087",
+      "elapsed_ms": 1441,
+      "valid": true,
+      "outcome": "executed"
+    },
+    {
+      "op": "SCROLL_DOWN",
+      "target": null,
+      "text": null,
+      "option": null,
+      "key": null,
+      "probabilities": {},
+      "confidence": null,
+      "latency_ms": 496,
+      "usage": {
+        "prompt_tokens": 1480,
+        "completion_tokens": 97,
+        "total_tokens": 1577,
+        "cost": 0.0001401,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0001401,
+          "upstream_inference_prompt_cost": 0.000111,
+          "upstream_inference_completions_cost": 2.91e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 65,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "cost": 0.0001401,
+      "model": "openai/gpt-oss-20b",
+      "provider": "Groq",
+      "raw": "{\"op\":\"SCROLL_DOWN\",\"target\":null,\"text\":null,\"option\":null,\"key\":\"null\"}",
+      "request_chars": 5480,
+      "fingerprint": "38adf463dc64022d3190eec42063f7bff61b117a5804daa0c5a33fef88b427cc",
+      "elapsed_ms": 2336,
+      "valid": true,
+      "outcome": "executed"
+    },
+    {
+      "op": "SCROLL_UP",
+      "target": null,
+      "text": null,
+      "option": null,
+      "key": null,
+      "probabilities": {},
+      "confidence": null,
+      "latency_ms": 553,
+      "usage": {
+        "prompt_tokens": 1771,
+        "completion_tokens": 167,
+        "total_tokens": 1938,
+        "cost": 0.000154125,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 768,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.000154125,
+          "upstream_inference_prompt_cost": 0.000104025,
+          "upstream_inference_completions_cost": 5.01e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 135,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "cost": 0.000154125,
+      "model": "openai/gpt-oss-20b",
+      "provider": "Groq",
+      "raw": "{\"op\":\"SCROLL_UP\",\"target\":null,\"text\":null,\"option\":null,\"key\":null}",
+      "request_chars": 6472,
+      "fingerprint": "ad12dd73648411f0ed5ad09523f05626b737e414f6d3a337f87ae17dd5f3dd60",
+      "elapsed_ms": 3053,
+      "valid": true,
+      "outcome": "executed"
+    },
+    {
+      "op": "TYPE",
+      "target": 15,
+      "text": "Zurich",
+      "option": null,
+      "key": "Enter",
+      "probabilities": {},
+      "confidence": null,
+      "latency_ms": 975,
+      "usage": {
+        "prompt_tokens": 1498,
+        "completion_tokens": 353,
+        "total_tokens": 1851,
+        "cost": 0.00018945,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 768,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00018945,
+          "upstream_inference_prompt_cost": 8.355e-05,
+          "upstream_inference_completions_cost": 0.0001059
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 322,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "cost": 0.00018945,
+      "model": "openai/gpt-oss-20b",
+      "provider": "Groq",
+      "raw": "{\"op\":\"TYPE\",\"target\":15,\"text\":\"Zurich\",\"option\":null,\"key\":\"Enter\"}",
+      "request_chars": 5538,
+      "fingerprint": "38adf463dc64022d3190eec42063f7bff61b117a5804daa0c5a33fef88b427cc",
+      "elapsed_ms": 4210,
+      "valid": true,
+      "outcome": "executed"
+    },
+    {
+      "op": "TYPE",
+      "target": 16,
+      "text": "London",
+      "option": null,
+      "key": "Enter",
+      "probabilities": {},
+      "confidence": null,
+      "latency_ms": 435,
+      "usage": {
+        "prompt_tokens": 1521,
+        "completion_tokens": 69,
+        "total_tokens": 1590,
+        "cost": 0.000134775,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.000134775,
+          "upstream_inference_prompt_cost": 0.000114075,
+          "upstream_inference_completions_cost": 2.07e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 39,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "cost": 0.000134775,
+      "model": "openai/gpt-oss-20b",
+      "provider": "Groq",
+      "raw": "{\"op\":\"TYPE\",\"target\":16,\"text\":\"London\",\"option\":null,\"key\":\"Enter\"}",
+      "request_chars": 5604,
+      "fingerprint": "384b8fbfa7e531d9af9143d2efc4f975f46dbf3c0e551a5dc9585498acbe2fd5",
+      "elapsed_ms": 5014,
+      "valid": true,
+      "outcome": "executed"
+    },
+    {
+      "op": "CLICK",
+      "target": 18,
+      "text": null,
+      "option": null,
+      "key": null,
+      "probabilities": {},
+      "confidence": null,
+      "latency_ms": 269,
+      "usage": {
+        "prompt_tokens": 1562,
+        "completion_tokens": 42,
+        "total_tokens": 1604,
+        "cost": 0.00012975,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00012975,
+          "upstream_inference_prompt_cost": 0.00011715,
+          "upstream_inference_completions_cost": 1.26e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 12,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "cost": 0.00012975,
+      "model": "openai/gpt-oss-20b",
+      "provider": "Groq",
+      "raw": "{\"op\":\"CLICK\",\"target\":18,\"text\":null,\"option\":null,\"key\":null}",
+      "request_chars": 5719,
+      "fingerprint": "a1bfbe4992affbbf59987fc4ffb73384a3e1c8658db03e9da5b27bd9dc6993d0",
+      "elapsed_ms": 5766,
+      "valid": true,
+      "outcome": "executed"
+    },
+    {
+      "op": "CLICK",
+      "target": 29,
+      "text": null,
+      "option": null,
+      "key": null,
+      "probabilities": {},
+      "confidence": null,
+      "latency_ms": 509,
+      "usage": {
+        "prompt_tokens": 1831,
+        "completion_tokens": 78,
+        "total_tokens": 1909,
+        "cost": 0.000160725,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.000160725,
+          "upstream_inference_prompt_cost": 0.000137325,
+          "upstream_inference_completions_cost": 2.34e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 48,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "cost": 0.000160725,
+      "model": "openai/gpt-oss-20b",
+      "provider": "Groq",
+      "raw": "{\"op\":\"CLICK\",\"target\":29,\"text\":null,\"option\":null,\"key\":null}",
+      "request_chars": 5904,
+      "fingerprint": "56eecb5216011900429e953e7b3478998d98d9ddf019e230ad02ace0dc1440ca",
+      "elapsed_ms": 6564,
+      "valid": true,
+      "outcome": "stale: Page changed since this decision"
+    },
+    {
+      "op": "CLICK",
+      "target": 29,
+      "text": null,
+      "option": null,
+      "key": null,
+      "probabilities": {},
+      "confidence": null,
+      "latency_ms": 394,
+      "usage": {
+        "prompt_tokens": 2141,
+        "completion_tokens": 81,
+        "total_tokens": 2222,
+        "cost": 0.000184875,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.000184875,
+          "upstream_inference_prompt_cost": 0.000160575,
+          "upstream_inference_completions_cost": 2.43e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 51,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "cost": 0.000184875,
+      "model": "openai/gpt-oss-20b",
+      "provider": "Groq",
+      "raw": "{\"op\":\"CLICK\",\"target\":29,\"text\":null,\"option\":null,\"key\":null}",
+      "request_chars": 6694,
+      "fingerprint": "75a951890ee0050a68347d2816ed8792a9c7fdbae7a17879a7e1c91a705000dc",
+      "elapsed_ms": 7285,
+      "valid": true,
+      "outcome": "executed"
+    },
+    {
+      "op": "CLICK",
+      "target": 50,
+      "text": null,
+      "option": null,
+      "key": null,
+      "probabilities": {},
+      "confidence": null,
+      "latency_ms": 738,
+      "usage": {
+        "prompt_tokens": 2196,
+        "completion_tokens": 93,
+        "total_tokens": 2289,
+        "cost": 0.0001638,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 768,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0001638,
+          "upstream_inference_prompt_cost": 0.0001359,
+          "upstream_inference_completions_cost": 2.79e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 63,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "cost": 0.0001638,
+      "model": "openai/gpt-oss-20b",
+      "provider": "Groq",
+      "raw": "{\"op\":\"CLICK\",\"target\":50,\"text\":null,\"option\":null,\"key\":null}",
+      "request_chars": 6865,
+      "fingerprint": "fa6e15081f86b91123a08eb424869a56aa3488a979451968b28b2c0bc369b316",
+      "elapsed_ms": 8393,
+      "valid": true,
+      "outcome": "executed"
+    },
+    {
+      "op": "CLICK",
+      "target": 19,
+      "text": null,
+      "option": null,
+      "key": null,
+      "probabilities": {},
+      "confidence": null,
+      "latency_ms": 419,
+      "usage": {
+        "prompt_tokens": 1601,
+        "completion_tokens": 40,
+        "total_tokens": 1641,
+        "cost": 0.000132075,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.000132075,
+          "upstream_inference_prompt_cost": 0.000120075,
+          "upstream_inference_completions_cost": 1.2e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 10,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "cost": 0.000132075,
+      "model": "openai/gpt-oss-20b",
+      "provider": "Groq",
+      "raw": "{\"op\":\"CLICK\",\"target\":19,\"text\":null,\"option\":null,\"key\":null}",
+      "request_chars": 5825,
+      "fingerprint": "345a292290055795fccb3389bd543920ba45bfa9f0097b8ce5a46c19b475ed0c",
+      "elapsed_ms": 9205,
+      "valid": true,
+      "outcome": "executed"
+    },
+    {
+      "op": "DONE",
+      "target": null,
+      "text": null,
+      "option": null,
+      "key": null,
+      "probabilities": {},
+      "confidence": null,
+      "latency_ms": 925,
+      "usage": {
+        "prompt_tokens": 2871,
+        "completion_tokens": 75,
+        "total_tokens": 2946,
+        "cost": 0.000218625,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 512,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.000218625,
+          "upstream_inference_prompt_cost": 0.000196125,
+          "upstream_inference_completions_cost": 2.25e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 45,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "cost": 0.000218625,
+      "model": "openai/gpt-oss-20b",
+      "provider": "Groq",
+      "raw": "{\"op\":\"DONE\",\"target\":null,\"text\":null,\"option\":null,\"key\":null}",
+      "request_chars": 10656,
+      "fingerprint": "80564741968879093f3551c677c6bbc08ae814450c1532f14029a15dfdba1500",
+      "elapsed_ms": 11476,
+      "valid": true,
+      "outcome": "executed"
+    }
+  ],
+  "totals": {
+    "requests": 14,
+    "actions": 12,
+    "waits": 0,
+    "stale": 1,
+    "invalid": 0,
+    "model_ms": 8581,
+    "model_median_ms": 522,
+    "input_tokens": 23189,
+    "output_tokens": 1525,
+    "cost_usd": 0.002024,
+    "request_chars": 83242,
+    "cdp_calls": 121
+  },
+  "error": null,
+  "verification": {
+    "passed": true,
+    "checks": {
+      "search_page": true,
+      "one_way": true,
+      "origin": true,
+      "destination": true,
+      "date": true,
+      "year": true,
+      "results": true
+    },
+    "visible_flights": [
+      "From 50 euros.This price does not include overhead bin access. Nonstop flight with easyJet. Leaves Zurich Airport at 8:55 PM on Sunday, October 18 and arrives at London Luton Airport at 9:40 PM on Sun",
+      "From 87 euros. Nonstop flight with British Airways. Leaves Zurich Airport at 7:45 PM on Sunday, October 18 and arrives at Heathrow Airport at 8:30 PM on Sunday, October 18. Total duration 1 hr 45 min.",
+      "From 121 euros. Nonstop flight with SWISS. Operated by Helvetic. Leaves Zurich Airport at 4:50 PM on Sunday, October 18 and arrives at London City Airport at 5:25 PM on Sunday, October 18. Total durat",
+      "From 68 euros.This price does not include overhead bin access. Nonstop flight with easyJet. Leaves Zurich Airport at 8:40 PM on Sunday, October 18 and arrives at London Gatwick Airport at 9:20 PM on S",
+      "From 81 euros.This price does not include overhead bin access. Nonstop flight with easyJet. Leaves Zurich Airport at 4:45 PM on Sunday, October 18 and arrives at London Gatwick Airport at 5:35 PM on S"
+    ]
+  },
+  "final_url": "https://www.google.com/travel/flights/search?tfs=CBwQAhooEgoyMDI2LTEwLTE4agwIAxIIL20vMDg5NjZyDAgDEggvbS8wNGpwbEABSAFwAYIBCwj___________8BmAEC&hl=en",
+  "wall_ms": 15528,
+  "setup_ms": 1222,
+  "browser": "Chrome/153.0.8010.53"
+}

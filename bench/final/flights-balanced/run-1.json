@@ -1,0 +1,700 @@
+{
+  "goal": "Find one-way flights from Zurich to London on October 18, 2026, for one adult in economy. Stop when matching flight options are visible. Do not select or book a flight.",
+  "policy": "openai/gpt-oss-120b@Cerebras",
+  "status": "done",
+  "reason": "model's call",
+  "elapsed_ms": 7925,
+  "url": "https://www.google.com/travel/flights/search?tfs=CBwQAhooEgoyMDI2LTEwLTE4agwIAxIIL20vMDg5NjZyDAgDEggvbS8wNGpwbEABSAFwAYIBCwj___________8BmAEC&hl=en",
+  "title": "Z\u00fcrich to London | Google Flights",
+  "elements": 78,
+  "history": [
+    {
+      "step": 1,
+      "op": "CLICK",
+      "kind": "click",
+      "label": "Reject all",
+      "target": 4,
+      "text": null,
+      "option": null,
+      "key": null,
+      "confidence": null,
+      "latency_ms": 314,
+      "url": "https://www.google.com/travel/flights?hl=en",
+      "executed_ms": 0,
+      "page_changed": true,
+      "elapsed_ms": 0
+    },
+    {
+      "step": 2,
+      "op": "CLICK",
+      "kind": "click",
+      "label": "Change ticket type. Round trip",
+      "target": 12,
+      "text": null,
+      "option": null,
+      "key": null,
+      "confidence": null,
+      "latency_ms": 529,
+      "url": "https://www.google.com/travel/flights?hl=en",
+      "executed_ms": 564,
+      "page_changed": true,
+      "elapsed_ms": 700
+    },
+    {
+      "step": 3,
+      "op": "CLICK",
+      "kind": "click",
+      "label": "One way",
+      "target": 2,
+      "text": null,
+      "option": null,
+      "key": null,
+      "confidence": null,
+      "latency_ms": 245,
+      "url": "https://www.google.com/travel/flights?tfs=CBwQARoOagwIAhIIL20vMDVxdGpAAUgBcAGCAQsI____________AZgBAg&tfu=KgIIAw&hl=en",
+      "executed_ms": 1020,
+      "page_changed": true,
+      "elapsed_ms": 1400
+    },
+    {
+      "step": 4,
+      "op": "TYPE",
+      "kind": "fill",
+      "label": "Where from? + Enter",
+      "target": 15,
+      "text": "Zurich",
+      "option": null,
+      "key": "Enter",
+      "confidence": null,
+      "latency_ms": 554,
+      "url": "https://www.google.com/travel/flights?tfs=CBwQARoOagwIAxIIL20vMDg5NjZAAUgBcAGCAQsI____________AZgBAg&tfu=KgIIAw&hl=en",
+      "executed_ms": 2014,
+      "page_changed": true,
+      "elapsed_ms": 2311
+    },
+    {
+      "step": 5,
+      "op": "TYPE",
+      "kind": "fill",
+      "label": "Where to? + Enter",
+      "target": 16,
+      "text": "London",
+      "option": null,
+      "key": "Enter",
+      "confidence": null,
+      "latency_ms": 382,
+      "url": "https://www.google.com/travel/flights?tfs=CBwQARocagwIAxIIL20vMDg5NjZyDAgDEggvbS8wNGpwbEABSAFwAYIBCwj___________8BmAEC&tfu=KgIIAw&hl=en",
+      "executed_ms": 2722,
+      "page_changed": true,
+      "elapsed_ms": 3169
+    },
+    {
+      "step": 6,
+      "op": "CLICK",
+      "kind": "click",
+      "label": "Departure",
+      "target": 18,
+      "text": null,
+      "option": null,
+      "key": null,
+      "confidence": null,
+      "latency_ms": 265,
+      "url": "https://www.google.com/travel/flights?tfs=CBwQARocagwIAxIIL20vMDg5NjZyDAgDEggvbS8wNGpwbEABSAFwAYIBCwj___________8BmAEC&tfu=KgIIAw&hl=en",
+      "executed_ms": 3471,
+      "page_changed": true,
+      "elapsed_ms": 3677
+    },
+    {
+      "step": 7,
+      "op": "CLICK",
+      "kind": "click",
+      "label": "Sunday, October 18, 2026 , 50 euros, Cheapest price",
+      "target": 29,
+      "text": null,
+      "option": null,
+      "key": null,
+      "confidence": null,
+      "latency_ms": 269,
+      "url": "https://www.google.com/travel/flights?tfs=CBwQARocagwIAxIIL20vMDg5NjZyDAgDEggvbS8wNGpwbEABSAFwAYIBCwj___________8BmAEC&tfu=KgIIAw&hl=en",
+      "executed_ms": 5114,
+      "page_changed": true,
+      "elapsed_ms": 5287
+    },
+    {
+      "step": 8,
+      "op": "CLICK",
+      "kind": "click",
+      "label": "Done. Search for one-way flights, departing on October 18, 2026",
+      "target": 50,
+      "text": null,
+      "option": null,
+      "key": null,
+      "confidence": null,
+      "latency_ms": 269,
+      "url": "https://www.google.com/travel/flights?tfs=CBwQARooEgoyMDI2LTEwLTE4agwIAxIIL20vMDg5NjZyDAgDEggvbS8wNGpwbEABSAFwAYIBCwj___________8BmAEC&tfu=KgIIAw&hl=en",
+      "executed_ms": 5597,
+      "page_changed": true,
+      "elapsed_ms": 5968
+    },
+    {
+      "step": 9,
+      "op": "CLICK",
+      "kind": "click",
+      "label": "Search",
+      "target": 19,
+      "text": null,
+      "option": null,
+      "key": null,
+      "confidence": null,
+      "latency_ms": 304,
+      "url": "https://www.google.com/travel/flights/search?tfs=CBwQAhooEgoyMDI2LTEwLTE4agwIAxIIL20vMDg5NjZyDAgDEggvbS8wNGpwbEABSAFwAYIBCwj___________8BmAEC&hl=en",
+      "executed_ms": 6330,
+      "page_changed": true,
+      "elapsed_ms": 7570
+    }
+  ],
+  "decisions": [
+    {
+      "op": "CLICK",
+      "target": 4,
+      "text": null,
+      "option": null,
+      "key": null,
+      "probabilities": {},
+      "confidence": null,
+      "latency_ms": 314,
+      "usage": {
+        "prompt_tokens": 1183,
+        "completion_tokens": 70,
+        "total_tokens": 1253,
+        "cost": 0.00046655,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00046655,
+          "upstream_inference_prompt_cost": 0.00041405,
+          "upstream_inference_completions_cost": 5.25e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 26,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "cost": 0.00046655,
+      "model": "openai/gpt-oss-120b",
+      "provider": "Cerebras",
+      "raw": "{\n  \"op\": \"CLICK\",\n  \"target\": 4,\n  \"text\": null,\n  \"option\": null,\n  \"key\": null\n}",
+      "request_chars": 4837,
+      "fingerprint": "84f80792194f2c422674545622f1c5efe7155f563aa20fc7b85a9e773f37362b",
+      "elapsed_ms": 0,
+      "valid": true,
+      "outcome": "executed"
+    },
+    {
+      "op": "CLICK",
+      "target": 12,
+      "text": null,
+      "option": null,
+      "key": null,
+      "probabilities": {},
+      "confidence": null,
+      "latency_ms": 529,
+      "usage": {
+        "prompt_tokens": 1413,
+        "completion_tokens": 244,
+        "total_tokens": 1657,
+        "cost": 0.00067755,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 512,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00067755,
+          "upstream_inference_prompt_cost": 0.00049455,
+          "upstream_inference_completions_cost": 0.000183
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 213,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "cost": 0.00067755,
+      "model": "openai/gpt-oss-120b",
+      "provider": "Cerebras",
+      "raw": "{\"op\":\"CLICK\",\"target\":12,\"text\":null,\"option\":null,\"key\":null}",
+      "request_chars": 5359,
+      "fingerprint": "790e11e881dd10e0ce4b3c746fbdbf7f34fccee81df6e16dd9852350fe2b8922",
+      "elapsed_ms": 529,
+      "valid": true,
+      "outcome": "executed"
+    },
+    {
+      "op": "CLICK",
+      "target": 2,
+      "text": null,
+      "option": null,
+      "key": null,
+      "probabilities": {},
+      "confidence": null,
+      "latency_ms": 245,
+      "usage": {
+        "prompt_tokens": 901,
+        "completion_tokens": 62,
+        "total_tokens": 963,
+        "cost": 0.00036185,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 768,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00036185,
+          "upstream_inference_prompt_cost": 0.00031535,
+          "upstream_inference_completions_cost": 4.65e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 18,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "cost": 0.00036185,
+      "model": "openai/gpt-oss-120b",
+      "provider": "Cerebras",
+      "raw": "{\n  \"op\": \"CLICK\",\n  \"target\": 2,\n  \"text\": null,\n  \"option\": null,\n  \"key\": null\n}",
+      "request_chars": 3505,
+      "fingerprint": "f8419764ef30c83a35f16cac8e426a47f6eb0a637d6e7dabcb74dc3bbbc3c087",
+      "elapsed_ms": 946,
+      "valid": true,
+      "outcome": "executed"
+    },
+    {
+      "op": "TYPE",
+      "target": 15,
+      "text": "Zurich",
+      "option": null,
+      "key": "Enter",
+      "probabilities": {},
+      "confidence": null,
+      "latency_ms": 554,
+      "usage": {
+        "prompt_tokens": 1462,
+        "completion_tokens": 314,
+        "total_tokens": 1776,
+        "cost": 0.0007472,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 768,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0007472,
+          "upstream_inference_prompt_cost": 0.0005117,
+          "upstream_inference_completions_cost": 0.0002355
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 282,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "cost": 0.0007472,
+      "model": "openai/gpt-oss-120b",
+      "provider": "Cerebras",
+      "raw": "{\"op\":\"TYPE\",\"target\":15,\"text\":\"Zurich\",\"option\":null,\"key\":\"Enter\"}",
+      "request_chars": 5450,
+      "fingerprint": "38adf463dc64022d3190eec42063f7bff61b117a5804daa0c5a33fef88b427cc",
+      "elapsed_ms": 1954,
+      "valid": true,
+      "outcome": "executed"
+    },
+    {
+      "op": "TYPE",
+      "target": 16,
+      "text": "London",
+      "option": null,
+      "key": "Enter",
+      "probabilities": {},
+      "confidence": null,
+      "latency_ms": 382,
+      "usage": {
+        "prompt_tokens": 1485,
+        "completion_tokens": 232,
+        "total_tokens": 1717,
+        "cost": 0.00069375,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 1408,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00069375,
+          "upstream_inference_prompt_cost": 0.00051975,
+          "upstream_inference_completions_cost": 0.000174
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 201,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "cost": 0.00069375,
+      "model": "openai/gpt-oss-120b",
+      "provider": "Cerebras",
+      "raw": "{\"op\":\"TYPE\",\"target\":16,\"text\":\"London\",\"key\":\"Enter\",\"option\":null}",
+      "request_chars": 5516,
+      "fingerprint": "384b8fbfa7e531d9af9143d2efc4f975f46dbf3c0e551a5dc9585498acbe2fd5",
+      "elapsed_ms": 2693,
+      "valid": true,
+      "outcome": "executed"
+    },
+    {
+      "op": "CLICK",
+      "target": 18,
+      "text": null,
+      "option": null,
+      "key": null,
+      "probabilities": {},
+      "confidence": null,
+      "latency_ms": 265,
+      "usage": {
+        "prompt_tokens": 1526,
+        "completion_tokens": 89,
+        "total_tokens": 1615,
+        "cost": 0.00060085,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 768,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00060085,
+          "upstream_inference_prompt_cost": 0.0005341,
+          "upstream_inference_completions_cost": 6.675e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 45,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "cost": 0.00060085,
+      "model": "openai/gpt-oss-120b",
+      "provider": "Cerebras",
+      "raw": "{\n  \"op\": \"CLICK\",\n  \"target\": 18,\n  \"text\": null,\n  \"option\": null,\n  \"key\": null\n}",
+      "request_chars": 5631,
+      "fingerprint": "2cd72c5bd91a02713f2dcb5fd1f08384bf1afbd33d90d7e9c68848ab1a2387f8",
+      "elapsed_ms": 3434,
+      "valid": true,
+      "outcome": "executed"
+    },
+    {
+      "op": "CLICK",
+      "target": 29,
+      "text": null,
+      "option": null,
+      "key": null,
+      "probabilities": {},
+      "confidence": null,
+      "latency_ms": 320,
+      "usage": {
+        "prompt_tokens": 1804,
+        "completion_tokens": 104,
+        "total_tokens": 1908,
+        "cost": 0.0007094,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 1792,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0007094,
+          "upstream_inference_prompt_cost": 0.0006314,
+          "upstream_inference_completions_cost": 7.8e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 60,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "cost": 0.0007094,
+      "model": "openai/gpt-oss-120b",
+      "provider": "Cerebras",
+      "raw": "{\n  \"op\": \"CLICK\",\n  \"target\": 29,\n  \"text\": null,\n  \"option\": null,\n  \"key\": null\n}",
+      "request_chars": 5846,
+      "fingerprint": "32a829c9ad14549829099dae0df91a950bb7c0ae05240292382f7596cc1c2187",
+      "elapsed_ms": 3997,
+      "valid": true,
+      "outcome": "stale: Page changed since this decision"
+    },
+    {
+      "op": "CLICK",
+      "target": 29,
+      "text": null,
+      "option": null,
+      "key": null,
+      "probabilities": {},
+      "confidence": null,
+      "latency_ms": 328,
+      "usage": {
+        "prompt_tokens": 1924,
+        "completion_tokens": 146,
+        "total_tokens": 2070,
+        "cost": 0.0007829,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 768,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0007829,
+          "upstream_inference_prompt_cost": 0.0006734,
+          "upstream_inference_completions_cost": 0.0001095
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 115,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "cost": 0.0007829,
+      "model": "openai/gpt-oss-120b",
+      "provider": "Cerebras",
+      "raw": "{\"op\":\"CLICK\",\"target\":29,\"text\":null,\"option\":null,\"key\":null}",
+      "request_chars": 6246,
+      "fingerprint": "6baaca08e52c58cd59ec092d32687c3cc23d0ded6f97889c58f30a5164df64f2",
+      "elapsed_ms": 4603,
+      "valid": true,
+      "outcome": "stale: Page changed since this decision"
+    },
+    {
+      "op": "CLICK",
+      "target": 29,
+      "text": null,
+      "option": null,
+      "key": null,
+      "probabilities": {},
+      "confidence": null,
+      "latency_ms": 269,
+      "usage": {
+        "prompt_tokens": 2158,
+        "completion_tokens": 76,
+        "total_tokens": 2234,
+        "cost": 0.0008123,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 768,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0008123,
+          "upstream_inference_prompt_cost": 0.0007553,
+          "upstream_inference_completions_cost": 5.7e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 45,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "cost": 0.0008123,
+      "model": "openai/gpt-oss-120b",
+      "provider": "Cerebras",
+      "raw": "{\"op\":\"CLICK\",\"target\":29,\"text\":null,\"option\":null,\"key\":null}",
+      "request_chars": 6826,
+      "fingerprint": "5a65953986c11e969ddc4e7db87077f40af8c9fa3c38181860082cc323cd6354",
+      "elapsed_ms": 5027,
+      "valid": true,
+      "outcome": "executed"
+    },
+    {
+      "op": "CLICK",
+      "target": 50,
+      "text": null,
+      "option": null,
+      "key": null,
+      "probabilities": {},
+      "confidence": null,
+      "latency_ms": 269,
+      "usage": {
+        "prompt_tokens": 2180,
+        "completion_tokens": 73,
+        "total_tokens": 2253,
+        "cost": 0.00081775,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 768,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00081775,
+          "upstream_inference_prompt_cost": 0.000763,
+          "upstream_inference_completions_cost": 5.475e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 42,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "cost": 0.00081775,
+      "model": "openai/gpt-oss-120b",
+      "provider": "Cerebras",
+      "raw": "{\"op\":\"CLICK\",\"target\":50,\"text\":null,\"option\":null,\"key\":null}",
+      "request_chars": 6843,
+      "fingerprint": "e6b0f0584f9ae2dc6e78da31ac367233936567192c052e9445b44342f671ef13",
+      "elapsed_ms": 5557,
+      "valid": true,
+      "outcome": "executed"
+    },
+    {
+      "op": "CLICK",
+      "target": 19,
+      "text": null,
+      "option": null,
+      "key": null,
+      "probabilities": {},
+      "confidence": null,
+      "latency_ms": 304,
+      "usage": {
+        "prompt_tokens": 1600,
+        "completion_tokens": 57,
+        "total_tokens": 1657,
+        "cost": 0.00060275,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 768,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00060275,
+          "upstream_inference_prompt_cost": 0.00056,
+          "upstream_inference_completions_cost": 4.275e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 13,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "cost": 0.00060275,
+      "model": "openai/gpt-oss-120b",
+      "provider": "Cerebras",
+      "raw": "{\n  \"op\": \"CLICK\",\n  \"target\": 19,\n  \"text\": null,\n  \"option\": null,\n  \"key\": null\n}",
+      "request_chars": 5859,
+      "fingerprint": "7b3dbbfff6186c3ba25cf0883cf22a68d102f423a37304eba091b4fded547cf5",
+      "elapsed_ms": 6272,
+      "valid": true,
+      "outcome": "executed"
+    },
+    {
+      "op": "DONE",
+      "target": null,
+      "text": null,
+      "option": null,
+      "key": null,
+      "probabilities": {},
+      "confidence": null,
+      "latency_ms": 316,
+      "usage": {
+        "prompt_tokens": 2870,
+        "completion_tokens": 47,
+        "total_tokens": 2917,
+        "cost": 0.00103975,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 512,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00103975,
+          "upstream_inference_prompt_cost": 0.0010045,
+          "upstream_inference_completions_cost": 3.525e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 16,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "cost": 0.00103975,
+      "model": "openai/gpt-oss-120b",
+      "provider": "Cerebras",
+      "raw": "{\"op\":\"DONE\",\"target\":null,\"text\":null,\"option\":null,\"key\":null}",
+      "request_chars": 10686,
+      "fingerprint": "1e5c3693d577684e9c742a741b5139c04b4b22a72865ba2e50deba2f174650ba",
+      "elapsed_ms": 7886,
+      "valid": true,
+      "outcome": "executed"
+    }
+  ],
+  "totals": {
+    "requests": 12,
+    "actions": 9,
+    "waits": 0,
+    "stale": 2,
+    "invalid": 0,
+    "model_ms": 4095,
+    "model_median_ms": 315,
+    "input_tokens": 20506,
+    "output_tokens": 1514,
+    "cost_usd": 0.008313,
+    "request_chars": 72604,
+    "cdp_calls": 108
+  },
+  "error": null,
+  "verification": {
+    "passed": true,
+    "checks": {
+      "search_page": true,
+      "one_way": true,
+      "origin": true,
+      "destination": true,
+      "date": true,
+      "year": true,
+      "results": true
+    },
+    "visible_flights": [
+      "From 50 euros.This price does not include overhead bin access. Nonstop flight with easyJet. Leaves Zurich Airport at 8:55 PM on Sunday, October 18 and arrives at London Luton Airport at 9:40 PM on Sun",
+      "From 87 euros. Nonstop flight with British Airways. Leaves Zurich Airport at 7:45 PM on Sunday, October 18 and arrives at Heathrow Airport at 8:30 PM on Sunday, October 18. Total duration 1 hr 45 min.",
+      "From 121 euros. Nonstop flight with SWISS. Operated by Helvetic. Leaves Zurich Airport at 4:50 PM on Sunday, October 18 and arrives at London City Airport at 5:25 PM on Sunday, October 18. Total durat",
+      "From 68 euros.This price does not include overhead bin access. Nonstop flight with easyJet. Leaves Zurich Airport at 8:40 PM on Sunday, October 18 and arrives at London Gatwick Airport at 9:20 PM on S",
+      "From 81 euros.This price does not include overhead bin access. Nonstop flight with easyJet. Leaves Zurich Airport at 4:45 PM on Sunday, October 18 and arrives at London Gatwick Airport at 5:35 PM on S"
+    ]
+  },
+  "final_url": "https://www.google.com/travel/flights/search?tfs=CBwQAhooEgoyMDI2LTEwLTE4agwIAxIIL20vMDg5NjZyDAgDEggvbS8wNGpwbEABSAFwAYIBCwj___________8BmAEC&hl=en",
+  "wall_ms": 10825,
+  "setup_ms": 1596,
+  "browser": "Chrome/153.0.8010.53"
+}

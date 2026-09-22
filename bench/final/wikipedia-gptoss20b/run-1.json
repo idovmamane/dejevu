@@ -1,0 +1,140 @@
+{
+  "goal": "Find and open the Wikipedia article about G\u00f6del's incompleteness theorems.",
+  "policy": "openai/gpt-oss-20b@Groq",
+  "status": "done",
+  "reason": "model's call",
+  "elapsed_ms": 1283,
+  "url": "https://en.wikipedia.org/wiki/G%C3%B6del%27s_incompleteness_theorems",
+  "title": "G\u00f6del's incompleteness theorems - Wikipedia",
+  "elements": 61,
+  "history": [
+    {
+      "step": 1,
+      "op": "TYPE",
+      "kind": "fill",
+      "label": "Search Wikipedia + Enter",
+      "target": 2,
+      "text": "G\u00f6del's incompleteness theorems",
+      "option": null,
+      "key": "Enter",
+      "confidence": null,
+      "latency_ms": 307,
+      "url": "https://en.wikipedia.org/wiki/G%C3%B6del%27s_incompleteness_theorems",
+      "executed_ms": 341,
+      "page_changed": true,
+      "elapsed_ms": 882
+    }
+  ],
+  "decisions": [
+    {
+      "op": "TYPE",
+      "target": 2,
+      "text": "G\u00f6del's incompleteness theorems",
+      "option": null,
+      "key": "Enter",
+      "probabilities": {},
+      "confidence": null,
+      "latency_ms": 307,
+      "usage": {
+        "prompt_tokens": 2103,
+        "completion_tokens": 65,
+        "total_tokens": 2168,
+        "cost": 0.000100425,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 2048,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.000100425,
+          "upstream_inference_prompt_cost": 8.0925e-05,
+          "upstream_inference_completions_cost": 1.95e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 27,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "cost": 0.000100425,
+      "model": "openai/gpt-oss-20b",
+      "provider": "Groq",
+      "raw": "{\"op\":\"TYPE\",\"target\":2,\"text\":\"G\u00f6del's incompleteness theorems\",\"key\":\"Enter\",\"option\":null}",
+      "request_chars": 7417,
+      "fingerprint": "0d3ffa650d6487bc131e10485d1e3be1574b44a8d98f4f0a17c1cca9094e4ca3",
+      "elapsed_ms": 308,
+      "valid": true,
+      "outcome": "executed"
+    },
+    {
+      "op": "DONE",
+      "target": null,
+      "text": null,
+      "option": null,
+      "key": null,
+      "probabilities": {},
+      "confidence": null,
+      "latency_ms": 356,
+      "usage": {
+        "prompt_tokens": 1999,
+        "completion_tokens": 57,
+        "total_tokens": 2056,
+        "cost": 9.9825e-05,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 1792,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 9.9825e-05,
+          "upstream_inference_prompt_cost": 8.2725e-05,
+          "upstream_inference_completions_cost": 1.71e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 27,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "cost": 9.9825e-05,
+      "model": "openai/gpt-oss-20b",
+      "provider": "Groq",
+      "raw": "{\"op\":\"DONE\",\"target\":null,\"text\":null,\"option\":null,\"key\":null}",
+      "request_chars": 7788,
+      "fingerprint": "801a9c86a78d549b00b9123b15f2d3dce3945518a3121f99a43d3b669397a198",
+      "elapsed_ms": 1239,
+      "valid": true,
+      "outcome": "executed"
+    }
+  ],
+  "totals": {
+    "requests": 2,
+    "actions": 1,
+    "waits": 0,
+    "stale": 0,
+    "invalid": 0,
+    "model_ms": 663,
+    "model_median_ms": 332,
+    "input_tokens": 4102,
+    "output_tokens": 122,
+    "cost_usd": 0.0002,
+    "request_chars": 15205,
+    "cdp_calls": 25
+  },
+  "error": null,
+  "verification": {
+    "passed": true,
+    "checks": {
+      "article_url": true
+    },
+    "url": "https://en.wikipedia.org/wiki/G%C3%B6del%27s_incompleteness_theorems"
+  },
+  "final_url": "https://en.wikipedia.org/wiki/G%C3%B6del%27s_incompleteness_theorems",
+  "wall_ms": 2335,
+  "setup_ms": 860,
+  "browser": "Chrome/153.0.8010.53"
+}

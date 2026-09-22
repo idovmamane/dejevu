@@ -1,0 +1,10 @@
+*.egg-info/
+.DS_Store
+.env
+.pytest_cache/
+.ruff_cache/
+.venv/
+__pycache__/
+artifacts/
+bench/superseded/
+dist/

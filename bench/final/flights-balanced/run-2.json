@@ -1,0 +1,668 @@
+{
+  "goal": "Find one-way flights from Zurich to London on October 18, 2026, for one adult in economy. Stop when matching flight options are visible. Do not select or book a flight.",
+  "policy": "openai/gpt-oss-120b@Cerebras",
+  "status": "blocked",
+  "reason": "looping: SCROLL_DOWN 'scroll down' repeated four times in six actions",
+  "elapsed_ms": 6620,
+  "url": "https://www.google.com/travel/flights?tfs=CBwQARoOagwIAhIIL20vMDVxdGpAAUgBcAGCAQsI____________AZgBAg&tfu=KgIIAw&hl=en",
+  "title": "Find Cheap Flights Worldwide & Book Your Ticket - Google Flights",
+  "elements": 42,
+  "history": [
+    {
+      "step": 1,
+      "op": "CLICK",
+      "kind": "click",
+      "label": "Reject all",
+      "target": 4,
+      "text": null,
+      "option": null,
+      "key": null,
+      "confidence": null,
+      "latency_ms": 244,
+      "url": "https://www.google.com/travel/flights?hl=en",
+      "executed_ms": 0,
+      "page_changed": true,
+      "elapsed_ms": 0
+    },
+    {
+      "step": 2,
+      "op": "CLICK",
+      "kind": "click",
+      "label": "Change ticket type. Round trip",
+      "target": 12,
+      "text": null,
+      "option": null,
+      "key": null,
+      "confidence": null,
+      "latency_ms": 458,
+      "url": "https://www.google.com/travel/flights?hl=en",
+      "executed_ms": 498,
+      "page_changed": true,
+      "elapsed_ms": 633
+    },
+    {
+      "step": 3,
+      "op": "CLICK",
+      "kind": "click",
+      "label": "One way",
+      "target": 2,
+      "text": null,
+      "option": null,
+      "key": null,
+      "confidence": null,
+      "latency_ms": 242,
+      "url": "https://www.google.com/travel/flights?hl=en",
+      "executed_ms": 957,
+      "page_changed": true,
+      "elapsed_ms": 1183
+    },
+    {
+      "step": 4,
+      "op": "CLICK",
+      "kind": "click",
+      "label": "Departure",
+      "target": 17,
+      "text": null,
+      "option": null,
+      "key": null,
+      "confidence": null,
+      "latency_ms": 354,
+      "url": "https://www.google.com/travel/flights?hl=en",
+      "executed_ms": 1563,
+      "page_changed": false,
+      "elapsed_ms": 1707
+    },
+    {
+      "step": 5,
+      "op": "SCROLL_DOWN",
+      "kind": "scroll",
+      "label": "scroll down",
+      "target": null,
+      "text": null,
+      "option": null,
+      "key": null,
+      "confidence": null,
+      "latency_ms": 293,
+      "url": "https://www.google.com/travel/flights?tfs=CBwQARoOagwIAhIIL20vMDVxdGpAAUgBcAGCAQsI____________AZgBAg&tfu=KgIIAw&hl=en",
+      "executed_ms": 3398,
+      "page_changed": true,
+      "elapsed_ms": 3643
+    },
+    {
+      "step": 6,
+      "op": "SCROLL_UP",
+      "kind": "scroll",
+      "label": "scroll up",
+      "target": null,
+      "text": null,
+      "option": null,
+      "key": null,
+      "confidence": null,
+      "latency_ms": 414,
+      "url": "https://www.google.com/travel/flights?tfs=CBwQARoOagwIAhIIL20vMDVxdGpAAUgBcAGCAQsI____________AZgBAg&tfu=KgIIAw&hl=en",
+      "executed_ms": 4102,
+      "page_changed": true,
+      "elapsed_ms": 4351
+    },
+    {
+      "step": 7,
+      "op": "SCROLL_DOWN",
+      "kind": "scroll",
+      "label": "scroll down",
+      "target": null,
+      "text": null,
+      "option": null,
+      "key": null,
+      "confidence": null,
+      "latency_ms": 310,
+      "url": "https://www.google.com/travel/flights?tfs=CBwQARoOagwIAhIIL20vMDVxdGpAAUgBcAGCAQsI____________AZgBAg&tfu=KgIIAw&hl=en",
+      "executed_ms": 4699,
+      "page_changed": true,
+      "elapsed_ms": 4955
+    },
+    {
+      "step": 8,
+      "op": "SCROLL_DOWN",
+      "kind": "scroll",
+      "label": "scroll down",
+      "target": null,
+      "text": null,
+      "option": null,
+      "key": null,
+      "confidence": null,
+      "latency_ms": 341,
+      "url": "https://www.google.com/travel/flights?tfs=CBwQARoOagwIAhIIL20vMDVxdGpAAUgBcAGCAQsI____________AZgBAg&tfu=KgIIAw&hl=en",
+      "executed_ms": 5351,
+      "page_changed": true,
+      "elapsed_ms": 5503
+    },
+    {
+      "step": 9,
+      "op": "CLICK",
+      "kind": "click",
+      "label": "Sunday, October 18, 2026",
+      "target": 27,
+      "text": null,
+      "option": null,
+      "key": null,
+      "confidence": null,
+      "latency_ms": 374,
+      "url": "https://www.google.com/travel/flights?tfs=CBwQARoOagwIAhIIL20vMDVxdGpAAUgBcAGCAQsI____________AZgBAg&tfu=KgIIAw&hl=en",
+      "executed_ms": 5977,
+      "page_changed": true,
+      "elapsed_ms": 6148
+    },
+    {
+      "step": 10,
+      "op": "SCROLL_DOWN",
+      "kind": "scroll",
+      "label": "scroll down",
+      "target": null,
+      "text": null,
+      "option": null,
+      "key": null,
+      "confidence": null,
+      "latency_ms": 292,
+      "url": "https://www.google.com/travel/flights?tfs=CBwQARoOagwIAhIIL20vMDVxdGpAAUgBcAGCAQsI____________AZgBAg&tfu=KgIIAw&hl=en",
+      "executed_ms": 6466,
+      "page_changed": true,
+      "elapsed_ms": 6620
+    }
+  ],
+  "decisions": [
+    {
+      "op": "CLICK",
+      "target": 4,
+      "text": null,
+      "option": null,
+      "key": null,
+      "probabilities": {},
+      "confidence": null,
+      "latency_ms": 244,
+      "usage": {
+        "prompt_tokens": 1183,
+        "completion_tokens": 70,
+        "total_tokens": 1253,
+        "cost": 0.00046655,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 1152,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00046655,
+          "upstream_inference_prompt_cost": 0.00041405,
+          "upstream_inference_completions_cost": 5.25e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 26,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "cost": 0.00046655,
+      "model": "openai/gpt-oss-120b",
+      "provider": "Cerebras",
+      "raw": "{\n  \"op\": \"CLICK\",\n  \"target\": 4,\n  \"text\": null,\n  \"option\": null,\n  \"key\": null\n}",
+      "request_chars": 4837,
+      "fingerprint": "84f80792194f2c422674545622f1c5efe7155f563aa20fc7b85a9e773f37362b",
+      "elapsed_ms": 0,
+      "valid": true,
+      "outcome": "executed"
+    },
+    {
+      "op": "CLICK",
+      "target": 12,
+      "text": null,
+      "option": null,
+      "key": null,
+      "probabilities": {},
+      "confidence": null,
+      "latency_ms": 458,
+      "usage": {
+        "prompt_tokens": 1413,
+        "completion_tokens": 244,
+        "total_tokens": 1657,
+        "cost": 0.00067755,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 1408,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00067755,
+          "upstream_inference_prompt_cost": 0.00049455,
+          "upstream_inference_completions_cost": 0.000183
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 213,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "cost": 0.00067755,
+      "model": "openai/gpt-oss-120b",
+      "provider": "Cerebras",
+      "raw": "{\"op\":\"CLICK\",\"target\":12,\"text\":null,\"option\":null,\"key\":null}",
+      "request_chars": 5359,
+      "fingerprint": "790e11e881dd10e0ce4b3c746fbdbf7f34fccee81df6e16dd9852350fe2b8922",
+      "elapsed_ms": 459,
+      "valid": true,
+      "outcome": "executed"
+    },
+    {
+      "op": "CLICK",
+      "target": 2,
+      "text": null,
+      "option": null,
+      "key": null,
+      "probabilities": {},
+      "confidence": null,
+      "latency_ms": 242,
+      "usage": {
+        "prompt_tokens": 901,
+        "completion_tokens": 62,
+        "total_tokens": 963,
+        "cost": 0.00036185,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 896,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00036185,
+          "upstream_inference_prompt_cost": 0.00031535,
+          "upstream_inference_completions_cost": 4.65e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 18,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "cost": 0.00036185,
+      "model": "openai/gpt-oss-120b",
+      "provider": "Cerebras",
+      "raw": "{\n  \"op\": \"CLICK\",\n  \"target\": 2,\n  \"text\": null,\n  \"option\": null,\n  \"key\": null\n}",
+      "request_chars": 3505,
+      "fingerprint": "f8419764ef30c83a35f16cac8e426a47f6eb0a637d6e7dabcb74dc3bbbc3c087",
+      "elapsed_ms": 876,
+      "valid": true,
+      "outcome": "executed"
+    },
+    {
+      "op": "CLICK",
+      "target": 17,
+      "text": null,
+      "option": null,
+      "key": null,
+      "probabilities": {},
+      "confidence": null,
+      "latency_ms": 354,
+      "usage": {
+        "prompt_tokens": 1439,
+        "completion_tokens": 141,
+        "total_tokens": 1580,
+        "cost": 0.0006094,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 896,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0006094,
+          "upstream_inference_prompt_cost": 0.00050365,
+          "upstream_inference_completions_cost": 0.00010575
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 110,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "cost": 0.0006094,
+      "model": "openai/gpt-oss-120b",
+      "provider": "Cerebras",
+      "raw": "{\"op\":\"CLICK\",\"target\":17,\"text\":null,\"option\":null,\"key\":null}",
+      "request_chars": 5444,
+      "fingerprint": "4ccab446b26d41f80762a80e96a68239cb18bdce09862241a0c28ed8b7797141",
+      "elapsed_ms": 1537,
+      "valid": true,
+      "outcome": "executed"
+    },
+    {
+      "op": "TYPE",
+      "target": 15,
+      "text": "Zurich",
+      "option": null,
+      "key": "Enter",
+      "probabilities": {},
+      "confidence": null,
+      "latency_ms": 1179,
+      "usage": {
+        "prompt_tokens": 1450,
+        "completion_tokens": 325,
+        "total_tokens": 1775,
+        "cost": 0.00075125,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 640,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00075125,
+          "upstream_inference_prompt_cost": 0.0005075,
+          "upstream_inference_completions_cost": 0.00024375
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 297,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "cost": 0.00075125,
+      "model": "openai/gpt-oss-120b",
+      "provider": "Cerebras",
+      "raw": "{\"op\":\"TYPE\",\"target\":15,\"text\":\"Zurich\",\"key\":\"Enter\"}",
+      "request_chars": 5485,
+      "fingerprint": "4ccab446b26d41f80762a80e96a68239cb18bdce09862241a0c28ed8b7797141",
+      "elapsed_ms": 2886,
+      "valid": true,
+      "outcome": "stale: Page changed since this decision"
+    },
+    {
+      "op": "SCROLL_DOWN",
+      "target": null,
+      "text": null,
+      "option": null,
+      "key": null,
+      "probabilities": {},
+      "confidence": null,
+      "latency_ms": 293,
+      "usage": {
+        "prompt_tokens": 1743,
+        "completion_tokens": 92,
+        "total_tokens": 1835,
+        "cost": 0.00067905,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 640,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00067905,
+          "upstream_inference_prompt_cost": 0.00061005,
+          "upstream_inference_completions_cost": 6.9e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 59,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "cost": 0.00067905,
+      "model": "openai/gpt-oss-120b",
+      "provider": "Cerebras",
+      "raw": "{\"op\":\"SCROLL_DOWN\",\"target\":null,\"text\":null,\"option\":null,\"key\":null}",
+      "request_chars": 5636,
+      "fingerprint": "76e589039ce7475f9f3a18f0ddee5251fa49ab737072a579cc26d20a2898c7ac",
+      "elapsed_ms": 3365,
+      "valid": true,
+      "outcome": "executed"
+    },
+    {
+      "op": "SCROLL_UP",
+      "target": null,
+      "text": null,
+      "option": null,
+      "key": null,
+      "probabilities": {},
+      "confidence": null,
+      "latency_ms": 414,
+      "usage": {
+        "prompt_tokens": 1871,
+        "completion_tokens": 97,
+        "total_tokens": 1968,
+        "cost": 0.0007276,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 768,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0007276,
+          "upstream_inference_prompt_cost": 0.00065485,
+          "upstream_inference_completions_cost": 7.275e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 52,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "cost": 0.0007276,
+      "model": "openai/gpt-oss-120b",
+      "provider": "Cerebras",
+      "raw": "{\n  \"op\": \"SCROLL_UP\",\n  \"target\": null,\n  \"text\": null,\n  \"option\": null,\n  \"key\": null\n}",
+      "request_chars": 6135,
+      "fingerprint": "b8d36f45c2352451219dde743acc0c1ea4e3ecf949b0d94ae051d3b86a7c3d84",
+      "elapsed_ms": 4057,
+      "valid": true,
+      "outcome": "executed"
+    },
+    {
+      "op": "SCROLL_DOWN",
+      "target": null,
+      "text": null,
+      "option": null,
+      "key": null,
+      "probabilities": {},
+      "confidence": null,
+      "latency_ms": 310,
+      "usage": {
+        "prompt_tokens": 1761,
+        "completion_tokens": 110,
+        "total_tokens": 1871,
+        "cost": 0.00069885,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 768,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00069885,
+          "upstream_inference_prompt_cost": 0.00061635,
+          "upstream_inference_completions_cost": 8.25e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 65,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "cost": 0.00069885,
+      "model": "openai/gpt-oss-120b",
+      "provider": "Cerebras",
+      "raw": "{\n  \"op\": \"SCROLL_DOWN\",\n  \"target\": null,\n  \"text\": null,\n  \"option\": null,\n  \"key\": null\n}",
+      "request_chars": 5694,
+      "fingerprint": "76e589039ce7475f9f3a18f0ddee5251fa49ab737072a579cc26d20a2898c7ac",
+      "elapsed_ms": 4662,
+      "valid": true,
+      "outcome": "executed"
+    },
+    {
+      "op": "SCROLL_DOWN",
+      "target": null,
+      "text": null,
+      "option": null,
+      "key": null,
+      "probabilities": {},
+      "confidence": null,
+      "latency_ms": 341,
+      "usage": {
+        "prompt_tokens": 1889,
+        "completion_tokens": 114,
+        "total_tokens": 2003,
+        "cost": 0.00074665,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 768,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00074665,
+          "upstream_inference_prompt_cost": 0.00066115,
+          "upstream_inference_completions_cost": 8.55e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 81,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "cost": 0.00074665,
+      "model": "openai/gpt-oss-120b",
+      "provider": "Cerebras",
+      "raw": "{\"op\":\"SCROLL_DOWN\",\"target\":null,\"text\":null,\"option\":null,\"key\":null}",
+      "request_chars": 6193,
+      "fingerprint": "b8d36f45c2352451219dde743acc0c1ea4e3ecf949b0d94ae051d3b86a7c3d84",
+      "elapsed_ms": 5297,
+      "valid": true,
+      "outcome": "executed"
+    },
+    {
+      "op": "CLICK",
+      "target": 27,
+      "text": null,
+      "option": null,
+      "key": null,
+      "probabilities": {},
+      "confidence": null,
+      "latency_ms": 374,
+      "usage": {
+        "prompt_tokens": 1849,
+        "completion_tokens": 61,
+        "total_tokens": 1910,
+        "cost": 0.0006929,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 768,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0006929,
+          "upstream_inference_prompt_cost": 0.00064715,
+          "upstream_inference_completions_cost": 4.575e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 30,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "cost": 0.0006929,
+      "model": "openai/gpt-oss-120b",
+      "provider": "Cerebras",
+      "raw": "{\"op\":\"CLICK\",\"target\":27,\"text\":null,\"option\":null,\"key\":null}",
+      "request_chars": 6201,
+      "fingerprint": "7db85b7d5b44c46b506e27189fc81006e6d3273fb8d22f9238a31a1710345a07",
+      "elapsed_ms": 5877,
+      "valid": true,
+      "outcome": "executed"
+    },
+    {
+      "op": "SCROLL_DOWN",
+      "target": null,
+      "text": null,
+      "option": null,
+      "key": null,
+      "probabilities": {},
+      "confidence": null,
+      "latency_ms": 292,
+      "usage": {
+        "prompt_tokens": 1822,
+        "completion_tokens": 92,
+        "total_tokens": 1914,
+        "cost": 0.0007067,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 768,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0007067,
+          "upstream_inference_prompt_cost": 0.0006377,
+          "upstream_inference_completions_cost": 6.9e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 47,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "cost": 0.0007067,
+      "model": "openai/gpt-oss-120b",
+      "provider": "Cerebras",
+      "raw": "{\n  \"op\": \"SCROLL_DOWN\",\n  \"target\": null,\n  \"text\": null,\n  \"option\": null,\n  \"key\": null\n}",
+      "request_chars": 5887,
+      "fingerprint": "90908d2970fca79c41e697b4c5281ae42f335c47dc7652498aac3c24286080c6",
+      "elapsed_ms": 6441,
+      "valid": true,
+      "outcome": "executed"
+    }
+  ],
+  "totals": {
+    "requests": 11,
+    "actions": 10,
+    "waits": 0,
+    "stale": 1,
+    "invalid": 0,
+    "model_ms": 4501,
+    "model_median_ms": 341,
+    "input_tokens": 17321,
+    "output_tokens": 1408,
+    "cost_usd": 0.007118,
+    "request_chars": 60376,
+    "cdp_calls": 111
+  },
+  "error": null,
+  "verification": {
+    "passed": false,
+    "checks": {
+      "search_page": false,
+      "one_way": false,
+      "origin": false,
+      "destination": false,
+      "date": true,
+      "year": false,
+      "results": false
+    },
+    "visible_flights": []
+  },
+  "final_url": "https://www.google.com/travel/flights?tfs=CBwQARoOagwIAhIIL20vMDVxdGpAAUgBcAGCAQsI____________AZgBAg&tfu=KgIIAw&hl=en",
+  "wall_ms": 11200,
+  "setup_ms": 1093,
+  "browser": "Chrome/153.0.8010.53"
+}

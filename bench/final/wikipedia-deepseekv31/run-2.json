@@ -1,0 +1,140 @@
+{
+  "goal": "Find and open the Wikipedia article about G\u00f6del's incompleteness theorems.",
+  "policy": "deepseek/deepseek-chat-v3.1",
+  "status": "done",
+  "reason": "model's call",
+  "elapsed_ms": 4046,
+  "url": "https://en.wikipedia.org/wiki/G%C3%B6del%27s_incompleteness_theorems",
+  "title": "G\u00f6del's incompleteness theorems - Wikipedia",
+  "elements": 61,
+  "history": [
+    {
+      "step": 1,
+      "op": "TYPE",
+      "kind": "fill",
+      "label": "Search Wikipedia + Enter",
+      "target": 2,
+      "text": "G\u00f6del's incompleteness theorems",
+      "option": null,
+      "key": "Enter",
+      "confidence": null,
+      "latency_ms": 2267,
+      "url": "https://en.wikipedia.org/wiki/G%C3%B6del%27s_incompleteness_theorems",
+      "executed_ms": 2293,
+      "page_changed": true,
+      "elapsed_ms": 2981
+    }
+  ],
+  "decisions": [
+    {
+      "op": "TYPE",
+      "target": 2,
+      "text": "G\u00f6del's incompleteness theorems",
+      "option": null,
+      "key": "Enter",
+      "probabilities": {},
+      "confidence": null,
+      "latency_ms": 2267,
+      "usage": {
+        "prompt_tokens": 2061,
+        "completion_tokens": 32,
+        "total_tokens": 2093,
+        "cost": 0.00029845,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 2060,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00029845,
+          "upstream_inference_prompt_cost": 0.00026805,
+          "upstream_inference_completions_cost": 3.04e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "cost": 0.00029845,
+      "model": "deepseek/deepseek-chat-v3.1",
+      "provider": "DeepInfra",
+      "raw": "{\"op\": \"TYPE\", \"target\": 2, \"text\": \"G\u00f6del's incompleteness theorems\", \"key\": \"Enter\"}",
+      "request_chars": 7417,
+      "fingerprint": "0d3ffa650d6487bc131e10485d1e3be1574b44a8d98f4f0a17c1cca9094e4ca3",
+      "elapsed_ms": 2267,
+      "valid": true,
+      "outcome": "executed"
+    },
+    {
+      "op": "DONE",
+      "target": null,
+      "text": null,
+      "option": null,
+      "key": null,
+      "probabilities": {},
+      "confidence": null,
+      "latency_ms": 1027,
+      "usage": {
+        "prompt_tokens": 1938,
+        "completion_tokens": 8,
+        "total_tokens": 1946,
+        "cost": 0.00025966,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 1937,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00025966,
+          "upstream_inference_prompt_cost": 0.00025206,
+          "upstream_inference_completions_cost": 7.6e-06
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "cost": 0.00025966,
+      "model": "deepseek/deepseek-chat-v3.1",
+      "provider": "DeepInfra",
+      "raw": "{\"op\": \"DONE\"}",
+      "request_chars": 7788,
+      "fingerprint": "801a9c86a78d549b00b9123b15f2d3dce3945518a3121f99a43d3b669397a198",
+      "elapsed_ms": 4009,
+      "valid": true,
+      "outcome": "executed"
+    }
+  ],
+  "totals": {
+    "requests": 2,
+    "actions": 1,
+    "waits": 0,
+    "stale": 0,
+    "invalid": 0,
+    "model_ms": 3294,
+    "model_median_ms": 1647,
+    "input_tokens": 3999,
+    "output_tokens": 40,
+    "cost_usd": 0.000558,
+    "request_chars": 15205,
+    "cdp_calls": 27
+  },
+  "error": null,
+  "verification": {
+    "passed": true,
+    "checks": {
+      "article_url": true
+    },
+    "url": "https://en.wikipedia.org/wiki/G%C3%B6del%27s_incompleteness_theorems"
+  },
+  "final_url": "https://en.wikipedia.org/wiki/G%C3%B6del%27s_incompleteness_theorems",
+  "wall_ms": 5123,
+  "setup_ms": 906,
+  "browser": "Chrome/153.0.8010.53"
+}

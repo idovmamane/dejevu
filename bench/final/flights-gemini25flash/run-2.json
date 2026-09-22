@@ -1,0 +1,652 @@
+{
+  "goal": "Find one-way flights from Zurich to London on October 18, 2026, for one adult in economy. Stop when matching flight options are visible. Do not select or book a flight.",
+  "policy": "google/gemini-2.5-flash",
+  "status": "done",
+  "reason": "model's call",
+  "elapsed_ms": 6937,
+  "url": "https://www.google.com/travel/flights?tfs=CBwQARooEgoyMDI2LTEwLTE4agwIAxIIL20vMDg5NjZyDAgDEggvbS8wNGpwbEABSAFwAYIBCwj___________8BmAEC&tfu=KgIIAw&hl=en",
+  "title": "Find Cheap Flights Worldwide & Book Your Ticket - Google Flights",
+  "elements": 31,
+  "history": [
+    {
+      "step": 1,
+      "op": "SCROLL_DOWN",
+      "kind": "scroll",
+      "label": "scroll down",
+      "target": null,
+      "text": null,
+      "option": null,
+      "key": null,
+      "confidence": null,
+      "latency_ms": 425,
+      "url": "https://consent.google.com/m?continue=https://www.google.com/travel/flights?hl%3Den&gl=FR&m=0&pc=flt&cm=2&hl=en&src=1",
+      "executed_ms": 0,
+      "page_changed": true,
+      "elapsed_ms": 0
+    },
+    {
+      "step": 2,
+      "op": "CLICK",
+      "kind": "click",
+      "label": "Reject all",
+      "target": 1,
+      "text": null,
+      "option": null,
+      "key": null,
+      "confidence": null,
+      "latency_ms": 432,
+      "url": "https://www.google.com/travel/flights?hl=en",
+      "executed_ms": 0,
+      "page_changed": true,
+      "elapsed_ms": 0
+    },
+    {
+      "step": 3,
+      "op": "CLICK",
+      "kind": "click",
+      "label": "Change ticket type. Round trip",
+      "target": 12,
+      "text": null,
+      "option": null,
+      "key": null,
+      "confidence": null,
+      "latency_ms": 379,
+      "url": "https://www.google.com/travel/flights?hl=en",
+      "executed_ms": 413,
+      "page_changed": true,
+      "elapsed_ms": 551
+    },
+    {
+      "step": 4,
+      "op": "CLICK",
+      "kind": "click",
+      "label": "One way",
+      "target": 2,
+      "text": null,
+      "option": null,
+      "key": null,
+      "confidence": null,
+      "latency_ms": 430,
+      "url": "https://www.google.com/travel/flights?tfs=CBwQARoOagwIAhIIL20vMDVxdGpAAUgBcAGCAQsI____________AZgBAg&tfu=KgIIAw&hl=en",
+      "executed_ms": 1045,
+      "page_changed": true,
+      "elapsed_ms": 1365
+    },
+    {
+      "step": 5,
+      "op": "TYPE",
+      "kind": "fill",
+      "label": "Where from? + Enter",
+      "target": 15,
+      "text": "Zurich",
+      "option": null,
+      "key": "Enter",
+      "confidence": null,
+      "latency_ms": 535,
+      "url": "https://www.google.com/travel/flights?tfs=CBwQARoOagwIAxIIL20vMDg5NjZAAUgBcAGCAQsI____________AZgBAg&tfu=KgIIAw&hl=en",
+      "executed_ms": 1982,
+      "page_changed": true,
+      "elapsed_ms": 2279
+    },
+    {
+      "step": 6,
+      "op": "TYPE",
+      "kind": "fill",
+      "label": "Where to? + Enter",
+      "target": 16,
+      "text": "London",
+      "option": null,
+      "key": "Enter",
+      "confidence": null,
+      "latency_ms": 443,
+      "url": "https://www.google.com/travel/flights?tfs=CBwQARocagwIAxIIL20vMDg5NjZyDAgDEggvbS8wNGpwbEABSAFwAYIBCwj___________8BmAEC&tfu=KgIIAw&hl=en",
+      "executed_ms": 2780,
+      "page_changed": true,
+      "elapsed_ms": 3154
+    },
+    {
+      "step": 7,
+      "op": "CLICK",
+      "kind": "click",
+      "label": "Departure",
+      "target": 18,
+      "text": null,
+      "option": null,
+      "key": null,
+      "confidence": null,
+      "latency_ms": 569,
+      "url": "https://www.google.com/travel/flights?tfs=CBwQARocagwIAxIIL20vMDg5NjZyDAgDEggvbS8wNGpwbEABSAFwAYIBCwj___________8BmAEC&tfu=KgIIAw&hl=en",
+      "executed_ms": 3772,
+      "page_changed": true,
+      "elapsed_ms": 4036
+    },
+    {
+      "step": 8,
+      "op": "CLICK",
+      "kind": "click",
+      "label": "Sunday, October 18, 2026 , 50 euros, Cheapest price",
+      "target": 29,
+      "text": null,
+      "option": null,
+      "key": null,
+      "confidence": null,
+      "latency_ms": 427,
+      "url": "https://www.google.com/travel/flights?tfs=CBwQARocagwIAxIIL20vMDg5NjZyDAgDEggvbS8wNGpwbEABSAFwAYIBCwj___________8BmAEC&tfu=KgIIAw&hl=en",
+      "executed_ms": 5322,
+      "page_changed": true,
+      "elapsed_ms": 5566
+    },
+    {
+      "step": 9,
+      "op": "CLICK",
+      "kind": "click",
+      "label": "Done. Search for one-way flights, departing on October 18, 2026",
+      "target": 50,
+      "text": null,
+      "option": null,
+      "key": null,
+      "confidence": null,
+      "latency_ms": 485,
+      "url": "https://www.google.com/travel/flights?tfs=CBwQARooEgoyMDI2LTEwLTE4agwIAxIIL20vMDg5NjZyDAgDEggvbS8wNGpwbEABSAFwAYIBCwj___________8BmAEC&tfu=KgIIAw&hl=en",
+      "executed_ms": 6087,
+      "page_changed": true,
+      "elapsed_ms": 6447
+    }
+  ],
+  "decisions": [
+    {
+      "op": "SCROLL_DOWN",
+      "target": null,
+      "text": null,
+      "option": null,
+      "key": null,
+      "probabilities": {},
+      "confidence": null,
+      "latency_ms": 425,
+      "usage": {
+        "prompt_tokens": 1138,
+        "completion_tokens": 29,
+        "total_tokens": 1167,
+        "cost": 0.0004139,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0004139,
+          "upstream_inference_prompt_cost": 0.0003414,
+          "upstream_inference_completions_cost": 7.25e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "cost": 0.0004139,
+      "model": "google/gemini-2.5-flash",
+      "provider": "Google",
+      "raw": "{\"op\": \"SCROLL_DOWN\", \"target\": null, \"text\": null, \"option\": null, \"key\": null}",
+      "request_chars": 4837,
+      "fingerprint": "84f80792194f2c422674545622f1c5efe7155f563aa20fc7b85a9e773f37362b",
+      "elapsed_ms": 0,
+      "valid": true,
+      "outcome": "executed"
+    },
+    {
+      "op": "CLICK",
+      "target": 1,
+      "text": null,
+      "option": null,
+      "key": null,
+      "probabilities": {},
+      "confidence": null,
+      "latency_ms": 432,
+      "usage": {
+        "prompt_tokens": 1122,
+        "completion_tokens": 12,
+        "total_tokens": 1134,
+        "cost": 0.0003666,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0003666,
+          "upstream_inference_prompt_cost": 0.0003366,
+          "upstream_inference_completions_cost": 3e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "cost": 0.0003666,
+      "model": "google/gemini-2.5-flash",
+      "provider": "Google",
+      "raw": "{\"op\": \"CLICK\", \"target\": 1}",
+      "request_chars": 4724,
+      "fingerprint": "ddd4c5f7acefc3a261dcc18d0936b3fbee5df49273acf0a803c1fb1d333af130",
+      "elapsed_ms": 0,
+      "valid": true,
+      "outcome": "executed"
+    },
+    {
+      "op": "CLICK",
+      "target": 12,
+      "text": null,
+      "option": null,
+      "key": null,
+      "probabilities": {},
+      "confidence": null,
+      "latency_ms": 379,
+      "usage": {
+        "prompt_tokens": 1424,
+        "completion_tokens": 13,
+        "total_tokens": 1437,
+        "cost": 0.0004597,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0004597,
+          "upstream_inference_prompt_cost": 0.0004272,
+          "upstream_inference_completions_cost": 3.25e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "cost": 0.0004597,
+      "model": "google/gemini-2.5-flash",
+      "provider": "Google",
+      "raw": "{\"op\": \"CLICK\", \"target\": 12}",
+      "request_chars": 5389,
+      "fingerprint": "790e11e881dd10e0ce4b3c746fbdbf7f34fccee81df6e16dd9852350fe2b8922",
+      "elapsed_ms": 379,
+      "valid": true,
+      "outcome": "executed"
+    },
+    {
+      "op": "CLICK",
+      "target": 2,
+      "text": null,
+      "option": null,
+      "key": null,
+      "probabilities": {},
+      "confidence": null,
+      "latency_ms": 430,
+      "usage": {
+        "prompt_tokens": 857,
+        "completion_tokens": 12,
+        "total_tokens": 869,
+        "cost": 0.0002871,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0002871,
+          "upstream_inference_prompt_cost": 0.0002571,
+          "upstream_inference_completions_cost": 3e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "cost": 0.0002871,
+      "model": "google/gemini-2.5-flash",
+      "provider": "Google",
+      "raw": "{\"op\": \"CLICK\", \"target\": 2}",
+      "request_chars": 3535,
+      "fingerprint": "f8419764ef30c83a35f16cac8e426a47f6eb0a637d6e7dabcb74dc3bbbc3c087",
+      "elapsed_ms": 981,
+      "valid": true,
+      "outcome": "executed"
+    },
+    {
+      "op": "TYPE",
+      "target": 15,
+      "text": "Zurich",
+      "option": null,
+      "key": "Enter",
+      "probabilities": {},
+      "confidence": null,
+      "latency_ms": 535,
+      "usage": {
+        "prompt_tokens": 1473,
+        "completion_tokens": 26,
+        "total_tokens": 1499,
+        "cost": 0.0005069,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0005069,
+          "upstream_inference_prompt_cost": 0.0004419,
+          "upstream_inference_completions_cost": 6.5e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "cost": 0.0005069,
+      "model": "google/gemini-2.5-flash",
+      "provider": "Google",
+      "raw": "{\"op\": \"TYPE\", \"target\": 15, \"text\": \"Zurich\", \"key\": \"Enter\"}",
+      "request_chars": 5480,
+      "fingerprint": "38adf463dc64022d3190eec42063f7bff61b117a5804daa0c5a33fef88b427cc",
+      "elapsed_ms": 1900,
+      "valid": true,
+      "outcome": "executed"
+    },
+    {
+      "op": "TYPE",
+      "target": 16,
+      "text": "London",
+      "option": null,
+      "key": "Enter",
+      "probabilities": {},
+      "confidence": null,
+      "latency_ms": 443,
+      "usage": {
+        "prompt_tokens": 1494,
+        "completion_tokens": 25,
+        "total_tokens": 1519,
+        "cost": 0.0005107,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0005107,
+          "upstream_inference_prompt_cost": 0.0004482,
+          "upstream_inference_completions_cost": 6.25e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "cost": 0.0005107,
+      "model": "google/gemini-2.5-flash",
+      "provider": "Google",
+      "raw": "{\"TYPE\": \"text\", \"target\": 16, \"text\": \"London\", \"key\": \"Enter\"}",
+      "request_chars": 5546,
+      "fingerprint": "384b8fbfa7e531d9af9143d2efc4f975f46dbf3c0e551a5dc9585498acbe2fd5",
+      "elapsed_ms": 2722,
+      "valid": true,
+      "outcome": "executed"
+    },
+    {
+      "op": "CLICK",
+      "target": 18,
+      "text": null,
+      "option": null,
+      "key": null,
+      "probabilities": {},
+      "confidence": null,
+      "latency_ms": 569,
+      "usage": {
+        "prompt_tokens": 1536,
+        "completion_tokens": 7,
+        "total_tokens": 1543,
+        "cost": 0.0004783,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0004783,
+          "upstream_inference_prompt_cost": 0.0004608,
+          "upstream_inference_completions_cost": 1.75e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "cost": 0.0004783,
+      "model": "google/gemini-2.5-flash",
+      "provider": "Google",
+      "raw": "{\"CLICK\": 18}",
+      "request_chars": 5661,
+      "fingerprint": "2cd72c5bd91a02713f2dcb5fd1f08384bf1afbd33d90d7e9c68848ab1a2387f8",
+      "elapsed_ms": 3723,
+      "valid": true,
+      "outcome": "executed"
+    },
+    {
+      "op": "CLICK",
+      "target": 29,
+      "text": null,
+      "option": null,
+      "key": null,
+      "probabilities": {},
+      "confidence": null,
+      "latency_ms": 369,
+      "usage": {
+        "prompt_tokens": 2003,
+        "completion_tokens": 7,
+        "total_tokens": 2010,
+        "cost": 0.0006184,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0006184,
+          "upstream_inference_prompt_cost": 0.0006009,
+          "upstream_inference_completions_cost": 1.75e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "cost": 0.0006184,
+      "model": "google/gemini-2.5-flash",
+      "provider": "Google",
+      "raw": "{\"CLICK\": 29}",
+      "request_chars": 5876,
+      "fingerprint": "32a829c9ad14549829099dae0df91a950bb7c0ae05240292382f7596cc1c2187",
+      "elapsed_ms": 4405,
+      "valid": true,
+      "outcome": "stale: Page changed since this decision"
+    },
+    {
+      "op": "CLICK",
+      "target": 29,
+      "text": null,
+      "option": null,
+      "key": null,
+      "probabilities": {},
+      "confidence": null,
+      "latency_ms": 427,
+      "usage": {
+        "prompt_tokens": 2423,
+        "completion_tokens": 13,
+        "total_tokens": 2436,
+        "cost": 0.0007594,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0007594,
+          "upstream_inference_prompt_cost": 0.0007269,
+          "upstream_inference_completions_cost": 3.25e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "cost": 0.0007594,
+      "model": "google/gemini-2.5-flash",
+      "provider": "Google",
+      "raw": "{\"op\": \"CLICK\", \"target\": 29}",
+      "request_chars": 6666,
+      "fingerprint": "5a65953986c11e969ddc4e7db87077f40af8c9fa3c38181860082cc323cd6354",
+      "elapsed_ms": 5227,
+      "valid": true,
+      "outcome": "executed"
+    },
+    {
+      "op": "CLICK",
+      "target": 50,
+      "text": null,
+      "option": null,
+      "key": null,
+      "probabilities": {},
+      "confidence": null,
+      "latency_ms": 485,
+      "usage": {
+        "prompt_tokens": 2501,
+        "completion_tokens": 7,
+        "total_tokens": 2508,
+        "cost": 0.0007678,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0007678,
+          "upstream_inference_prompt_cost": 0.0007503,
+          "upstream_inference_completions_cost": 1.75e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "cost": 0.0007678,
+      "model": "google/gemini-2.5-flash",
+      "provider": "Google",
+      "raw": "{\"CLICK\": 50}",
+      "request_chars": 6873,
+      "fingerprint": "e6b0f0584f9ae2dc6e78da31ac367233936567192c052e9445b44342f671ef13",
+      "elapsed_ms": 6051,
+      "valid": true,
+      "outcome": "executed"
+    },
+    {
+      "op": "DONE",
+      "target": null,
+      "text": null,
+      "option": null,
+      "key": null,
+      "probabilities": {},
+      "confidence": null,
+      "latency_ms": 471,
+      "usage": {
+        "prompt_tokens": 1607,
+        "completion_tokens": 5,
+        "total_tokens": 1612,
+        "cost": 0.0004946,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0004946,
+          "upstream_inference_prompt_cost": 0.0004821,
+          "upstream_inference_completions_cost": 1.25e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "cost": 0.0004946,
+      "model": "google/gemini-2.5-flash",
+      "provider": "Google",
+      "raw": "{\"DONE\": true}",
+      "request_chars": 5859,
+      "fingerprint": "7b3dbbfff6186c3ba25cf0883cf22a68d102f423a37304eba091b4fded547cf5",
+      "elapsed_ms": 6918,
+      "valid": true,
+      "outcome": "executed"
+    }
+  ],
+  "totals": {
+    "requests": 11,
+    "actions": 9,
+    "waits": 0,
+    "stale": 1,
+    "invalid": 0,
+    "model_ms": 4965,
+    "model_median_ms": 432,
+    "input_tokens": 17578,
+    "output_tokens": 156,
+    "cost_usd": 0.005663,
+    "request_chars": 60446,
+    "cdp_calls": 96
+  },
+  "error": null,
+  "verification": {
+    "passed": false,
+    "checks": {
+      "search_page": false,
+      "one_way": true,
+      "origin": true,
+      "destination": true,
+      "date": true,
+      "year": true,
+      "results": false
+    },
+    "visible_flights": []
+  },
+  "final_url": "https://www.google.com/travel/flights?tfs=CBwQARooEgoyMDI2LTEwLTE4agwIAxIIL20vMDg5NjZyDAgDEggvbS8wNGpwbEABSAFwAYIBCwj___________8BmAEC&tfu=KgIIAw&hl=en",
+  "wall_ms": 10026,
+  "setup_ms": 958,
+  "browser": "Chrome/153.0.8010.53"
+}

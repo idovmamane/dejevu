@@ -1,0 +1,27 @@
+[project]
+name = "instinct"
+version = "0.1.0"
+description = "A browser agent that decides in one glance: one model call per step, any OpenAI-compatible model, self-launched Chrome."
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.12"
+dependencies = ["websockets>=13,<17", "httpx[http2]>=0.28,<1"]
+
+[project.scripts]
+instinct = "instinct.cli:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[dependency-groups]
+dev = ["pytest>=8.4,<9", "ruff>=0.14,<1"]
+
+[tool.ruff]
+line-length = 130
+
+[tool.ruff.lint]
+select = ["E", "F", "I"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

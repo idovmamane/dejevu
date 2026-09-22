@@ -1,0 +1,1078 @@
+{
+  "goal": "Find one-way flights from Zurich to London on October 18, 2026, for one adult in economy. Stop when matching flight options are visible. Do not select or book a flight.",
+  "policy": "deepseek/deepseek-chat-v3.1",
+  "status": "blocked",
+  "reason": "the page kept changing under eight decisions in a row",
+  "elapsed_ms": 51555,
+  "url": "https://www.google.com/travel/flights?tfs=CBwQARocagwIAhIIL20vMDVxdGpqDAgDEggvbS8wODk2NkABSAFwAYIBCwj___________8BmAEC&tfu=KgIIAw&hl=en",
+  "title": "Find Cheap Flights Worldwide & Book Your Ticket - Google Flights",
+  "elements": 6,
+  "history": [
+    {
+      "step": 1,
+      "op": "CLICK",
+      "kind": "click",
+      "label": "Reject all",
+      "target": 4,
+      "text": null,
+      "option": null,
+      "key": null,
+      "confidence": null,
+      "latency_ms": 2909,
+      "url": "https://www.google.com/travel/flights?hl=en",
+      "executed_ms": 0,
+      "page_changed": true,
+      "elapsed_ms": 0
+    },
+    {
+      "step": 2,
+      "op": "CLICK",
+      "kind": "click",
+      "label": "Change ticket type. Round trip",
+      "target": 12,
+      "text": null,
+      "option": null,
+      "key": null,
+      "confidence": null,
+      "latency_ms": 3058,
+      "url": "https://www.google.com/travel/flights?hl=en",
+      "executed_ms": 3178,
+      "page_changed": true,
+      "elapsed_ms": 3317
+    },
+    {
+      "step": 3,
+      "op": "CLICK",
+      "kind": "click",
+      "label": "One way",
+      "target": 2,
+      "text": null,
+      "option": null,
+      "key": null,
+      "confidence": null,
+      "latency_ms": 1911,
+      "url": "https://www.google.com/travel/flights?tfs=CBwQARoOagwIAhIIL20vMDVxdGpAAUgBcAGCAQsI____________AZgBAg&tfu=KgIIAw&hl=en",
+      "executed_ms": 5316,
+      "page_changed": true,
+      "elapsed_ms": 5696
+    },
+    {
+      "step": 4,
+      "op": "CLICK",
+      "kind": "click",
+      "label": "Where from?",
+      "target": 15,
+      "text": null,
+      "option": null,
+      "key": null,
+      "confidence": null,
+      "latency_ms": 2144,
+      "url": "https://www.google.com/travel/flights?tfs=CBwQARoOagwIAhIIL20vMDVxdGpAAUgBcAGCAQsI____________AZgBAg&tfu=KgIIAw&hl=en",
+      "executed_ms": 7931,
+      "page_changed": true,
+      "elapsed_ms": 8253
+    },
+    {
+      "step": 5,
+      "op": "CLICK",
+      "kind": "click",
+      "label": "Origin, Select multiple airports",
+      "target": 2,
+      "text": null,
+      "option": null,
+      "key": null,
+      "confidence": null,
+      "latency_ms": 1458,
+      "url": "https://www.google.com/travel/flights?tfs=CBwQARoOagwIAhIIL20vMDVxdGpAAUgBcAGCAQsI____________AZgBAg&tfu=KgIIAw&hl=en",
+      "executed_ms": 9762,
+      "page_changed": true,
+      "elapsed_ms": 10055
+    },
+    {
+      "step": 6,
+      "op": "TYPE",
+      "kind": "fill",
+      "label": "Where else? + Enter",
+      "target": 3,
+      "text": "Zurich",
+      "option": null,
+      "key": "Enter",
+      "confidence": null,
+      "latency_ms": 1880,
+      "url": "https://www.google.com/travel/flights?tfs=CBwQARoOagwIAhIIL20vMDVxdGpAAUgBcAGCAQsI____________AZgBAg&tfu=KgIIAw&hl=en",
+      "executed_ms": 11976,
+      "page_changed": true,
+      "elapsed_ms": 12339
+    },
+    {
+      "step": 7,
+      "op": "CLICK",
+      "kind": "click",
+      "label": "Done",
+      "target": 6,
+      "text": null,
+      "option": null,
+      "key": null,
+      "confidence": null,
+      "latency_ms": 2627,
+      "url": "https://www.google.com/travel/flights?tfs=CBwQARocagwIAhIIL20vMDVxdGpqDAgDEggvbS8wODk2NkABSAFwAYIBCwj___________8BmAEC&tfu=KgIIAw&hl=en",
+      "executed_ms": 15079,
+      "page_changed": true,
+      "elapsed_ms": 15284
+    },
+    {
+      "step": 8,
+      "op": "CLICK",
+      "kind": "click",
+      "label": "Change ticket type. One way",
+      "target": 12,
+      "text": null,
+      "option": null,
+      "key": null,
+      "confidence": null,
+      "latency_ms": 1950,
+      "url": "https://www.google.com/travel/flights?tfs=CBwQARocagwIAhIIL20vMDVxdGpqDAgDEggvbS8wODk2NkABSAFwAYIBCwj___________8BmAEC&tfu=KgIIAw&hl=en",
+      "executed_ms": 17260,
+      "page_changed": true,
+      "elapsed_ms": 17408
+    },
+    {
+      "step": 9,
+      "op": "CLICK",
+      "kind": "click",
+      "label": "One way",
+      "target": 2,
+      "text": null,
+      "option": null,
+      "key": null,
+      "confidence": null,
+      "latency_ms": 2229,
+      "url": "https://www.google.com/travel/flights?tfs=CBwQARocagwIAhIIL20vMDVxdGpqDAgDEggvbS8wODk2NkABSAFwAYIBCwj___________8BmAEC&tfu=KgIIAw&hl=en",
+      "executed_ms": 19656,
+      "page_changed": true,
+      "elapsed_ms": 19879
+    },
+    {
+      "step": 10,
+      "op": "CLICK",
+      "kind": "click",
+      "label": "Change ticket type. One way",
+      "target": 12,
+      "text": null,
+      "option": null,
+      "key": null,
+      "confidence": null,
+      "latency_ms": 2229,
+      "url": "https://www.google.com/travel/flights?tfs=CBwQARocagwIAhIIL20vMDVxdGpqDAgDEggvbS8wODk2NkABSAFwAYIBCwj___________8BmAEC&tfu=KgIIAw&hl=en",
+      "executed_ms": 22128,
+      "page_changed": true,
+      "elapsed_ms": 22300
+    },
+    {
+      "step": 11,
+      "op": "SCROLL_DOWN",
+      "kind": "scroll",
+      "label": "scroll down",
+      "target": null,
+      "text": null,
+      "option": null,
+      "key": null,
+      "confidence": null,
+      "latency_ms": 1881,
+      "url": "https://www.google.com/travel/flights?tfs=CBwQARocagwIAhIIL20vMDVxdGpqDAgDEggvbS8wODk2NkABSAFwAYIBCwj___________8BmAEC&tfu=KgIIAw&hl=en",
+      "executed_ms": 24203,
+      "page_changed": true,
+      "elapsed_ms": 24449
+    },
+    {
+      "step": 12,
+      "op": "CLICK",
+      "kind": "click",
+      "label": "Where from? Paris, Z\u00fcrich",
+      "target": 15,
+      "text": null,
+      "option": null,
+      "key": null,
+      "confidence": null,
+      "latency_ms": 2296,
+      "url": "https://www.google.com/travel/flights?tfs=CBwQARocagwIAhIIL20vMDVxdGpqDAgDEggvbS8wODk2NkABSAFwAYIBCwj___________8BmAEC&tfu=KgIIAw&hl=en",
+      "executed_ms": 26780,
+      "page_changed": true,
+      "elapsed_ms": 27103
+    }
+  ],
+  "decisions": [
+    {
+      "op": "CLICK",
+      "target": 4,
+      "text": null,
+      "option": null,
+      "key": null,
+      "probabilities": {},
+      "confidence": null,
+      "latency_ms": 2909,
+      "usage": {
+        "prompt_tokens": 1137,
+        "completion_tokens": 28,
+        "total_tokens": 1165,
+        "cost": 0.00033499,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00033499,
+          "upstream_inference_prompt_cost": 0.00030699,
+          "upstream_inference_completions_cost": 2.8e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "cost": 0.00033499,
+      "model": "deepseek/deepseek-chat-v3.1",
+      "provider": "SiliconFlow",
+      "raw": "{\"op\": \"CLICK\", \"target\": 4, \"text\": null, \"option\": null, \"key\": null}",
+      "request_chars": 4837,
+      "fingerprint": "84f80792194f2c422674545622f1c5efe7155f563aa20fc7b85a9e773f37362b",
+      "elapsed_ms": 0,
+      "valid": true,
+      "outcome": "executed"
+    },
+    {
+      "op": "CLICK",
+      "target": 12,
+      "text": null,
+      "option": null,
+      "key": null,
+      "probabilities": {},
+      "confidence": null,
+      "latency_ms": 3058,
+      "usage": {
+        "prompt_tokens": 1386,
+        "completion_tokens": 29,
+        "total_tokens": 1415,
+        "cost": 0.00030337,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 589,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00030337,
+          "upstream_inference_prompt_cost": 0.00027582,
+          "upstream_inference_completions_cost": 2.755e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "cost": 0.00030337,
+      "model": "deepseek/deepseek-chat-v3.1",
+      "provider": "DeepInfra",
+      "raw": "{\"op\": \"CLICK\", \"target\": 12, \"text\": null, \"option\": null, \"key\": null}",
+      "request_chars": 5359,
+      "fingerprint": "790e11e881dd10e0ce4b3c746fbdbf7f34fccee81df6e16dd9852350fe2b8922",
+      "elapsed_ms": 3058,
+      "valid": true,
+      "outcome": "executed"
+    },
+    {
+      "op": "CLICK",
+      "target": 2,
+      "text": null,
+      "option": null,
+      "key": null,
+      "probabilities": {},
+      "confidence": null,
+      "latency_ms": 1911,
+      "usage": {
+        "prompt_tokens": 850,
+        "completion_tokens": 29,
+        "total_tokens": 879,
+        "cost": 0.00018463,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 576,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00018463,
+          "upstream_inference_prompt_cost": 0.00015708,
+          "upstream_inference_completions_cost": 2.755e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "cost": 0.00018463,
+      "model": "deepseek/deepseek-chat-v3.1",
+      "provider": "AtlasCloud",
+      "raw": "{\"op\": \"CLICK\", \"target\": 2, \"text\": null, \"option\": null, \"key\": null}",
+      "request_chars": 3505,
+      "fingerprint": "f8419764ef30c83a35f16cac8e426a47f6eb0a637d6e7dabcb74dc3bbbc3c087",
+      "elapsed_ms": 5228,
+      "valid": true,
+      "outcome": "executed"
+    },
+    {
+      "op": "CLICK",
+      "target": 15,
+      "text": null,
+      "option": null,
+      "key": null,
+      "probabilities": {},
+      "confidence": null,
+      "latency_ms": 2144,
+      "usage": {
+        "prompt_tokens": 1459,
+        "completion_tokens": 29,
+        "total_tokens": 1488,
+        "cost": 0.00042293,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00042293,
+          "upstream_inference_prompt_cost": 0.00039393,
+          "upstream_inference_completions_cost": 2.9e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "cost": 0.00042293,
+      "model": "deepseek/deepseek-chat-v3.1",
+      "provider": "Novita",
+      "raw": "{\"op\": \"CLICK\", \"target\": 15, \"text\": null, \"option\": null, \"key\": null}",
+      "request_chars": 5450,
+      "fingerprint": "38adf463dc64022d3190eec42063f7bff61b117a5804daa0c5a33fef88b427cc",
+      "elapsed_ms": 7840,
+      "valid": true,
+      "outcome": "executed"
+    },
+    {
+      "op": "CLICK",
+      "target": 2,
+      "text": null,
+      "option": null,
+      "key": null,
+      "probabilities": {},
+      "confidence": null,
+      "latency_ms": 1458,
+      "usage": {
+        "prompt_tokens": 1226,
+        "completion_tokens": 29,
+        "total_tokens": 1255,
+        "cost": 0.00028655,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 640,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00028655,
+          "upstream_inference_prompt_cost": 0.000259,
+          "upstream_inference_completions_cost": 2.755e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "cost": 0.00028655,
+      "model": "deepseek/deepseek-chat-v3.1",
+      "provider": "AtlasCloud",
+      "raw": "{\"op\": \"CLICK\", \"target\": 2, \"text\": null, \"option\": null, \"key\": null}",
+      "request_chars": 4681,
+      "fingerprint": "8f20e58492df44abd2e4ca7cfea6d6eb1385ee4508d005ae8b7eb66a2a30e291",
+      "elapsed_ms": 9711,
+      "valid": true,
+      "outcome": "executed"
+    },
+    {
+      "op": "TYPE",
+      "target": 3,
+      "text": "Zurich",
+      "option": null,
+      "key": "Enter",
+      "probabilities": {},
+      "confidence": null,
+      "latency_ms": 1880,
+      "usage": {
+        "prompt_tokens": 933,
+        "completion_tokens": 26,
+        "total_tokens": 959,
+        "cost": 0.00017404,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 768,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00017404,
+          "upstream_inference_prompt_cost": 0.00014934,
+          "upstream_inference_completions_cost": 2.47e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "cost": 0.00017404,
+      "model": "deepseek/deepseek-chat-v3.1",
+      "provider": "AtlasCloud",
+      "raw": "{\"op\": \"TYPE\", \"target\": 3, \"text\": \"Zurich\", \"key\": \"Enter\"}",
+      "request_chars": 3693,
+      "fingerprint": "ebb5ea573459f767a500f8b893496e9bc1e3302021a8d933a2840e2ca9abaddb",
+      "elapsed_ms": 11935,
+      "valid": true,
+      "outcome": "executed"
+    },
+    {
+      "op": "CLICK",
+      "target": 6,
+      "text": null,
+      "option": null,
+      "key": null,
+      "probabilities": {},
+      "confidence": null,
+      "latency_ms": 2627,
+      "usage": {
+        "prompt_tokens": 1184,
+        "completion_tokens": 29,
+        "total_tokens": 1213,
+        "cost": 0.00025364,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 704,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00025364,
+          "upstream_inference_prompt_cost": 0.00022464,
+          "upstream_inference_completions_cost": 2.9e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "cost": 0.00025364,
+      "model": "deepseek/deepseek-chat-v3.1",
+      "provider": "Novita",
+      "raw": "{\"op\": \"CLICK\", \"target\": 6, \"text\": null, \"option\": null, \"key\": null}",
+      "request_chars": 4506,
+      "fingerprint": "2069e615b9a420aa929bce170c173f164bd8853c1d10881d8be9f1b5e2242132",
+      "elapsed_ms": 14966,
+      "valid": true,
+      "outcome": "executed"
+    },
+    {
+      "op": "CLICK",
+      "target": 12,
+      "text": null,
+      "option": null,
+      "key": null,
+      "probabilities": {},
+      "confidence": null,
+      "latency_ms": 1950,
+      "usage": {
+        "prompt_tokens": 1514,
+        "completion_tokens": 29,
+        "total_tokens": 1543,
+        "cost": 0.00032169,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 703,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00032169,
+          "upstream_inference_prompt_cost": 0.00029414,
+          "upstream_inference_completions_cost": 2.755e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "cost": 0.00032169,
+      "model": "deepseek/deepseek-chat-v3.1",
+      "provider": "DeepInfra",
+      "raw": "{\"op\": \"CLICK\", \"target\": 12, \"text\": null, \"option\": null, \"key\": null}",
+      "request_chars": 5670,
+      "fingerprint": "624745daa06eceea884b2b496430538ed5775b1559d7a5acfeea643d81cf9c1e",
+      "elapsed_ms": 17234,
+      "valid": true,
+      "outcome": "executed"
+    },
+    {
+      "op": "CLICK",
+      "target": 2,
+      "text": null,
+      "option": null,
+      "key": null,
+      "probabilities": {},
+      "confidence": null,
+      "latency_ms": 2229,
+      "usage": {
+        "prompt_tokens": 1014,
+        "completion_tokens": 29,
+        "total_tokens": 1043,
+        "cost": 0.00021638,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 640,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00021638,
+          "upstream_inference_prompt_cost": 0.00018738,
+          "upstream_inference_completions_cost": 2.9e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "cost": 0.00021638,
+      "model": "deepseek/deepseek-chat-v3.1",
+      "provider": "Novita",
+      "raw": "{\"op\": \"CLICK\", \"target\": 2, \"text\": null, \"option\": null, \"key\": null}",
+      "request_chars": 3878,
+      "fingerprint": "822ac3837fda387ca871f5411bd441da9f3539353b4610b81f3c8607b1ab9832",
+      "elapsed_ms": 19638,
+      "valid": true,
+      "outcome": "executed"
+    },
+    {
+      "op": "CLICK",
+      "target": 12,
+      "text": null,
+      "option": null,
+      "key": null,
+      "probabilities": {},
+      "confidence": null,
+      "latency_ms": 2229,
+      "usage": {
+        "prompt_tokens": 1529,
+        "completion_tokens": 29,
+        "total_tokens": 1558,
+        "cost": 0.00024516,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 1372,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00024516,
+          "upstream_inference_prompt_cost": 0.00021761,
+          "upstream_inference_completions_cost": 2.755e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "cost": 0.00024516,
+      "model": "deepseek/deepseek-chat-v3.1",
+      "provider": "DeepInfra",
+      "raw": "{\"op\": \"CLICK\", \"target\": 12, \"text\": null, \"option\": null, \"key\": null}",
+      "request_chars": 5721,
+      "fingerprint": "624745daa06eceea884b2b496430538ed5775b1559d7a5acfeea643d81cf9c1e",
+      "elapsed_ms": 22108,
+      "valid": true,
+      "outcome": "executed"
+    },
+    {
+      "op": "SCROLL_DOWN",
+      "target": null,
+      "text": null,
+      "option": null,
+      "key": null,
+      "probabilities": {},
+      "confidence": null,
+      "latency_ms": 1881,
+      "usage": {
+        "prompt_tokens": 992,
+        "completion_tokens": 30,
+        "total_tokens": 1022,
+        "cost": 0.00018266,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 782,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00018266,
+          "upstream_inference_prompt_cost": 0.00015416,
+          "upstream_inference_completions_cost": 2.85e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "cost": 0.00018266,
+      "model": "deepseek/deepseek-chat-v3.1",
+      "provider": "DeepInfra",
+      "raw": "{\"op\": \"SCROLL_DOWN\", \"target\": null, \"text\": null, \"option\": null, \"key\": null}",
+      "request_chars": 3873,
+      "fingerprint": "822ac3837fda387ca871f5411bd441da9f3539353b4610b81f3c8607b1ab9832",
+      "elapsed_ms": 24182,
+      "valid": true,
+      "outcome": "executed"
+    },
+    {
+      "op": "CLICK",
+      "target": 15,
+      "text": null,
+      "option": null,
+      "key": null,
+      "probabilities": {},
+      "confidence": null,
+      "latency_ms": 2296,
+      "usage": {
+        "prompt_tokens": 1553,
+        "completion_tokens": 29,
+        "total_tokens": 1582,
+        "cost": 0.00035327,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 704,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00035327,
+          "upstream_inference_prompt_cost": 0.00032427,
+          "upstream_inference_completions_cost": 2.9e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "cost": 0.00035327,
+      "model": "deepseek/deepseek-chat-v3.1",
+      "provider": "Novita",
+      "raw": "{\"op\": \"CLICK\", \"target\": 15, \"text\": null, \"option\": null, \"key\": null}",
+      "request_chars": 5728,
+      "fingerprint": "f00dd79de9f82f1b51e350116298867e71788e730b28a446eacd06a9ed0eeb4b",
+      "elapsed_ms": 26746,
+      "valid": true,
+      "outcome": "executed"
+    },
+    {
+      "op": "CLICK",
+      "target": 1,
+      "text": null,
+      "option": null,
+      "key": null,
+      "probabilities": {},
+      "confidence": null,
+      "latency_ms": 2880,
+      "usage": {
+        "prompt_tokens": 1019,
+        "completion_tokens": 29,
+        "total_tokens": 1048,
+        "cost": 0.00021162,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 589,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00021162,
+          "upstream_inference_prompt_cost": 0.00018407,
+          "upstream_inference_completions_cost": 2.755e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "cost": 0.00021162,
+      "model": "deepseek/deepseek-chat-v3.1",
+      "provider": "DeepInfra",
+      "raw": "{\"op\": \"CLICK\", \"target\": 1, \"text\": null, \"option\": null, \"key\": null}",
+      "request_chars": 3927,
+      "fingerprint": "0188b17264af995f8a02eca1d415054766efe1ed159bba92e43bcc2611bebbc7",
+      "elapsed_ms": 29983,
+      "valid": true,
+      "outcome": "stale: Target moved, hid or is covered"
+    },
+    {
+      "op": "CLICK",
+      "target": 3,
+      "text": null,
+      "option": null,
+      "key": null,
+      "probabilities": {},
+      "confidence": null,
+      "latency_ms": 3151,
+      "usage": {
+        "prompt_tokens": 1019,
+        "completion_tokens": 29,
+        "total_tokens": 1048,
+        "cost": 0.00016014,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 1018,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00016014,
+          "upstream_inference_prompt_cost": 0.00013259,
+          "upstream_inference_completions_cost": 2.755e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "cost": 0.00016014,
+      "model": "deepseek/deepseek-chat-v3.1",
+      "provider": "DeepInfra",
+      "raw": "{\"op\": \"CLICK\", \"target\": 3, \"text\": null, \"option\": null, \"key\": null}",
+      "request_chars": 3927,
+      "fingerprint": "0188b17264af995f8a02eca1d415054766efe1ed159bba92e43bcc2611bebbc7",
+      "elapsed_ms": 33272,
+      "valid": true,
+      "outcome": "stale: Target moved, hid or is covered"
+    },
+    {
+      "op": "CLICK",
+      "target": 3,
+      "text": null,
+      "option": null,
+      "key": null,
+      "probabilities": {},
+      "confidence": null,
+      "latency_ms": 2402,
+      "usage": {
+        "prompt_tokens": 1072,
+        "completion_tokens": 29,
+        "total_tokens": 1101,
+        "cost": 0.00017843,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 976,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00017843,
+          "upstream_inference_prompt_cost": 0.00015088,
+          "upstream_inference_completions_cost": 2.755e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "cost": 0.00017843,
+      "model": "deepseek/deepseek-chat-v3.1",
+      "provider": "DeepInfra",
+      "raw": "{\"op\": \"CLICK\", \"target\": 3, \"text\": null, \"option\": null, \"key\": null}",
+      "request_chars": 4124,
+      "fingerprint": "0188b17264af995f8a02eca1d415054766efe1ed159bba92e43bcc2611bebbc7",
+      "elapsed_ms": 35834,
+      "valid": true,
+      "outcome": "stale: Target moved, hid or is covered"
+    },
+    {
+      "op": "CLICK",
+      "target": 3,
+      "text": null,
+      "option": null,
+      "key": null,
+      "probabilities": {},
+      "confidence": null,
+      "latency_ms": 2031,
+      "usage": {
+        "prompt_tokens": 1072,
+        "completion_tokens": 29,
+        "total_tokens": 1101,
+        "cost": 0.00016703,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 1071,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00016703,
+          "upstream_inference_prompt_cost": 0.00013948,
+          "upstream_inference_completions_cost": 2.755e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "cost": 0.00016703,
+      "model": "deepseek/deepseek-chat-v3.1",
+      "provider": "DeepInfra",
+      "raw": "{\"op\": \"CLICK\", \"target\": 3, \"text\": null, \"option\": null, \"key\": null}",
+      "request_chars": 4124,
+      "fingerprint": "0188b17264af995f8a02eca1d415054766efe1ed159bba92e43bcc2611bebbc7",
+      "elapsed_ms": 38020,
+      "valid": true,
+      "outcome": "stale: Target moved, hid or is covered"
+    },
+    {
+      "op": "CLICK",
+      "target": 3,
+      "text": null,
+      "option": null,
+      "key": null,
+      "probabilities": {},
+      "confidence": null,
+      "latency_ms": 4095,
+      "usage": {
+        "prompt_tokens": 1072,
+        "completion_tokens": 29,
+        "total_tokens": 1101,
+        "cost": 0.00016703,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 1071,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00016703,
+          "upstream_inference_prompt_cost": 0.00013948,
+          "upstream_inference_completions_cost": 2.755e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "cost": 0.00016703,
+      "model": "deepseek/deepseek-chat-v3.1",
+      "provider": "DeepInfra",
+      "raw": "{\"op\": \"CLICK\", \"target\": 3, \"text\": null, \"option\": null, \"key\": null}",
+      "request_chars": 4124,
+      "fingerprint": "0188b17264af995f8a02eca1d415054766efe1ed159bba92e43bcc2611bebbc7",
+      "elapsed_ms": 42265,
+      "valid": true,
+      "outcome": "stale: Target moved, hid or is covered"
+    },
+    {
+      "op": "CLICK",
+      "target": 3,
+      "text": null,
+      "option": null,
+      "key": null,
+      "probabilities": {},
+      "confidence": null,
+      "latency_ms": 3412,
+      "usage": {
+        "prompt_tokens": 1072,
+        "completion_tokens": 29,
+        "total_tokens": 1101,
+        "cost": 0.00016703,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 1071,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00016703,
+          "upstream_inference_prompt_cost": 0.00013948,
+          "upstream_inference_completions_cost": 2.755e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "cost": 0.00016703,
+      "model": "deepseek/deepseek-chat-v3.1",
+      "provider": "DeepInfra",
+      "raw": "{\"op\": \"CLICK\", \"target\": 3, \"text\": null, \"option\": null, \"key\": null}",
+      "request_chars": 4124,
+      "fingerprint": "0188b17264af995f8a02eca1d415054766efe1ed159bba92e43bcc2611bebbc7",
+      "elapsed_ms": 45836,
+      "valid": true,
+      "outcome": "stale: Target moved, hid or is covered"
+    },
+    {
+      "op": "CLICK",
+      "target": 3,
+      "text": null,
+      "option": null,
+      "key": null,
+      "probabilities": {},
+      "confidence": null,
+      "latency_ms": 2445,
+      "usage": {
+        "prompt_tokens": 1072,
+        "completion_tokens": 29,
+        "total_tokens": 1101,
+        "cost": 0.00016703,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 1071,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00016703,
+          "upstream_inference_prompt_cost": 0.00013948,
+          "upstream_inference_completions_cost": 2.755e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "cost": 0.00016703,
+      "model": "deepseek/deepseek-chat-v3.1",
+      "provider": "DeepInfra",
+      "raw": "{\"op\": \"CLICK\", \"target\": 3, \"text\": null, \"option\": null, \"key\": null}",
+      "request_chars": 4124,
+      "fingerprint": "0188b17264af995f8a02eca1d415054766efe1ed159bba92e43bcc2611bebbc7",
+      "elapsed_ms": 48428,
+      "valid": true,
+      "outcome": "stale: Target moved, hid or is covered"
+    },
+    {
+      "op": "CLICK",
+      "target": 3,
+      "text": null,
+      "option": null,
+      "key": null,
+      "probabilities": {},
+      "confidence": null,
+      "latency_ms": 2974,
+      "usage": {
+        "prompt_tokens": 1072,
+        "completion_tokens": 29,
+        "total_tokens": 1101,
+        "cost": 0.00016703,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 1071,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00016703,
+          "upstream_inference_prompt_cost": 0.00013948,
+          "upstream_inference_completions_cost": 2.755e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "cost": 0.00016703,
+      "model": "deepseek/deepseek-chat-v3.1",
+      "provider": "DeepInfra",
+      "raw": "{\"op\": \"CLICK\", \"target\": 3, \"text\": null, \"option\": null, \"key\": null}",
+      "request_chars": 4124,
+      "fingerprint": "0188b17264af995f8a02eca1d415054766efe1ed159bba92e43bcc2611bebbc7",
+      "elapsed_ms": 51544,
+      "valid": true,
+      "outcome": "stale: Target moved, hid or is covered"
+    }
+  ],
+  "totals": {
+    "requests": 20,
+    "actions": 12,
+    "waits": 0,
+    "stale": 8,
+    "invalid": 0,
+    "model_ms": 49962,
+    "model_median_ms": 2349,
+    "input_tokens": 23247,
+    "output_tokens": 577,
+    "cost_usd": 0.004665,
+    "request_chars": 89499,
+    "cdp_calls": 136
+  },
+  "error": null,
+  "verification": {
+    "passed": false,
+    "checks": {
+      "search_page": false,
+      "one_way": false,
+      "origin": false,
+      "destination": false,
+      "date": false,
+      "year": false,
+      "results": false
+    },
+    "visible_flights": []
+  },
+  "final_url": "https://www.google.com/travel/flights?tfs=CBwQARocagwIAhIIL20vMDVxdGpqDAgDEggvbS8wODk2NkABSAFwAYIBCwj___________8BmAEC&tfu=KgIIAw&hl=en",
+  "wall_ms": 56981,
+  "setup_ms": 1015,
+  "browser": "Chrome/153.0.8010.53"
+}

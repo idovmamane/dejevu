@@ -1,0 +1,616 @@
+{
+  "goal": "Find one-way flights from Zurich to London on October 18, 2026, for one adult in economy. Stop when matching flight options are visible. Do not select or book a flight.",
+  "policy": "meta-llama/llama-3.3-70b-instruct@Groq",
+  "status": "done",
+  "reason": "model's call",
+  "elapsed_ms": 6292,
+  "url": "https://www.google.com/travel/flights/search?tfs=CBwQAhooEgoyMDI2LTEwLTE4agwIAxIIL20vMDg5NjZyDAgDEggvbS8wNGpwbEABSAFwAYIBCwj___________8BmAEC&hl=en",
+  "title": "Z\u00fcrich to London | Google Flights",
+  "elements": 75,
+  "history": [
+    {
+      "step": 1,
+      "op": "SCROLL_DOWN",
+      "kind": "scroll",
+      "label": "scroll down",
+      "target": null,
+      "text": null,
+      "option": null,
+      "key": null,
+      "confidence": null,
+      "latency_ms": 292,
+      "url": "https://consent.google.com/m?continue=https://www.google.com/travel/flights?hl%3Den&gl=FR&m=0&pc=flt&cm=2&hl=en&src=1",
+      "executed_ms": 0,
+      "page_changed": true,
+      "elapsed_ms": 0
+    },
+    {
+      "step": 2,
+      "op": "CLICK",
+      "kind": "click",
+      "label": "Reject all",
+      "target": 1,
+      "text": null,
+      "option": null,
+      "key": null,
+      "confidence": null,
+      "latency_ms": 292,
+      "url": "https://www.google.com/travel/flights?hl=en",
+      "executed_ms": 0,
+      "page_changed": true,
+      "elapsed_ms": 0
+    },
+    {
+      "step": 3,
+      "op": "CLICK",
+      "kind": "click",
+      "label": "Change ticket type. Round trip",
+      "target": 12,
+      "text": null,
+      "option": null,
+      "key": null,
+      "confidence": null,
+      "latency_ms": 259,
+      "url": "https://www.google.com/travel/flights?hl=en",
+      "executed_ms": 278,
+      "page_changed": true,
+      "elapsed_ms": 425
+    },
+    {
+      "step": 4,
+      "op": "CLICK",
+      "kind": "click",
+      "label": "One way",
+      "target": 2,
+      "text": null,
+      "option": null,
+      "key": null,
+      "confidence": null,
+      "latency_ms": 210,
+      "url": "https://www.google.com/travel/flights?tfs=CBwQARoOagwIAhIIL20vMDVxdGpAAUgBcAGCAQsI____________AZgBAg&tfu=KgIIAw&hl=en",
+      "executed_ms": 666,
+      "page_changed": true,
+      "elapsed_ms": 977
+    },
+    {
+      "step": 5,
+      "op": "TYPE",
+      "kind": "fill",
+      "label": "Where from? + Enter",
+      "target": 15,
+      "text": "Zurich",
+      "option": null,
+      "key": "Enter",
+      "confidence": null,
+      "latency_ms": 263,
+      "url": "https://www.google.com/travel/flights?tfs=CBwQARoOagwIAxIIL20vMDg5NjZAAUgBcAGCAQsI____________AZgBAg&tfu=KgIIAw&hl=en",
+      "executed_ms": 1288,
+      "page_changed": true,
+      "elapsed_ms": 1635
+    },
+    {
+      "step": 6,
+      "op": "TYPE",
+      "kind": "fill",
+      "label": "Where to? + Enter",
+      "target": 16,
+      "text": "London",
+      "option": null,
+      "key": "Enter",
+      "confidence": null,
+      "latency_ms": 363,
+      "url": "https://www.google.com/travel/flights?tfs=CBwQARocagwIAxIIL20vMDg5NjZyDAgDEggvbS8wNGpwbEABSAFwAYIBCwj___________8BmAEC&tfu=KgIIAw&hl=en",
+      "executed_ms": 2022,
+      "page_changed": true,
+      "elapsed_ms": 2489
+    },
+    {
+      "step": 7,
+      "op": "TYPE",
+      "kind": "fill",
+      "label": "Departure + Enter",
+      "target": 18,
+      "text": "2026-10-18",
+      "option": null,
+      "key": "Enter",
+      "confidence": null,
+      "latency_ms": 351,
+      "url": "https://www.google.com/travel/flights?tfs=CBwQARocagwIAxIIL20vMDg5NjZyDAgDEggvbS8wNGpwbEABSAFwAYIBCwj___________8BmAEC&tfu=KgIIAw&hl=en",
+      "executed_ms": 2885,
+      "page_changed": true,
+      "elapsed_ms": 3193
+    },
+    {
+      "step": 8,
+      "op": "CLICK",
+      "kind": "click",
+      "label": "Done. Search for one-way flights, departing on October 18, 2026",
+      "target": 50,
+      "text": null,
+      "option": null,
+      "key": null,
+      "confidence": null,
+      "latency_ms": 294,
+      "url": "https://www.google.com/travel/flights?tfs=CBwQARooEgoyMDI2LTEwLTE4agwIAxIIL20vMDg5NjZyDAgDEggvbS8wNGpwbEABSAFwAYIBCwj___________8BmAEC&tfu=KgIIAw&hl=en",
+      "executed_ms": 3503,
+      "page_changed": true,
+      "elapsed_ms": 4019
+    },
+    {
+      "step": 9,
+      "op": "CLICK",
+      "kind": "click",
+      "label": "Search",
+      "target": 19,
+      "text": null,
+      "option": null,
+      "key": null,
+      "confidence": null,
+      "latency_ms": 332,
+      "url": "https://www.google.com/travel/flights/search?tfs=CBwQAhooEgoyMDI2LTEwLTE4agwIAxIIL20vMDg5NjZyDAgDEggvbS8wNGpwbEABSAFwAYIBCwj___________8BmAEC&hl=en",
+      "executed_ms": 4407,
+      "page_changed": true,
+      "elapsed_ms": 5898
+    }
+  ],
+  "decisions": [
+    {
+      "op": "SCROLL_DOWN",
+      "target": null,
+      "text": null,
+      "option": null,
+      "key": null,
+      "probabilities": {},
+      "confidence": null,
+      "latency_ms": 292,
+      "usage": {
+        "prompt_tokens": 1142,
+        "completion_tokens": 35,
+        "total_tokens": 1177,
+        "cost": 0.00070143,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00070143,
+          "upstream_inference_prompt_cost": 0.00067378,
+          "upstream_inference_completions_cost": 2.765e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "cost": 0.00070143,
+      "model": "meta-llama/llama-3.3-70b-instruct",
+      "provider": "Groq",
+      "raw": "{\n  \"op\": \"SCROLL_DOWN\",\n   \"target\": null,\n   \"text\": null,\n   \"option\": null,\n   \"key\": null\n}",
+      "request_chars": 4837,
+      "fingerprint": "84f80792194f2c422674545622f1c5efe7155f563aa20fc7b85a9e773f37362b",
+      "elapsed_ms": 0,
+      "valid": true,
+      "outcome": "executed"
+    },
+    {
+      "op": "CLICK",
+      "target": 1,
+      "text": null,
+      "option": null,
+      "key": null,
+      "probabilities": {},
+      "confidence": null,
+      "latency_ms": 292,
+      "usage": {
+        "prompt_tokens": 1120,
+        "completion_tokens": 34,
+        "total_tokens": 1154,
+        "cost": 0.00068766,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00068766,
+          "upstream_inference_prompt_cost": 0.0006608,
+          "upstream_inference_completions_cost": 2.686e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "cost": 0.00068766,
+      "model": "meta-llama/llama-3.3-70b-instruct",
+      "provider": "Groq",
+      "raw": "{\n  \"op\": \"CLICK\",\n   \"target\": 1,\n   \"text\": null,\n   \"option\": null,\n   \"key\": null\n}",
+      "request_chars": 4724,
+      "fingerprint": "ddd4c5f7acefc3a261dcc18d0936b3fbee5df49273acf0a803c1fb1d333af130",
+      "elapsed_ms": 0,
+      "valid": true,
+      "outcome": "executed"
+    },
+    {
+      "op": "CLICK",
+      "target": 12,
+      "text": null,
+      "option": null,
+      "key": null,
+      "probabilities": {},
+      "confidence": null,
+      "latency_ms": 259,
+      "usage": {
+        "prompt_tokens": 1388,
+        "completion_tokens": 34,
+        "total_tokens": 1422,
+        "cost": 0.00084578,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00084578,
+          "upstream_inference_prompt_cost": 0.00081892,
+          "upstream_inference_completions_cost": 2.686e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "cost": 0.00084578,
+      "model": "meta-llama/llama-3.3-70b-instruct",
+      "provider": "Groq",
+      "raw": "{\n  \"op\": \"CLICK\",\n   \"target\": 12,\n   \"text\": null,\n   \"option\": null,\n   \"key\": null\n}",
+      "request_chars": 5389,
+      "fingerprint": "790e11e881dd10e0ce4b3c746fbdbf7f34fccee81df6e16dd9852350fe2b8922",
+      "elapsed_ms": 260,
+      "valid": true,
+      "outcome": "executed"
+    },
+    {
+      "op": "CLICK",
+      "target": 2,
+      "text": null,
+      "option": null,
+      "key": null,
+      "probabilities": {},
+      "confidence": null,
+      "latency_ms": 210,
+      "usage": {
+        "prompt_tokens": 866,
+        "completion_tokens": 34,
+        "total_tokens": 900,
+        "cost": 0.0005378,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0005378,
+          "upstream_inference_prompt_cost": 0.00051094,
+          "upstream_inference_completions_cost": 2.686e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "cost": 0.0005378,
+      "model": "meta-llama/llama-3.3-70b-instruct",
+      "provider": "Groq",
+      "raw": "{\n  \"op\": \"CLICK\",\n   \"target\": 2,\n   \"text\": null,\n   \"option\": null,\n   \"key\": null\n}",
+      "request_chars": 3535,
+      "fingerprint": "f8419764ef30c83a35f16cac8e426a47f6eb0a637d6e7dabcb74dc3bbbc3c087",
+      "elapsed_ms": 635,
+      "valid": true,
+      "outcome": "executed"
+    },
+    {
+      "op": "TYPE",
+      "target": 15,
+      "text": "Zurich",
+      "option": null,
+      "key": "Enter",
+      "probabilities": {},
+      "confidence": null,
+      "latency_ms": 263,
+      "usage": {
+        "prompt_tokens": 1442,
+        "completion_tokens": 38,
+        "total_tokens": 1480,
+        "cost": 0.0008808,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0008808,
+          "upstream_inference_prompt_cost": 0.00085078,
+          "upstream_inference_completions_cost": 3.002e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "cost": 0.0008808,
+      "model": "meta-llama/llama-3.3-70b-instruct",
+      "provider": "Groq",
+      "raw": "{\n  \"op\": \"TYPE\",\n   \"target\": 15,\n   \"text\": \"Zurich\",\n   \"option\": null,\n   \"key\": \"Enter\"\n}",
+      "request_chars": 5480,
+      "fingerprint": "38adf463dc64022d3190eec42063f7bff61b117a5804daa0c5a33fef88b427cc",
+      "elapsed_ms": 1240,
+      "valid": true,
+      "outcome": "executed"
+    },
+    {
+      "op": "TYPE",
+      "target": 16,
+      "text": "London",
+      "option": null,
+      "key": "Enter",
+      "probabilities": {},
+      "confidence": null,
+      "latency_ms": 363,
+      "usage": {
+        "prompt_tokens": 1466,
+        "completion_tokens": 36,
+        "total_tokens": 1502,
+        "cost": 0.00089338,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00089338,
+          "upstream_inference_prompt_cost": 0.00086494,
+          "upstream_inference_completions_cost": 2.844e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "cost": 0.00089338,
+      "model": "meta-llama/llama-3.3-70b-instruct",
+      "provider": "Groq",
+      "raw": "{\n  \"op\": \"TYPE\",\n   \"target\": 16,\n   \"text\": \"London\",\n   \"option\": null,\n   \"key\": \"Enter\"\n}",
+      "request_chars": 5546,
+      "fingerprint": "384b8fbfa7e531d9af9143d2efc4f975f46dbf3c0e551a5dc9585498acbe2fd5",
+      "elapsed_ms": 1998,
+      "valid": true,
+      "outcome": "executed"
+    },
+    {
+      "op": "TYPE",
+      "target": 18,
+      "text": "2026-10-18",
+      "option": null,
+      "key": "Enter",
+      "probabilities": {},
+      "confidence": null,
+      "latency_ms": 351,
+      "usage": {
+        "prompt_tokens": 1506,
+        "completion_tokens": 41,
+        "total_tokens": 1547,
+        "cost": 0.00092093,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00092093,
+          "upstream_inference_prompt_cost": 0.00088854,
+          "upstream_inference_completions_cost": 3.239e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "cost": 0.00092093,
+      "model": "meta-llama/llama-3.3-70b-instruct",
+      "provider": "Groq",
+      "raw": "{\n  \"op\": \"TYPE\",\n   \"target\": 18,\n   \"text\": \"2026-10-18\",\n   \"option\": null,\n   \"key\": \"Enter\"\n}",
+      "request_chars": 5661,
+      "fingerprint": "2cd72c5bd91a02713f2dcb5fd1f08384bf1afbd33d90d7e9c68848ab1a2387f8",
+      "elapsed_ms": 2841,
+      "valid": true,
+      "outcome": "executed"
+    },
+    {
+      "op": "CLICK",
+      "target": 50,
+      "text": null,
+      "option": null,
+      "key": null,
+      "probabilities": {},
+      "confidence": null,
+      "latency_ms": 294,
+      "usage": {
+        "prompt_tokens": 1820,
+        "completion_tokens": 34,
+        "total_tokens": 1854,
+        "cost": 0.00110066,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00110066,
+          "upstream_inference_prompt_cost": 0.0010738,
+          "upstream_inference_completions_cost": 2.686e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "cost": 0.00110066,
+      "model": "meta-llama/llama-3.3-70b-instruct",
+      "provider": "Groq",
+      "raw": "{\n  \"op\": \"CLICK\",\n   \"target\": 50,\n   \"text\": null,\n   \"option\": null,\n   \"key\": null\n}",
+      "request_chars": 6013,
+      "fingerprint": "1c64b076c4c5d03883e5332543b2080b12ac8630565b812a0806d419ac7ab263",
+      "elapsed_ms": 3486,
+      "valid": true,
+      "outcome": "executed"
+    },
+    {
+      "op": "CLICK",
+      "target": 19,
+      "text": null,
+      "option": null,
+      "key": null,
+      "probabilities": {},
+      "confidence": null,
+      "latency_ms": 332,
+      "usage": {
+        "prompt_tokens": 1569,
+        "completion_tokens": 34,
+        "total_tokens": 1603,
+        "cost": 0.00095257,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00095257,
+          "upstream_inference_prompt_cost": 0.00092571,
+          "upstream_inference_completions_cost": 2.686e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "cost": 0.00095257,
+      "model": "meta-llama/llama-3.3-70b-instruct",
+      "provider": "Groq",
+      "raw": "{\n  \"op\": \"CLICK\",\n   \"target\": 19,\n   \"text\": null,\n   \"option\": null,\n   \"key\": null\n}",
+      "request_chars": 5842,
+      "fingerprint": "7b3dbbfff6186c3ba25cf0883cf22a68d102f423a37304eba091b4fded547cf5",
+      "elapsed_ms": 4351,
+      "valid": true,
+      "outcome": "executed"
+    },
+    {
+      "op": "DONE",
+      "target": null,
+      "text": null,
+      "option": null,
+      "key": null,
+      "probabilities": {},
+      "confidence": null,
+      "latency_ms": 368,
+      "usage": {
+        "prompt_tokens": 2752,
+        "completion_tokens": 33,
+        "total_tokens": 2785,
+        "cost": 0.00164975,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00164975,
+          "upstream_inference_prompt_cost": 0.00162368,
+          "upstream_inference_completions_cost": 2.607e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "cost": 0.00164975,
+      "model": "meta-llama/llama-3.3-70b-instruct",
+      "provider": "Groq",
+      "raw": "{\n  \"op\": \"DONE\",\n   \"target\": null,\n   \"text\": null,\n   \"option\": null,\n   \"key\": null\n}",
+      "request_chars": 10297,
+      "fingerprint": "a3f559800da071ff61f03b510e1d01fddf9cc9cc40b66cb752fc31efbb84f2c0",
+      "elapsed_ms": 6266,
+      "valid": true,
+      "outcome": "executed"
+    }
+  ],
+  "totals": {
+    "requests": 10,
+    "actions": 9,
+    "waits": 0,
+    "stale": 0,
+    "invalid": 0,
+    "model_ms": 3024,
+    "model_median_ms": 293,
+    "input_tokens": 15071,
+    "output_tokens": 353,
+    "cost_usd": 0.009171,
+    "request_chars": 57324,
+    "cdp_calls": 107
+  },
+  "error": null,
+  "verification": {
+    "passed": true,
+    "checks": {
+      "search_page": true,
+      "one_way": true,
+      "origin": true,
+      "destination": true,
+      "date": true,
+      "year": true,
+      "results": true
+    },
+    "visible_flights": [
+      "From 50 euros.This price does not include overhead bin access. Nonstop flight with easyJet. Leaves Zurich Airport at 8:55 PM on Sunday, October 18 and arrives at London Luton Airport at 9:40 PM on Sun",
+      "From 87 euros. Nonstop flight with British Airways. Leaves Zurich Airport at 7:45 PM on Sunday, October 18 and arrives at Heathrow Airport at 8:30 PM on Sunday, October 18. Total duration 1 hr 45 min.",
+      "From 121 euros. Nonstop flight with SWISS. Operated by Helvetic. Leaves Zurich Airport at 4:50 PM on Sunday, October 18 and arrives at London City Airport at 5:25 PM on Sunday, October 18. Total durat",
+      "From 68 euros.This price does not include overhead bin access. Nonstop flight with easyJet. Leaves Zurich Airport at 8:40 PM on Sunday, October 18 and arrives at London Gatwick Airport at 9:20 PM on S",
+      "From 81 euros.This price does not include overhead bin access. Nonstop flight with easyJet. Leaves Zurich Airport at 4:45 PM on Sunday, October 18 and arrives at London Gatwick Airport at 5:35 PM on S"
+    ]
+  },
+  "final_url": "https://www.google.com/travel/flights/search?tfs=CBwQAhooEgoyMDI2LTEwLTE4agwIAxIIL20vMDg5NjZyDAgDEggvbS8wNGpwbEABSAFwAYIBCwj___________8BmAEC&hl=en",
+  "wall_ms": 8971,
+  "setup_ms": 951,
+  "browser": "Chrome/153.0.8010.53"
+}

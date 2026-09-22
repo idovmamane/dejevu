@@ -1,0 +1,140 @@
+{
+  "goal": "Find and open the Wikipedia article about G\u00f6del's incompleteness theorems.",
+  "policy": "google/gemini-2.5-flash-lite",
+  "status": "done",
+  "reason": "model's call",
+  "elapsed_ms": 1532,
+  "url": "https://en.wikipedia.org/wiki/G%C3%B6del%27s_incompleteness_theorems",
+  "title": "G\u00f6del's incompleteness theorems - Wikipedia",
+  "elements": 61,
+  "history": [
+    {
+      "step": 1,
+      "op": "TYPE",
+      "kind": "fill",
+      "label": "Search Wikipedia + Enter",
+      "target": 2,
+      "text": "G\u00f6del's incompleteness theorems",
+      "option": null,
+      "key": "Enter",
+      "confidence": null,
+      "latency_ms": 439,
+      "url": "https://en.wikipedia.org/wiki/G%C3%B6del%27s_incompleteness_theorems",
+      "executed_ms": 468,
+      "page_changed": true,
+      "elapsed_ms": 1115
+    }
+  ],
+  "decisions": [
+    {
+      "op": "TYPE",
+      "target": 2,
+      "text": "G\u00f6del's incompleteness theorems",
+      "option": null,
+      "key": "Enter",
+      "probabilities": {},
+      "confidence": null,
+      "latency_ms": 439,
+      "usage": {
+        "prompt_tokens": 2188,
+        "completion_tokens": 30,
+        "total_tokens": 2218,
+        "cost": 0.0002308,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0002308,
+          "upstream_inference_prompt_cost": 0.0002188,
+          "upstream_inference_completions_cost": 1.2e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "cost": 0.0002308,
+      "model": "google/gemini-2.5-flash-lite",
+      "provider": "Google",
+      "raw": "{\"op\": \"TYPE\", \"target\": 2, \"text\": \"G\u00f6del's incompleteness theorems\", \"key\": \"Enter\"}",
+      "request_chars": 7417,
+      "fingerprint": "0d3ffa650d6487bc131e10485d1e3be1574b44a8d98f4f0a17c1cca9094e4ca3",
+      "elapsed_ms": 439,
+      "valid": true,
+      "outcome": "executed"
+    },
+    {
+      "op": "DONE",
+      "target": null,
+      "text": null,
+      "option": null,
+      "key": null,
+      "probabilities": {},
+      "confidence": null,
+      "latency_ms": 371,
+      "usage": {
+        "prompt_tokens": 2024,
+        "completion_tokens": 6,
+        "total_tokens": 2030,
+        "cost": 0.0002048,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0002048,
+          "upstream_inference_prompt_cost": 0.0002024,
+          "upstream_inference_completions_cost": 2.4e-06
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "cost": 0.0002048,
+      "model": "google/gemini-2.5-flash-lite",
+      "provider": "Google",
+      "raw": "{\"op\": \"DONE\"}",
+      "request_chars": 7788,
+      "fingerprint": "801a9c86a78d549b00b9123b15f2d3dce3945518a3121f99a43d3b669397a198",
+      "elapsed_ms": 1487,
+      "valid": true,
+      "outcome": "executed"
+    }
+  ],
+  "totals": {
+    "requests": 2,
+    "actions": 1,
+    "waits": 0,
+    "stale": 0,
+    "invalid": 0,
+    "model_ms": 810,
+    "model_median_ms": 405,
+    "input_tokens": 4212,
+    "output_tokens": 36,
+    "cost_usd": 0.000436,
+    "request_chars": 15205,
+    "cdp_calls": 26
+  },
+  "error": null,
+  "verification": {
+    "passed": true,
+    "checks": {
+      "article_url": true
+    },
+    "url": "https://en.wikipedia.org/wiki/G%C3%B6del%27s_incompleteness_theorems"
+  },
+  "final_url": "https://en.wikipedia.org/wiki/G%C3%B6del%27s_incompleteness_theorems",
+  "wall_ms": 2452,
+  "setup_ms": 769,
+  "browser": "Chrome/153.0.8010.53"
+}

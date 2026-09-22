@@ -1,0 +1,330 @@
+{
+  "goal": "Find and open the Wikipedia article about G\u00f6del's incompleteness theorems.",
+  "policy": "openai/gpt-4.1-nano",
+  "status": "blocked",
+  "reason": "no visible progress in three actions",
+  "elapsed_ms": 9164,
+  "url": "https://en.wikipedia.org/w/index.php?search=&title=Special%3ASearch",
+  "title": "Search - Wikipedia",
+  "elements": 25,
+  "history": [
+    {
+      "step": 1,
+      "op": "TYPE",
+      "kind": "fill",
+      "label": "Search Wikipedia + Enter",
+      "target": 2,
+      "text": "G\u00f6del's incompleteness theorems",
+      "option": null,
+      "key": "Enter",
+      "confidence": null,
+      "latency_ms": 1353,
+      "url": "https://en.wikipedia.org/wiki/G%C3%B6del%27s_incompleteness_theorems",
+      "executed_ms": 1395,
+      "page_changed": true,
+      "elapsed_ms": 2217
+    },
+    {
+      "step": 2,
+      "op": "CLICK",
+      "kind": "click",
+      "label": "Search",
+      "target": 3,
+      "text": null,
+      "option": null,
+      "key": null,
+      "confidence": null,
+      "latency_ms": 1078,
+      "url": "https://en.wikipedia.org/w/index.php?search=&title=Special%3ASearch",
+      "executed_ms": 3310,
+      "page_changed": true,
+      "elapsed_ms": 4109
+    },
+    {
+      "step": 3,
+      "op": "CLICK",
+      "kind": "click",
+      "label": "Search",
+      "target": 3,
+      "text": null,
+      "option": null,
+      "key": null,
+      "confidence": null,
+      "latency_ms": 868,
+      "url": "https://en.wikipedia.org/w/index.php?search=&title=Special%3ASearch",
+      "executed_ms": 4995,
+      "page_changed": false,
+      "elapsed_ms": 5610
+    },
+    {
+      "step": 4,
+      "op": "CLICK",
+      "kind": "click",
+      "label": "Search",
+      "target": 3,
+      "text": null,
+      "option": null,
+      "key": null,
+      "confidence": null,
+      "latency_ms": 1081,
+      "url": "https://en.wikipedia.org/w/index.php?search=&title=Special%3ASearch",
+      "executed_ms": 6708,
+      "page_changed": false,
+      "elapsed_ms": 7385
+    },
+    {
+      "step": 5,
+      "op": "CLICK",
+      "kind": "click",
+      "label": "Search",
+      "target": 3,
+      "text": null,
+      "option": null,
+      "key": null,
+      "confidence": null,
+      "latency_ms": 850,
+      "url": "https://en.wikipedia.org/w/index.php?search=&title=Special%3ASearch",
+      "executed_ms": 8256,
+      "page_changed": false,
+      "elapsed_ms": 9164
+    }
+  ],
+  "decisions": [
+    {
+      "op": "CLICK",
+      "target": 2,
+      "text": "G\u00f6del's incompleteness theorems",
+      "option": null,
+      "key": "Enter",
+      "probabilities": {},
+      "confidence": null,
+      "latency_ms": 1353,
+      "usage": {
+        "prompt_tokens": 2012,
+        "completion_tokens": 33,
+        "total_tokens": 2045,
+        "cost": 8e-05,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 1792,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 8e-05,
+          "upstream_inference_prompt_cost": 6.68e-05,
+          "upstream_inference_completions_cost": 1.32e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "cost": 8e-05,
+      "model": "openai/gpt-4.1-nano",
+      "provider": "OpenAI",
+      "raw": "{\"op\": \"CLICK\", \"target\": 2, \"text\": \"G\u00f6del's incompleteness theorems\", \"key\": \"Enter\"}",
+      "request_chars": 7417,
+      "fingerprint": "0d3ffa650d6487bc131e10485d1e3be1574b44a8d98f4f0a17c1cca9094e4ca3",
+      "elapsed_ms": 1354,
+      "valid": true,
+      "outcome": "executed"
+    },
+    {
+      "op": "CLICK",
+      "target": 3,
+      "text": null,
+      "option": null,
+      "key": null,
+      "probabilities": {},
+      "confidence": null,
+      "latency_ms": 1078,
+      "usage": {
+        "prompt_tokens": 1908,
+        "completion_tokens": 28,
+        "total_tokens": 1936,
+        "cost": 6.76e-05,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 1792,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 6.76e-05,
+          "upstream_inference_prompt_cost": 5.64e-05,
+          "upstream_inference_completions_cost": 1.12e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "cost": 6.76e-05,
+      "model": "openai/gpt-4.1-nano",
+      "provider": "OpenAI",
+      "raw": "{\"op\": \"CLICK\", \"target\": 3, \"text\": null, \"option\": null, \"key\": null}",
+      "request_chars": 7788,
+      "fingerprint": "801a9c86a78d549b00b9123b15f2d3dce3945518a3121f99a43d3b669397a198",
+      "elapsed_ms": 3295,
+      "valid": true,
+      "outcome": "executed"
+    },
+    {
+      "op": "CLICK",
+      "target": 3,
+      "text": null,
+      "option": null,
+      "key": null,
+      "probabilities": {},
+      "confidence": null,
+      "latency_ms": 868,
+      "usage": {
+        "prompt_tokens": 1146,
+        "completion_tokens": 28,
+        "total_tokens": 1174,
+        "cost": 4.9e-05,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 1024,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 4.9e-05,
+          "upstream_inference_prompt_cost": 3.78e-05,
+          "upstream_inference_completions_cost": 1.12e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "cost": 4.9e-05,
+      "model": "openai/gpt-4.1-nano",
+      "provider": "OpenAI",
+      "raw": "{\"op\": \"CLICK\", \"target\": 3, \"text\": null, \"option\": null, \"key\": null}",
+      "request_chars": 4629,
+      "fingerprint": "52580e3145881581556a6c87acf8a103cfb3165f593bb382f8a6920acb5108e3",
+      "elapsed_ms": 4978,
+      "valid": true,
+      "outcome": "executed"
+    },
+    {
+      "op": "CLICK",
+      "target": 3,
+      "text": null,
+      "option": null,
+      "key": null,
+      "probabilities": {},
+      "confidence": null,
+      "latency_ms": 1081,
+      "usage": {
+        "prompt_tokens": 1157,
+        "completion_tokens": 28,
+        "total_tokens": 1185,
+        "cost": 5.01e-05,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 1024,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 5.01e-05,
+          "upstream_inference_prompt_cost": 3.89e-05,
+          "upstream_inference_completions_cost": 1.12e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "cost": 5.01e-05,
+      "model": "openai/gpt-4.1-nano",
+      "provider": "OpenAI",
+      "raw": "{\"op\": \"CLICK\", \"target\": 3, \"text\": null, \"option\": null, \"key\": null}",
+      "request_chars": 4667,
+      "fingerprint": "52580e3145881581556a6c87acf8a103cfb3165f593bb382f8a6920acb5108e3",
+      "elapsed_ms": 6691,
+      "valid": true,
+      "outcome": "executed"
+    },
+    {
+      "op": "CLICK",
+      "target": 3,
+      "text": null,
+      "option": null,
+      "key": null,
+      "probabilities": {},
+      "confidence": null,
+      "latency_ms": 850,
+      "usage": {
+        "prompt_tokens": 1168,
+        "completion_tokens": 28,
+        "total_tokens": 1196,
+        "cost": 5.12e-05,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 1024,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 5.12e-05,
+          "upstream_inference_prompt_cost": 4e-05,
+          "upstream_inference_completions_cost": 1.12e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "cost": 5.12e-05,
+      "model": "openai/gpt-4.1-nano",
+      "provider": "OpenAI",
+      "raw": "{\"op\": \"CLICK\", \"target\": 3, \"text\": null, \"option\": null, \"key\": null}",
+      "request_chars": 4705,
+      "fingerprint": "52580e3145881581556a6c87acf8a103cfb3165f593bb382f8a6920acb5108e3",
+      "elapsed_ms": 8236,
+      "valid": true,
+      "outcome": "executed"
+    }
+  ],
+  "totals": {
+    "requests": 5,
+    "actions": 5,
+    "waits": 0,
+    "stale": 0,
+    "invalid": 0,
+    "model_ms": 5230,
+    "model_median_ms": 1078,
+    "input_tokens": 7391,
+    "output_tokens": 145,
+    "cost_usd": 0.000298,
+    "request_chars": 29206,
+    "cdp_calls": 70
+  },
+  "error": null,
+  "verification": {
+    "passed": false,
+    "checks": {
+      "article_url": false
+    },
+    "url": "https://en.wikipedia.org/w/index.php?search=&title=Special%3ASearch"
+  },
+  "final_url": "https://en.wikipedia.org/w/index.php?search=&title=Special%3ASearch",
+  "wall_ms": 10337,
+  "setup_ms": 1028,
+  "browser": "Chrome/153.0.8010.53"
+}
