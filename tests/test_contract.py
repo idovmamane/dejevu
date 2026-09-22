@@ -5,12 +5,12 @@ from unittest.mock import Mock
 
 import pytest
 
-from instinct.agent import Loop
-from instinct.browser import StalePage, fingerprint
-from instinct.policy import LLMPolicy, normalize, parse_answer, target_probabilities
-from instinct.state import available_ops, render, validate
-from instinct.tasks import FLIGHT_DATE, verify_flights
-from instinct.types import Decision, PolicyError
+from jevless.agent import Loop
+from jevless.browser import StalePage, fingerprint
+from jevless.policy import LLMPolicy, normalize, parse_answer, target_probabilities
+from jevless.state import available_ops, render, validate
+from jevless.tasks import FLIGHT_DATE, verify_flights
+from jevless.types import Decision, PolicyError
 
 
 def page(**overrides):
@@ -166,7 +166,7 @@ def test_llm_policy_sends_one_request_and_reads_choice_and_text_together(monkeyp
             "usage": {"prompt_tokens": 500, "completion_tokens": 12, "cost": 0.0001},
         }
 
-    monkeypatch.setattr("instinct.policy.post_json", fake_post)
+    monkeypatch.setattr("jevless.policy.post_json", fake_post)
     policy = LLMPolicy(model="m", api_key="k", provider="P", logprobs=True)
     d = policy.decide("Find flights from Zurich", page(), [])
     assert len(calls) == 1
@@ -177,7 +177,7 @@ def test_llm_policy_sends_one_request_and_reads_choice_and_text_together(monkeyp
 
 
 def test_empty_answer_is_a_policy_error(monkeypatch):
-    monkeypatch.setattr("instinct.policy.post_json", lambda *_: {"choices": [{"message": {"content": "", "reasoning": "hmm"}}]})
+    monkeypatch.setattr("jevless.policy.post_json", lambda *_: {"choices": [{"message": {"content": "", "reasoning": "hmm"}}]})
     with pytest.raises(PolicyError, match="reasoning"):
         LLMPolicy(model="m", api_key="k").decide("goal", page(), [])
 
@@ -407,7 +407,7 @@ def test_unreadable_answer_is_retried_with_feedback_not_fatal():
         def decide(self, goal, page, history, note=None):
             self.notes.append(note)
             if len(self.notes) == 1:
-                from instinct.policy import AnswerError
+                from jevless.policy import AnswerError
 
                 raise AnswerError("answer is not valid JSON; no action executed")
             return Decision(op="DONE")

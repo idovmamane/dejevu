@@ -5,7 +5,7 @@ uv run python examples/flights.py [--headed] [--json artifacts/flights.json]
 
 import sys
 
-from instinct.cli import main
+from jevless.cli import main
 
 if __name__ == "__main__":
     main(["--task", "flights", *sys.argv[1:]])
