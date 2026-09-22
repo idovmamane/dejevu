@@ -1,0 +1,140 @@
+{
+  "goal": "Find and open the Wikipedia article about the person who invented the World Wide Web.",
+  "policy": "meta-llama/llama-3.3-70b-instruct@Groq",
+  "status": "done",
+  "reason": "model's call",
+  "elapsed_ms": 1335,
+  "url": "https://en.wikipedia.org/wiki/Tim_Berners-Lee",
+  "title": "Tim Berners-Lee - Wikipedia",
+  "elements": 95,
+  "history": [
+    {
+      "step": 1,
+      "op": "TYPE",
+      "kind": "fill",
+      "label": "Search Wikipedia + Enter",
+      "target": 2,
+      "text": "Tim Berners-Lee",
+      "option": null,
+      "key": "Enter",
+      "confidence": null,
+      "latency_ms": 395,
+      "url": "https://en.wikipedia.org/wiki/Tim_Berners-Lee",
+      "executed_ms": 421,
+      "page_changed": true,
+      "elapsed_ms": 1025
+    }
+  ],
+  "decisions": [
+    {
+      "op": "TYPE",
+      "target": 2,
+      "text": "Tim Berners-Lee",
+      "option": null,
+      "key": "Enter",
+      "probabilities": {},
+      "confidence": null,
+      "latency_ms": 395,
+      "usage": {
+        "prompt_tokens": 2073,
+        "completion_tokens": 40,
+        "total_tokens": 2113,
+        "cost": 0.00125467,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00125467,
+          "upstream_inference_prompt_cost": 0.00122307,
+          "upstream_inference_completions_cost": 3.16e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "cost": 0.00125467,
+      "model": "meta-llama/llama-3.3-70b-instruct",
+      "provider": "Groq",
+      "raw": "{\n  \"op\": \"TYPE\",\n   \"target\": 2,\n   \"text\": \"Tim Berners-Lee\",\n   \"option\": null,\n   \"key\": \"Enter\"\n}",
+      "request_chars": 7428,
+      "fingerprint": "94e04a91d3a531350b173780a40d5bbd914f082dfd27485a20ea2708202bb2fc",
+      "elapsed_ms": 396,
+      "valid": true,
+      "outcome": "executed"
+    },
+    {
+      "op": "DONE",
+      "target": null,
+      "text": null,
+      "option": null,
+      "key": null,
+      "probabilities": {},
+      "confidence": null,
+      "latency_ms": 275,
+      "usage": {
+        "prompt_tokens": 2280,
+        "completion_tokens": 33,
+        "total_tokens": 2313,
+        "cost": 0.00137127,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00137127,
+          "upstream_inference_prompt_cost": 0.0013452,
+          "upstream_inference_completions_cost": 2.607e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "cost": 0.00137127,
+      "model": "meta-llama/llama-3.3-70b-instruct",
+      "provider": "Groq",
+      "raw": "{\n  \"op\": \"DONE\",\n   \"target\": null,\n   \"text\": null,\n   \"option\": null,\n   \"key\": null\n}",
+      "request_chars": 7992,
+      "fingerprint": "800f93b81d2b7950b58a9addf0bfb07d5fdd41320d36c0510c61e67c8a99450b",
+      "elapsed_ms": 1300,
+      "valid": true,
+      "outcome": "executed"
+    }
+  ],
+  "totals": {
+    "requests": 2,
+    "actions": 1,
+    "waits": 0,
+    "stale": 0,
+    "invalid": 0,
+    "model_ms": 670,
+    "model_median_ms": 335,
+    "input_tokens": 4353,
+    "output_tokens": 73,
+    "cost_usd": 0.002626,
+    "request_chars": 15420,
+    "cdp_calls": 26
+  },
+  "error": null,
+  "verification": {
+    "passed": true,
+    "checks": {
+      "article_url": true
+    },
+    "url": "https://en.wikipedia.org/wiki/Tim_Berners-Lee"
+  },
+  "final_url": "https://en.wikipedia.org/wiki/Tim_Berners-Lee",
+  "wall_ms": 2344,
+  "setup_ms": 857,
+  "browser": "Chrome/153.0.8010.53"
+}

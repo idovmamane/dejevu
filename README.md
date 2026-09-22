@@ -59,9 +59,17 @@ Wikipedia: from the main page, find and open the article about Godel's incomplet
 | dejevu, deepseek-v3.1 | 2 of 2 | 3.83 s | 2 | 1 | 3,999 | $0.0006 |
 | dejevu, gpt-4.1-nano | 0 of 2 | loops | | | | $0.0003 |
 
+Hold out tasks, added after the harness was tuned and never used to adjust it. Three models, two runs each, all verified. Median time of the verified runs.
+
+| Task | llama-3.3-70b on Groq | gpt-oss-120b on Cerebras | gemini-2.5-flash |
+|---|---|---|---|
+| Selenium test form: text, textarea, native dropdown, checkbox, submit | 2.57 s, 6 calls | 3.37 s, 6 calls | 4.57 s, 6 calls |
+| Python docs: find and open the asyncio.gather page | 2.11 s, 3 calls | 3.64 s, 4 calls | 2.49 s, 3 calls |
+| Wikipedia: open the article about the inventor of the World Wide Web | 1.33 s, 2 calls | 1.27 s, 2 calls | 4.23 s, 4 calls |
+
 What this says:
 
-- The harness is model agnostic. Seven of eight models finish the Wikipedia task in one typed action.
+- The harness is model agnostic. Seven of eight models finish the Wikipedia task in one typed action, and three different models pass all three hold out tasks, 18 runs of 18.
 - The nine step Flights form separates models. Llama 3.3 70b on Groq is the one that passes every time. gpt-oss-120b passes some of the time. Smaller and cheaper models tend to declare victory inside the calendar.
 - Jev is still the cheapest per token by far. dejevu sends 5.6x fewer tokens, but the fastest open model route today, Groq at $0.59 per million, makes the Flights run about 2.5x Jev's price. Break even is a provider at $0.24 per million for the same model. The same llama-3.3-70b on DeepInfra at $0.10 per million passed 2 of 2 at $0.0020 per run, cheaper than Jev, but took 37 s per run the day we measured. Speed and price are a provider choice, the token count is the design.
 - Zero wasted calls. jev-ultrafast throws away 4 to 6 of its 17 calls per run because the page changed under them. dejevu waits for the page to settle before it asks.
@@ -170,6 +178,6 @@ The repo is small on purpose, about two thousand lines, and every claim in it ha
 
 ## Limits
 
-The DOM reader covers common HTML and ARIA controls, not the full accessible name algorithm. Closed shadow roots, cross origin frames, canvas, uploads and new tabs are not handled. Guards accept unrelated changes elsewhere on the page by design. A valid action can still be the wrong action, and the model decides: llama-3.3-70b types dates into date fields and gets away with it, smaller models stop early. Two websites and a local fixture do not establish general reliability. Three runs per cell is evidence of a difference, not a benchmark.
+The DOM reader covers common HTML and ARIA controls, not the full accessible name algorithm. Closed shadow roots, cross origin frames, canvas, uploads and new tabs are not handled. Guards accept unrelated changes elsewhere on the page by design. The harness was tuned while watching llama-3.3-70b runs on the two reference tasks, so other models were measured, not tuned for. A valid action can still be the wrong action, and the model decides: llama-3.3-70b types dates into date fields and gets away with it, smaller models stop early. Two websites and a local fixture do not establish general reliability. Three runs per cell is evidence of a difference, not a benchmark.
 
 MIT license.

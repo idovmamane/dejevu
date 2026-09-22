@@ -4,6 +4,8 @@
 
 First release.
 
+- Hold out tasks (Selenium test form, Python docs, Wikipedia inventor question) added after tuning: 18 of 18 runs verified across llama-3.3-70b, gpt-oss-120b and gemini-2.5-flash. Traces in `bench/holdout`.
+
 - One model call per step returns the operation, the element and the text together. Any OpenAI compatible endpoint. Optional TypeSafe Jev backend for head to head runs.
 - Settle detection after every action: DOM quiet, requests started by the action finished, closing modal transitions ended. No fixed waits.
 - Page reader across open shadow roots and same origin frames. Just off screen elements listed and scrolled into view when chosen.

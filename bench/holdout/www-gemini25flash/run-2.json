@@ -1,0 +1,256 @@
+{
+  "goal": "Find and open the Wikipedia article about the person who invented the World Wide Web.",
+  "policy": "google/gemini-2.5-flash",
+  "status": "done",
+  "reason": "model's call",
+  "elapsed_ms": 4134,
+  "url": "https://en.wikipedia.org/wiki/Tim_Berners-Lee",
+  "title": "Tim Berners-Lee - Wikipedia",
+  "elements": 95,
+  "history": [
+    {
+      "step": 1,
+      "op": "TYPE",
+      "kind": "fill",
+      "label": "Search Wikipedia + Enter",
+      "target": 2,
+      "text": "person who invented the World Wide Web",
+      "option": null,
+      "key": "Enter",
+      "confidence": null,
+      "latency_ms": 415,
+      "url": "https://en.wikipedia.org/w/index.php?search=person+who+invented+the+World+Wide+Web&title=Special:Search&ns0=1",
+      "executed_ms": 451,
+      "page_changed": true,
+      "elapsed_ms": 1648
+    },
+    {
+      "step": 2,
+      "op": "CLICK",
+      "kind": "click",
+      "label": "World Wide Web",
+      "target": 22,
+      "text": null,
+      "option": null,
+      "key": null,
+      "confidence": null,
+      "latency_ms": 444,
+      "url": "https://en.wikipedia.org/wiki/World_Wide_Web",
+      "executed_ms": 2109,
+      "page_changed": true,
+      "elapsed_ms": 2624
+    },
+    {
+      "step": 3,
+      "op": "CLICK",
+      "kind": "click",
+      "label": "Tim Berners-Lee",
+      "target": 37,
+      "text": null,
+      "option": null,
+      "key": null,
+      "confidence": null,
+      "latency_ms": 343,
+      "url": "https://en.wikipedia.org/wiki/Tim_Berners-Lee",
+      "executed_ms": 2980,
+      "page_changed": true,
+      "elapsed_ms": 3430
+    }
+  ],
+  "decisions": [
+    {
+      "op": "TYPE",
+      "target": 2,
+      "text": "person who invented the World Wide Web",
+      "option": null,
+      "key": "Enter",
+      "probabilities": {},
+      "confidence": null,
+      "latency_ms": 415,
+      "usage": {
+        "prompt_tokens": 2189,
+        "completion_tokens": 30,
+        "total_tokens": 2219,
+        "cost": 0.0007317,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0007317,
+          "upstream_inference_prompt_cost": 0.0006567,
+          "upstream_inference_completions_cost": 7.5e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "cost": 0.0007317,
+      "model": "google/gemini-2.5-flash",
+      "provider": "Google",
+      "raw": "{\"op\": \"TYPE\", \"target\": 2, \"text\": \"person who invented the World Wide Web\", \"key\": \"Enter\"}",
+      "request_chars": 7428,
+      "fingerprint": "94e04a91d3a531350b173780a40d5bbd914f082dfd27485a20ea2708202bb2fc",
+      "elapsed_ms": 415,
+      "valid": true,
+      "outcome": "executed"
+    },
+    {
+      "op": "CLICK",
+      "target": 22,
+      "text": null,
+      "option": null,
+      "key": null,
+      "probabilities": {},
+      "confidence": null,
+      "latency_ms": 444,
+      "usage": {
+        "prompt_tokens": 1809,
+        "completion_tokens": 13,
+        "total_tokens": 1822,
+        "cost": 0.0005752,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0005752,
+          "upstream_inference_prompt_cost": 0.0005427,
+          "upstream_inference_completions_cost": 3.25e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "cost": 0.0005752,
+      "model": "google/gemini-2.5-flash",
+      "provider": "Google",
+      "raw": "{\"op\": \"CLICK\", \"target\": 22}",
+      "request_chars": 6504,
+      "fingerprint": "640340fd0a3873f15cc513450998460d376c3f72175433d531476f548b74bef1",
+      "elapsed_ms": 2092,
+      "valid": true,
+      "outcome": "executed"
+    },
+    {
+      "op": "CLICK",
+      "target": 37,
+      "text": null,
+      "option": null,
+      "key": null,
+      "probabilities": {},
+      "confidence": null,
+      "latency_ms": 343,
+      "usage": {
+        "prompt_tokens": 2221,
+        "completion_tokens": 7,
+        "total_tokens": 2228,
+        "cost": 0.0006838,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0006838,
+          "upstream_inference_prompt_cost": 0.0006663,
+          "upstream_inference_completions_cost": 1.75e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "cost": 0.0006838,
+      "model": "google/gemini-2.5-flash",
+      "provider": "Google",
+      "raw": "{\"CLICK\": 37}",
+      "request_chars": 7353,
+      "fingerprint": "b54d242a03181cdb961deed4bf2493cf5bac3a2d05d8b0a0ddd635112af2b532",
+      "elapsed_ms": 2967,
+      "valid": true,
+      "outcome": "executed"
+    },
+    {
+      "op": "DONE",
+      "target": null,
+      "text": null,
+      "option": null,
+      "key": null,
+      "probabilities": {},
+      "confidence": null,
+      "latency_ms": 675,
+      "usage": {
+        "prompt_tokens": 2497,
+        "completion_tokens": 5,
+        "total_tokens": 2502,
+        "cost": 0.0007616,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0007616,
+          "upstream_inference_prompt_cost": 0.0007491,
+          "upstream_inference_completions_cost": 1.25e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "cost": 0.0007616,
+      "model": "google/gemini-2.5-flash",
+      "provider": "Google",
+      "raw": "{\"DONE\": true}",
+      "request_chars": 8098,
+      "fingerprint": "800f93b81d2b7950b58a9addf0bfb07d5fdd41320d36c0510c61e67c8a99450b",
+      "elapsed_ms": 4106,
+      "valid": true,
+      "outcome": "executed"
+    }
+  ],
+  "totals": {
+    "requests": 4,
+    "actions": 3,
+    "waits": 0,
+    "stale": 0,
+    "invalid": 0,
+    "model_ms": 1877,
+    "model_median_ms": 430,
+    "input_tokens": 8716,
+    "output_tokens": 55,
+    "cost_usd": 0.002752,
+    "request_chars": 29383,
+    "cdp_calls": 46
+  },
+  "error": null,
+  "verification": {
+    "passed": true,
+    "checks": {
+      "article_url": true
+    },
+    "url": "https://en.wikipedia.org/wiki/Tim_Berners-Lee"
+  },
+  "final_url": "https://en.wikipedia.org/wiki/Tim_Berners-Lee",
+  "wall_ms": 5177,
+  "setup_ms": 891,
+  "browser": "Chrome/153.0.8010.53"
+}

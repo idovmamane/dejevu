@@ -448,3 +448,16 @@ def test_cli_without_arguments_shows_help_and_exits(capsys):
     with pytest.raises(SystemExit):
         cli.main([])
     assert "examples:" in capsys.readouterr().out
+
+
+def test_holdout_checks_are_strict():
+    from dejevu.tasks import verify_pydocs, verify_webform, verify_www
+
+    good = "https://www.selenium.dev/selenium/web/submitted-form.html?my-text=dejevu&my-password=&my-textarea=hello+from+dejevu&my-select=2&my-check=on&my-check=on&my-radio=on"
+    assert verify_webform({"url": good})["passed"]
+    assert not verify_webform({"url": good.replace("my-select=2", "my-select=3")})["passed"]
+    assert not verify_webform({"url": good.replace("&my-check=on&my-check=on", "&my-check=on")})["passed"]
+    assert verify_pydocs({"url": "https://docs.python.org/3/library/asyncio-task.html#asyncio.gather"})["passed"]
+    assert not verify_pydocs({"url": "https://docs.python.org/3/search.html?q=asyncio.gather"})["passed"]
+    assert verify_www({"url": "https://en.wikipedia.org/wiki/Tim_Berners-Lee#Early_life"})["passed"]
+    assert not verify_www({"url": "https://en.wikipedia.org/wiki/World_Wide_Web"})["passed"]

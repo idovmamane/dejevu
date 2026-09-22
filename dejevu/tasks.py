@@ -51,6 +51,30 @@ def verify_wikipedia(page):
     return {"passed": ok, "checks": {"article_url": ok}, "url": page["url"]}
 
 
+# Hold out tasks: added after the harness was tuned on Flights and Wikipedia, never used to adjust it.
+def verify_webform(page):
+    parsed = urlparse(page["url"])
+    q = parse_qs(parsed.query)
+    checks = {
+        "submitted": parsed.path.endswith("/submitted-form.html"),
+        "text": q.get("my-text") == ["dejevu"],
+        "textarea": q.get("my-textarea") == ["hello from dejevu"],
+        "dropdown": q.get("my-select") == ["2"],
+        "both_checkboxes": len(q.get("my-check", [])) == 2,
+    }
+    return {"passed": all(checks.values()), "checks": checks, "query": q}
+
+
+def verify_pydocs(page):
+    ok = "docs.python.org" in page["url"] and "asyncio-task.html" in page["url"]
+    return {"passed": ok, "checks": {"asyncio_task_page": ok}, "url": page["url"]}
+
+
+def verify_www(page):
+    ok = page["url"].split("#")[0] == "https://en.wikipedia.org/wiki/Tim_Berners-Lee"
+    return {"passed": ok, "checks": {"article_url": ok}, "url": page["url"]}
+
+
 TASKS = {
     "flights": Task(
         name="flights",
@@ -68,5 +92,26 @@ TASKS = {
         url="https://en.wikipedia.org/wiki/Main_Page",
         goal="Find and open the Wikipedia article about Gödel's incompleteness theorems.",
         verify=verify_wikipedia,
+    ),
+    "webform": Task(
+        name="webform",
+        url="https://www.selenium.dev/selenium/web/web-form.html",
+        goal=(
+            "Fill the text input with dejevu, write hello from dejevu in the textarea, choose Two in the select dropdown, "
+            "tick the checkbox labelled Default checkbox, then submit the form. Stop when the page says the form was submitted."
+        ),
+        verify=verify_webform,
+    ),
+    "pydocs": Task(
+        name="pydocs",
+        url="https://docs.python.org/3/",
+        goal="Find the documentation for asyncio.gather and open it.",
+        verify=verify_pydocs,
+    ),
+    "www": Task(
+        name="www",
+        url="https://en.wikipedia.org/wiki/Main_Page",
+        goal="Find and open the Wikipedia article about the person who invented the World Wide Web.",
+        verify=verify_www,
     ),
 }

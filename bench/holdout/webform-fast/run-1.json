@@ -1,0 +1,402 @@
+{
+  "goal": "Fill the text input with dejevu, write hello from dejevu in the textarea, choose Two in the select dropdown, tick the checkbox labelled Default checkbox, then submit the form. Stop when the page says the form was submitted.",
+  "policy": "meta-llama/llama-3.3-70b-instruct@Groq",
+  "status": "done",
+  "reason": "model's call",
+  "elapsed_ms": 2696,
+  "url": "https://www.selenium.dev/selenium/web/submitted-form.html?my-text=dejevu&my-password=&my-textarea=hello+from+dejevu&my-readonly=Readonly+input&my-select=2&my-datalist=&my-file=&my-check=on&my-check=on&my-radio=on&my-colors=%23563d7c&my-date=&my-range=5&my-hidden=",
+  "title": "Web form - target page",
+  "elements": 0,
+  "history": [
+    {
+      "step": 1,
+      "op": "TYPE",
+      "kind": "fill",
+      "label": "Text input",
+      "target": 1,
+      "text": "dejevu",
+      "option": null,
+      "key": null,
+      "confidence": null,
+      "latency_ms": 417,
+      "url": "https://www.selenium.dev/selenium/web/web-form.html",
+      "executed_ms": 474,
+      "page_changed": true,
+      "elapsed_ms": 665
+    },
+    {
+      "step": 2,
+      "op": "TYPE",
+      "kind": "fill",
+      "label": "Textarea",
+      "target": 2,
+      "text": "hello from dejevu",
+      "option": null,
+      "key": null,
+      "confidence": null,
+      "latency_ms": 222,
+      "url": "https://www.selenium.dev/selenium/web/web-form.html",
+      "executed_ms": 907,
+      "page_changed": true,
+      "elapsed_ms": 1101
+    },
+    {
+      "step": 3,
+      "op": "SELECT",
+      "kind": "select",
+      "label": "Dropdown (select)",
+      "target": 5,
+      "text": null,
+      "option": 3,
+      "key": null,
+      "confidence": null,
+      "latency_ms": 268,
+      "url": "https://www.selenium.dev/selenium/web/web-form.html",
+      "executed_ms": 1372,
+      "page_changed": true,
+      "elapsed_ms": 1505
+    },
+    {
+      "step": 4,
+      "op": "CLICK",
+      "kind": "click",
+      "label": "Default checkbox",
+      "target": 8,
+      "text": null,
+      "option": null,
+      "key": null,
+      "confidence": null,
+      "latency_ms": 218,
+      "url": "https://www.selenium.dev/selenium/web/web-form.html",
+      "executed_ms": 1729,
+      "page_changed": true,
+      "elapsed_ms": 1859
+    },
+    {
+      "step": 5,
+      "op": "CLICK",
+      "kind": "click",
+      "label": "Submit",
+      "target": 11,
+      "text": null,
+      "option": null,
+      "key": null,
+      "confidence": null,
+      "latency_ms": 290,
+      "url": "https://www.selenium.dev/selenium/web/submitted-form.html?my-text=dejevu&my-password=&my-textarea=hello+from+dejevu&my-readonly=Readonly+input&my-select=2&my-datalist=&my-file=&my-check=on&my-check=on&my-radio=on&my-colors=%23563d7c&my-date=&my-range=5&my-hidden=",
+      "executed_ms": 2157,
+      "page_changed": true,
+      "elapsed_ms": 2482
+    }
+  ],
+  "decisions": [
+    {
+      "op": "TYPE",
+      "target": 1,
+      "text": "dejevu",
+      "option": null,
+      "key": null,
+      "probabilities": {},
+      "confidence": null,
+      "latency_ms": 417,
+      "usage": {
+        "prompt_tokens": 1036,
+        "completion_tokens": 37,
+        "total_tokens": 1073,
+        "cost": 0.00064047,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00064047,
+          "upstream_inference_prompt_cost": 0.00061124,
+          "upstream_inference_completions_cost": 2.923e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "cost": 0.00064047,
+      "model": "meta-llama/llama-3.3-70b-instruct",
+      "provider": "Groq",
+      "raw": "{\n  \"op\": \"TYPE\",\n   \"target\": 1,\n   \"text\": \"dejevu\",\n   \"option\": null,\n   \"key\": null\n}",
+      "request_chars": 4128,
+      "fingerprint": "ae737a2f0342e4b31efb35623a41fc9ac45f3eb9afbd34ab29b9d8ccad50535b",
+      "elapsed_ms": 418,
+      "valid": true,
+      "outcome": "executed"
+    },
+    {
+      "op": "TYPE",
+      "target": 2,
+      "text": "hello from dejevu",
+      "option": null,
+      "key": null,
+      "probabilities": {},
+      "confidence": null,
+      "latency_ms": 222,
+      "usage": {
+        "prompt_tokens": 1063,
+        "completion_tokens": 39,
+        "total_tokens": 1102,
+        "cost": 0.00065798,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00065798,
+          "upstream_inference_prompt_cost": 0.00062717,
+          "upstream_inference_completions_cost": 3.081e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "cost": 0.00065798,
+      "model": "meta-llama/llama-3.3-70b-instruct",
+      "provider": "Groq",
+      "raw": "{\n  \"op\": \"TYPE\",\n   \"target\": 2,\n   \"text\": \"hello from dejevu\",\n   \"option\": null,\n   \"key\": null\n}",
+      "request_chars": 4206,
+      "fingerprint": "66de1910c97b41482949bd227f3f5cd0530d26ed1a924bc4022994c6e94aeb21",
+      "elapsed_ms": 888,
+      "valid": true,
+      "outcome": "executed"
+    },
+    {
+      "op": "SELECT",
+      "target": 5,
+      "text": null,
+      "option": 3,
+      "key": null,
+      "probabilities": {},
+      "confidence": null,
+      "latency_ms": 268,
+      "usage": {
+        "prompt_tokens": 1087,
+        "completion_tokens": 35,
+        "total_tokens": 1122,
+        "cost": 0.00066898,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00066898,
+          "upstream_inference_prompt_cost": 0.00064133,
+          "upstream_inference_completions_cost": 2.765e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "cost": 0.00066898,
+      "model": "meta-llama/llama-3.3-70b-instruct",
+      "provider": "Groq",
+      "raw": "{\n  \"op\": \"SELECT\",\n   \"target\": 5,\n   \"text\": null,\n   \"option\": 3,\n   \"key\": null\n}",
+      "request_chars": 4282,
+      "fingerprint": "150b0c0d58ff6b3ebd8c9707779d10196b2a51c3f26366fde973be20a6081ca7",
+      "elapsed_ms": 1370,
+      "valid": true,
+      "outcome": "executed"
+    },
+    {
+      "op": "CLICK",
+      "target": 8,
+      "text": null,
+      "option": null,
+      "key": null,
+      "probabilities": {},
+      "confidence": null,
+      "latency_ms": 218,
+      "usage": {
+        "prompt_tokens": 1099,
+        "completion_tokens": 34,
+        "total_tokens": 1133,
+        "cost": 0.00067527,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00067527,
+          "upstream_inference_prompt_cost": 0.00064841,
+          "upstream_inference_completions_cost": 2.686e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "cost": 0.00067527,
+      "model": "meta-llama/llama-3.3-70b-instruct",
+      "provider": "Groq",
+      "raw": "{\n  \"op\": \"CLICK\",\n   \"target\": 8,\n   \"text\": null,\n   \"option\": null,\n   \"key\": null\n}",
+      "request_chars": 4318,
+      "fingerprint": "a6a2317af72f6a236065f9ba2566518db066075f65761fe9f1abb98391a992e4",
+      "elapsed_ms": 1722,
+      "valid": true,
+      "outcome": "executed"
+    },
+    {
+      "op": "CLICK",
+      "target": 11,
+      "text": null,
+      "option": null,
+      "key": null,
+      "probabilities": {},
+      "confidence": null,
+      "latency_ms": 290,
+      "usage": {
+        "prompt_tokens": 1109,
+        "completion_tokens": 34,
+        "total_tokens": 1143,
+        "cost": 0.00068117,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00068117,
+          "upstream_inference_prompt_cost": 0.00065431,
+          "upstream_inference_completions_cost": 2.686e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "cost": 0.00068117,
+      "model": "meta-llama/llama-3.3-70b-instruct",
+      "provider": "Groq",
+      "raw": "{\n  \"op\": \"CLICK\",\n   \"target\": 11,\n   \"text\": null,\n   \"option\": null,\n   \"key\": null\n}",
+      "request_chars": 4357,
+      "fingerprint": "468ce462fb9419f61b144b77df971402e7df686ad94a02a935d91ae422eca378",
+      "elapsed_ms": 2149,
+      "valid": true,
+      "outcome": "executed"
+    },
+    {
+      "op": "DONE",
+      "target": null,
+      "text": null,
+      "option": null,
+      "key": null,
+      "probabilities": {},
+      "confidence": null,
+      "latency_ms": 212,
+      "usage": {
+        "prompt_tokens": 899,
+        "completion_tokens": 33,
+        "total_tokens": 932,
+        "cost": 0.00055648,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00055648,
+          "upstream_inference_prompt_cost": 0.00053041,
+          "upstream_inference_completions_cost": 2.607e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "cost": 0.00055648,
+      "model": "meta-llama/llama-3.3-70b-instruct",
+      "provider": "Groq",
+      "raw": "{\n  \"op\": \"DONE\",\n   \"target\": null,\n   \"text\": null,\n   \"option\": null,\n   \"key\": null\n}",
+      "request_chars": 3656,
+      "fingerprint": "cb9fe6878dfd06f1b19fdbe5cc5aa2a23dc001dc91aa90662123ef97159354c9",
+      "elapsed_ms": 2695,
+      "valid": true,
+      "outcome": "executed"
+    }
+  ],
+  "totals": {
+    "requests": 6,
+    "actions": 5,
+    "waits": 0,
+    "stale": 0,
+    "invalid": 0,
+    "model_ms": 1627,
+    "model_median_ms": 245,
+    "input_tokens": 6293,
+    "output_tokens": 212,
+    "cost_usd": 0.00388,
+    "request_chars": 24947,
+    "cdp_calls": 51
+  },
+  "error": null,
+  "verification": {
+    "passed": true,
+    "checks": {
+      "submitted": true,
+      "text": true,
+      "textarea": true,
+      "dropdown": true,
+      "both_checkboxes": true
+    },
+    "query": {
+      "my-text": [
+        "dejevu"
+      ],
+      "my-textarea": [
+        "hello from dejevu"
+      ],
+      "my-readonly": [
+        "Readonly input"
+      ],
+      "my-select": [
+        "2"
+      ],
+      "my-check": [
+        "on",
+        "on"
+      ],
+      "my-radio": [
+        "on"
+      ],
+      "my-colors": [
+        "#563d7c"
+      ],
+      "my-range": [
+        "5"
+      ]
+    }
+  },
+  "final_url": "https://www.selenium.dev/selenium/web/submitted-form.html?my-text=dejevu&my-password=&my-textarea=hello+from+dejevu&my-readonly=Readonly+input&my-select=2&my-datalist=&my-file=&my-check=on&my-check=on&my-radio=on&my-colors=%23563d7c&my-date=&my-range=5&my-hidden=",
+  "wall_ms": 4785,
+  "setup_ms": 1956,
+  "browser": "Chrome/153.0.8010.53"
+}

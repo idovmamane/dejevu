@@ -1,0 +1,402 @@
+{
+  "goal": "Fill the text input with dejevu, write hello from dejevu in the textarea, choose Two in the select dropdown, tick the checkbox labelled Default checkbox, then submit the form. Stop when the page says the form was submitted.",
+  "policy": "openai/gpt-oss-120b@Cerebras",
+  "status": "done",
+  "reason": "model's call",
+  "elapsed_ms": 3877,
+  "url": "https://www.selenium.dev/selenium/web/submitted-form.html?my-text=dejevu&my-password=&my-textarea=hello+from+dejevu&my-readonly=Readonly+input&my-select=2&my-datalist=&my-file=&my-check=on&my-check=on&my-radio=on&my-colors=%23563d7c&my-date=&my-range=5&my-hidden=",
+  "title": "Web form - target page",
+  "elements": 0,
+  "history": [
+    {
+      "step": 1,
+      "op": "TYPE",
+      "kind": "fill",
+      "label": "Text input",
+      "target": 1,
+      "text": "dejevu",
+      "option": null,
+      "key": null,
+      "confidence": null,
+      "latency_ms": 379,
+      "url": "https://www.selenium.dev/selenium/web/web-form.html",
+      "executed_ms": 389,
+      "page_changed": true,
+      "elapsed_ms": 586
+    },
+    {
+      "step": 2,
+      "op": "TYPE",
+      "kind": "fill",
+      "label": "Textarea",
+      "target": 2,
+      "text": "hello from dejevu",
+      "option": null,
+      "key": null,
+      "confidence": null,
+      "latency_ms": 433,
+      "url": "https://www.selenium.dev/selenium/web/web-form.html",
+      "executed_ms": 1034,
+      "page_changed": true,
+      "elapsed_ms": 1223
+    },
+    {
+      "step": 3,
+      "op": "CLICK",
+      "kind": "click",
+      "label": "Default checkbox",
+      "target": 8,
+      "text": null,
+      "option": null,
+      "key": null,
+      "confidence": null,
+      "latency_ms": 278,
+      "url": "https://www.selenium.dev/selenium/web/web-form.html",
+      "executed_ms": 1511,
+      "page_changed": true,
+      "elapsed_ms": 1643
+    },
+    {
+      "step": 4,
+      "op": "SELECT",
+      "kind": "select",
+      "label": "Dropdown (select)",
+      "target": 5,
+      "text": null,
+      "option": 3,
+      "key": null,
+      "confidence": null,
+      "latency_ms": 314,
+      "url": "https://www.selenium.dev/selenium/web/web-form.html",
+      "executed_ms": 1959,
+      "page_changed": true,
+      "elapsed_ms": 2091
+    },
+    {
+      "step": 5,
+      "op": "CLICK",
+      "kind": "click",
+      "label": "Submit",
+      "target": 11,
+      "text": null,
+      "option": null,
+      "key": null,
+      "confidence": null,
+      "latency_ms": 1348,
+      "url": "https://www.selenium.dev/selenium/web/submitted-form.html?my-text=dejevu&my-password=&my-textarea=hello+from+dejevu&my-readonly=Readonly+input&my-select=2&my-datalist=&my-file=&my-check=on&my-check=on&my-radio=on&my-colors=%23563d7c&my-date=&my-range=5&my-hidden=",
+      "executed_ms": 3449,
+      "page_changed": true,
+      "elapsed_ms": 3632
+    }
+  ],
+  "decisions": [
+    {
+      "op": "TYPE",
+      "target": 1,
+      "text": "dejevu",
+      "option": null,
+      "key": null,
+      "probabilities": {},
+      "confidence": null,
+      "latency_ms": 379,
+      "usage": {
+        "prompt_tokens": 1077,
+        "completion_tokens": 79,
+        "total_tokens": 1156,
+        "cost": 0.0004362,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0004362,
+          "upstream_inference_prompt_cost": 0.00037695,
+          "upstream_inference_completions_cost": 5.925e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 46,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "cost": 0.0004362,
+      "model": "openai/gpt-oss-120b",
+      "provider": "Cerebras",
+      "raw": "{\"op\":\"TYPE\",\"target\":1,\"text\":\"dejevu\",\"option\":null,\"key\":null}",
+      "request_chars": 4128,
+      "fingerprint": "ae737a2f0342e4b31efb35623a41fc9ac45f3eb9afbd34ab29b9d8ccad50535b",
+      "elapsed_ms": 379,
+      "valid": true,
+      "outcome": "executed"
+    },
+    {
+      "op": "TYPE",
+      "target": 2,
+      "text": "hello from dejevu",
+      "option": null,
+      "key": null,
+      "probabilities": {},
+      "confidence": null,
+      "latency_ms": 433,
+      "usage": {
+        "prompt_tokens": 1105,
+        "completion_tokens": 151,
+        "total_tokens": 1256,
+        "cost": 0.0005,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0005,
+          "upstream_inference_prompt_cost": 0.00038675,
+          "upstream_inference_completions_cost": 0.00011325
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 117,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "cost": 0.0005,
+      "model": "openai/gpt-oss-120b",
+      "provider": "Cerebras",
+      "raw": "{\"op\":\"TYPE\",\"target\":2,\"text\":\"hello from dejevu\",\"option\":null,\"key\":null}",
+      "request_chars": 4206,
+      "fingerprint": "66de1910c97b41482949bd227f3f5cd0530d26ed1a924bc4022994c6e94aeb21",
+      "elapsed_ms": 1020,
+      "valid": true,
+      "outcome": "executed"
+    },
+    {
+      "op": "CLICK",
+      "target": 8,
+      "text": null,
+      "option": null,
+      "key": null,
+      "probabilities": {},
+      "confidence": null,
+      "latency_ms": 278,
+      "usage": {
+        "prompt_tokens": 1127,
+        "completion_tokens": 120,
+        "total_tokens": 1247,
+        "cost": 0.00048445,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 768,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00048445,
+          "upstream_inference_prompt_cost": 0.00039445,
+          "upstream_inference_completions_cost": 9e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 89,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "cost": 0.00048445,
+      "model": "openai/gpt-oss-120b",
+      "provider": "Cerebras",
+      "raw": "{\"op\":\"CLICK\",\"target\":8,\"text\":null,\"option\":null,\"key\":null}",
+      "request_chars": 4282,
+      "fingerprint": "150b0c0d58ff6b3ebd8c9707779d10196b2a51c3f26366fde973be20a6081ca7",
+      "elapsed_ms": 1501,
+      "valid": true,
+      "outcome": "executed"
+    },
+    {
+      "op": "SELECT",
+      "target": 5,
+      "text": null,
+      "option": 3,
+      "key": null,
+      "probabilities": {},
+      "confidence": null,
+      "latency_ms": 314,
+      "usage": {
+        "prompt_tokens": 1137,
+        "completion_tokens": 148,
+        "total_tokens": 1285,
+        "cost": 0.00050895,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 768,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00050895,
+          "upstream_inference_prompt_cost": 0.00039795,
+          "upstream_inference_completions_cost": 0.000111
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 117,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "cost": 0.00050895,
+      "model": "openai/gpt-oss-120b",
+      "provider": "Cerebras",
+      "raw": "{\"op\":\"SELECT\",\"target\":5,\"text\":null,\"option\":3,\"key\":null}",
+      "request_chars": 4321,
+      "fingerprint": "8cc3aa78383b2c81ff3300f441ce16c0e84bae8574ae8cabbff31a013cb9aba1",
+      "elapsed_ms": 1957,
+      "valid": true,
+      "outcome": "executed"
+    },
+    {
+      "op": "CLICK",
+      "target": 11,
+      "text": null,
+      "option": null,
+      "key": null,
+      "probabilities": {},
+      "confidence": null,
+      "latency_ms": 1348,
+      "usage": {
+        "prompt_tokens": 1149,
+        "completion_tokens": 122,
+        "total_tokens": 1271,
+        "cost": 0.00049365,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 768,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00049365,
+          "upstream_inference_prompt_cost": 0.00040215,
+          "upstream_inference_completions_cost": 9.15e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 91,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "cost": 0.00049365,
+      "model": "openai/gpt-oss-120b",
+      "provider": "Cerebras",
+      "raw": "{\"op\":\"CLICK\",\"target\":11,\"text\":null,\"option\":null,\"key\":null}",
+      "request_chars": 4357,
+      "fingerprint": "468ce462fb9419f61b144b77df971402e7df686ad94a02a935d91ae422eca378",
+      "elapsed_ms": 3439,
+      "valid": true,
+      "outcome": "executed"
+    },
+    {
+      "op": "DONE",
+      "target": null,
+      "text": null,
+      "option": null,
+      "key": null,
+      "probabilities": {},
+      "confidence": null,
+      "latency_ms": 242,
+      "usage": {
+        "prompt_tokens": 941,
+        "completion_tokens": 37,
+        "total_tokens": 978,
+        "cost": 0.0003571,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 640,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0003571,
+          "upstream_inference_prompt_cost": 0.00032935,
+          "upstream_inference_completions_cost": 2.775e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 6,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "cost": 0.0003571,
+      "model": "openai/gpt-oss-120b",
+      "provider": "Cerebras",
+      "raw": "{\"op\":\"DONE\",\"target\":null,\"text\":null,\"option\":null,\"key\":null}",
+      "request_chars": 3656,
+      "fingerprint": "cb9fe6878dfd06f1b19fdbe5cc5aa2a23dc001dc91aa90662123ef97159354c9",
+      "elapsed_ms": 3875,
+      "valid": true,
+      "outcome": "executed"
+    }
+  ],
+  "totals": {
+    "requests": 6,
+    "actions": 5,
+    "waits": 0,
+    "stale": 0,
+    "invalid": 0,
+    "model_ms": 2994,
+    "model_median_ms": 346,
+    "input_tokens": 6536,
+    "output_tokens": 657,
+    "cost_usd": 0.00278,
+    "request_chars": 24950,
+    "cdp_calls": 51
+  },
+  "error": null,
+  "verification": {
+    "passed": true,
+    "checks": {
+      "submitted": true,
+      "text": true,
+      "textarea": true,
+      "dropdown": true,
+      "both_checkboxes": true
+    },
+    "query": {
+      "my-text": [
+        "dejevu"
+      ],
+      "my-textarea": [
+        "hello from dejevu"
+      ],
+      "my-readonly": [
+        "Readonly input"
+      ],
+      "my-select": [
+        "2"
+      ],
+      "my-check": [
+        "on",
+        "on"
+      ],
+      "my-radio": [
+        "on"
+      ],
+      "my-colors": [
+        "#563d7c"
+      ],
+      "my-range": [
+        "5"
+      ]
+    }
+  },
+  "final_url": "https://www.selenium.dev/selenium/web/submitted-form.html?my-text=dejevu&my-password=&my-textarea=hello+from+dejevu&my-readonly=Readonly+input&my-select=2&my-datalist=&my-file=&my-check=on&my-check=on&my-radio=on&my-colors=%23563d7c&my-date=&my-range=5&my-hidden=",
+  "wall_ms": 4640,
+  "setup_ms": 632,
+  "browser": "Chrome/153.0.8010.53"
+}

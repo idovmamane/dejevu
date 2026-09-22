@@ -1,0 +1,256 @@
+{
+  "goal": "Find the documentation for asyncio.gather and open it.",
+  "policy": "openai/gpt-oss-120b@Cerebras",
+  "status": "done",
+  "reason": "model's call",
+  "elapsed_ms": 4206,
+  "url": "https://docs.python.org/3/library/asyncio-task.html#asyncio.gather",
+  "title": "Coroutines and tasks \u2014 Python 3.14.7 documentation",
+  "elements": 30,
+  "history": [
+    {
+      "step": 1,
+      "op": "CLICK",
+      "kind": "click",
+      "label": "Library reference",
+      "target": 14,
+      "text": null,
+      "option": null,
+      "key": null,
+      "confidence": null,
+      "latency_ms": 1327,
+      "url": "https://docs.python.org/3/library/index.html",
+      "executed_ms": 1410,
+      "page_changed": true,
+      "elapsed_ms": 2017
+    },
+    {
+      "step": 2,
+      "op": "TYPE",
+      "kind": "fill",
+      "label": "Quick search + Enter",
+      "target": 10,
+      "text": "asyncio.gather",
+      "option": null,
+      "key": "Enter",
+      "confidence": null,
+      "latency_ms": 257,
+      "url": "https://docs.python.org/3/search.html?q=asyncio.gather",
+      "executed_ms": 2283,
+      "page_changed": true,
+      "elapsed_ms": 2937
+    },
+    {
+      "step": 3,
+      "op": "CLICK",
+      "kind": "click",
+      "label": "asyncio . gather",
+      "target": 11,
+      "text": null,
+      "option": null,
+      "key": null,
+      "confidence": null,
+      "latency_ms": 246,
+      "url": "https://docs.python.org/3/library/asyncio-task.html#asyncio.gather",
+      "executed_ms": 3196,
+      "page_changed": true,
+      "elapsed_ms": 3813
+    }
+  ],
+  "decisions": [
+    {
+      "op": "CLICK",
+      "target": 14,
+      "text": null,
+      "option": null,
+      "key": null,
+      "probabilities": {},
+      "confidence": null,
+      "latency_ms": 1327,
+      "usage": {
+        "prompt_tokens": 2757,
+        "completion_tokens": 63,
+        "total_tokens": 2820,
+        "cost": 0.0010122,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 2688,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0010122,
+          "upstream_inference_prompt_cost": 0.00096495,
+          "upstream_inference_completions_cost": 4.725e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 32,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "cost": 0.0010122,
+      "model": "openai/gpt-oss-120b",
+      "provider": "Cerebras",
+      "raw": "{\"op\":\"CLICK\",\"target\":14,\"text\":null,\"option\":null,\"key\":null}",
+      "request_chars": 8614,
+      "fingerprint": "74a97bd843a3517a011c6de01f3fb86aa65bfe568c22cde0b0086c5dda286273",
+      "elapsed_ms": 1328,
+      "valid": true,
+      "outcome": "executed"
+    },
+    {
+      "op": "TYPE",
+      "target": 10,
+      "text": "asyncio.gather",
+      "option": null,
+      "key": "Enter",
+      "probabilities": {},
+      "confidence": null,
+      "latency_ms": 257,
+      "usage": {
+        "prompt_tokens": 2226,
+        "completion_tokens": 59,
+        "total_tokens": 2285,
+        "cost": 0.00082335,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 2176,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00082335,
+          "upstream_inference_prompt_cost": 0.0007791,
+          "upstream_inference_completions_cost": 4.425e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 25,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "cost": 0.00082335,
+      "model": "openai/gpt-oss-120b",
+      "provider": "Cerebras",
+      "raw": "{\"op\":\"TYPE\",\"target\":10,\"text\":\"asyncio.gather\",\"option\":null,\"key\":\"Enter\"}",
+      "request_chars": 8526,
+      "fingerprint": "fe0b00c05f31acbdc7cb183fdeb40974ac3edc5ecbc947e59db852d8ef0438d4",
+      "elapsed_ms": 2274,
+      "valid": true,
+      "outcome": "executed"
+    },
+    {
+      "op": "CLICK",
+      "target": 11,
+      "text": null,
+      "option": null,
+      "key": null,
+      "probabilities": {},
+      "confidence": null,
+      "latency_ms": 246,
+      "usage": {
+        "prompt_tokens": 1786,
+        "completion_tokens": 60,
+        "total_tokens": 1846,
+        "cost": 0.0006701,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 1664,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0006701,
+          "upstream_inference_prompt_cost": 0.0006251,
+          "upstream_inference_completions_cost": 4.5e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 29,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "cost": 0.0006701,
+      "model": "openai/gpt-oss-120b",
+      "provider": "Cerebras",
+      "raw": "{\"op\":\"CLICK\",\"target\":11,\"text\":null,\"option\":null,\"key\":null}",
+      "request_chars": 6025,
+      "fingerprint": "3d9d5cb3a92ba0bdce7bc290e412ad08d063bd3ba72c921d4b100a078bda6b55",
+      "elapsed_ms": 3184,
+      "valid": true,
+      "outcome": "executed"
+    },
+    {
+      "op": "DONE",
+      "target": null,
+      "text": null,
+      "option": null,
+      "key": null,
+      "probabilities": {},
+      "confidence": null,
+      "latency_ms": 376,
+      "usage": {
+        "prompt_tokens": 1683,
+        "completion_tokens": 51,
+        "total_tokens": 1734,
+        "cost": 0.0006273,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 1664,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0006273,
+          "upstream_inference_prompt_cost": 0.00058905,
+          "upstream_inference_completions_cost": 3.825e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 20,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "cost": 0.0006273,
+      "model": "openai/gpt-oss-120b",
+      "provider": "Cerebras",
+      "raw": "{\"op\":\"DONE\",\"target\":null,\"text\":null,\"option\":null,\"key\":null}",
+      "request_chars": 6341,
+      "fingerprint": "f63f4ce56d307c47fbae4ab49315d69bae201d3a18b8ab74006e8f8a3f7ab4a4",
+      "elapsed_ms": 4189,
+      "valid": true,
+      "outcome": "executed"
+    }
+  ],
+  "totals": {
+    "requests": 4,
+    "actions": 3,
+    "waits": 0,
+    "stale": 0,
+    "invalid": 0,
+    "model_ms": 2206,
+    "model_median_ms": 316,
+    "input_tokens": 8452,
+    "output_tokens": 233,
+    "cost_usd": 0.003133,
+    "request_chars": 29506,
+    "cdp_calls": 65
+  },
+  "error": null,
+  "verification": {
+    "passed": true,
+    "checks": {
+      "asyncio_task_page": true
+    },
+    "url": "https://docs.python.org/3/library/asyncio-task.html#asyncio.gather"
+  },
+  "final_url": "https://docs.python.org/3/library/asyncio-task.html#asyncio.gather",
+  "wall_ms": 5370,
+  "setup_ms": 1018,
+  "browser": "Chrome/153.0.8010.53"
+}

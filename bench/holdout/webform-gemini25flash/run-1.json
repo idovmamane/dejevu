@@ -1,0 +1,402 @@
+{
+  "goal": "Fill the text input with dejevu, write hello from dejevu in the textarea, choose Two in the select dropdown, tick the checkbox labelled Default checkbox, then submit the form. Stop when the page says the form was submitted.",
+  "policy": "google/gemini-2.5-flash",
+  "status": "done",
+  "reason": "model's call",
+  "elapsed_ms": 3277,
+  "url": "https://www.selenium.dev/selenium/web/submitted-form.html?my-text=dejevu&my-password=&my-textarea=hello+from+dejevu&my-readonly=Readonly+input&my-select=2&my-datalist=&my-file=&my-check=on&my-check=on&my-radio=on&my-colors=%23563d7c&my-date=&my-range=5&my-hidden=",
+  "title": "Web form - target page",
+  "elements": 0,
+  "history": [
+    {
+      "step": 1,
+      "op": "TYPE",
+      "kind": "fill",
+      "label": "Text input",
+      "target": 1,
+      "text": "dejevu",
+      "option": null,
+      "key": null,
+      "confidence": null,
+      "latency_ms": 406,
+      "url": "https://www.selenium.dev/selenium/web/web-form.html",
+      "executed_ms": 421,
+      "page_changed": true,
+      "elapsed_ms": 620
+    },
+    {
+      "step": 2,
+      "op": "TYPE",
+      "kind": "fill",
+      "label": "Textarea",
+      "target": 2,
+      "text": "hello from dejevu",
+      "option": null,
+      "key": null,
+      "confidence": null,
+      "latency_ms": 429,
+      "url": "https://www.selenium.dev/selenium/web/web-form.html",
+      "executed_ms": 1063,
+      "page_changed": true,
+      "elapsed_ms": 1258
+    },
+    {
+      "step": 3,
+      "op": "SELECT",
+      "kind": "select",
+      "label": "Dropdown (select)",
+      "target": 5,
+      "text": null,
+      "option": 3,
+      "key": null,
+      "confidence": null,
+      "latency_ms": 344,
+      "url": "https://www.selenium.dev/selenium/web/web-form.html",
+      "executed_ms": 1605,
+      "page_changed": true,
+      "elapsed_ms": 1753
+    },
+    {
+      "step": 4,
+      "op": "CLICK",
+      "kind": "click",
+      "label": "Default checkbox",
+      "target": 8,
+      "text": null,
+      "option": null,
+      "key": null,
+      "confidence": null,
+      "latency_ms": 446,
+      "url": "https://www.selenium.dev/selenium/web/web-form.html",
+      "executed_ms": 2205,
+      "page_changed": true,
+      "elapsed_ms": 2339
+    },
+    {
+      "step": 5,
+      "op": "CLICK",
+      "kind": "click",
+      "label": "Submit",
+      "target": 11,
+      "text": null,
+      "option": null,
+      "key": null,
+      "confidence": null,
+      "latency_ms": 374,
+      "url": "https://www.selenium.dev/selenium/web/submitted-form.html?my-text=dejevu&my-password=&my-textarea=hello+from+dejevu&my-readonly=Readonly+input&my-select=2&my-datalist=&my-file=&my-check=on&my-check=on&my-radio=on&my-colors=%23563d7c&my-date=&my-range=5&my-hidden=",
+      "executed_ms": 2722,
+      "page_changed": true,
+      "elapsed_ms": 2891
+    }
+  ],
+  "decisions": [
+    {
+      "op": "TYPE",
+      "target": 1,
+      "text": "dejevu",
+      "option": null,
+      "key": null,
+      "probabilities": {},
+      "confidence": null,
+      "latency_ms": 406,
+      "usage": {
+        "prompt_tokens": 1042,
+        "completion_tokens": 20,
+        "total_tokens": 1062,
+        "cost": 0.0003626,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0003626,
+          "upstream_inference_prompt_cost": 0.0003126,
+          "upstream_inference_completions_cost": 5e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "cost": 0.0003626,
+      "model": "google/gemini-2.5-flash",
+      "provider": "Google",
+      "raw": "{\"op\": \"TYPE\", \"target\": 1, \"text\": \"dejevu\"}",
+      "request_chars": 4128,
+      "fingerprint": "ae737a2f0342e4b31efb35623a41fc9ac45f3eb9afbd34ab29b9d8ccad50535b",
+      "elapsed_ms": 407,
+      "valid": true,
+      "outcome": "executed"
+    },
+    {
+      "op": "TYPE",
+      "target": 2,
+      "text": "hello from dejevu",
+      "option": null,
+      "key": null,
+      "probabilities": {},
+      "confidence": null,
+      "latency_ms": 429,
+      "usage": {
+        "prompt_tokens": 1070,
+        "completion_tokens": 26,
+        "total_tokens": 1096,
+        "cost": 0.000386,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.000386,
+          "upstream_inference_prompt_cost": 0.000321,
+          "upstream_inference_completions_cost": 6.5e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "cost": 0.000386,
+      "model": "google/gemini-2.5-flash",
+      "provider": "Google",
+      "raw": "{\"op\": \"TYPE\", \"target\": 2, \"text\": \"hello from dejevu\", \"key\": null}",
+      "request_chars": 4206,
+      "fingerprint": "66de1910c97b41482949bd227f3f5cd0530d26ed1a924bc4022994c6e94aeb21",
+      "elapsed_ms": 1050,
+      "valid": true,
+      "outcome": "executed"
+    },
+    {
+      "op": "SELECT",
+      "target": 5,
+      "text": null,
+      "option": 3,
+      "key": null,
+      "probabilities": {},
+      "confidence": null,
+      "latency_ms": 344,
+      "usage": {
+        "prompt_tokens": 1093,
+        "completion_tokens": 18,
+        "total_tokens": 1111,
+        "cost": 0.0003729,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0003729,
+          "upstream_inference_prompt_cost": 0.0003279,
+          "upstream_inference_completions_cost": 4.5e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "cost": 0.0003729,
+      "model": "google/gemini-2.5-flash",
+      "provider": "Google",
+      "raw": "{\"op\": \"SELECT\", \"target\": 5, \"option\": 3}",
+      "request_chars": 4282,
+      "fingerprint": "150b0c0d58ff6b3ebd8c9707779d10196b2a51c3f26366fde973be20a6081ca7",
+      "elapsed_ms": 1602,
+      "valid": true,
+      "outcome": "executed"
+    },
+    {
+      "op": "CLICK",
+      "target": 8,
+      "text": null,
+      "option": null,
+      "key": null,
+      "probabilities": {},
+      "confidence": null,
+      "latency_ms": 446,
+      "usage": {
+        "prompt_tokens": 1105,
+        "completion_tokens": 12,
+        "total_tokens": 1117,
+        "cost": 0.0003615,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0003615,
+          "upstream_inference_prompt_cost": 0.0003315,
+          "upstream_inference_completions_cost": 3e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "cost": 0.0003615,
+      "model": "google/gemini-2.5-flash",
+      "provider": "Google",
+      "raw": "{\"op\": \"CLICK\", \"target\": 8}",
+      "request_chars": 4318,
+      "fingerprint": "a6a2317af72f6a236065f9ba2566518db066075f65761fe9f1abb98391a992e4",
+      "elapsed_ms": 2199,
+      "valid": true,
+      "outcome": "executed"
+    },
+    {
+      "op": "CLICK",
+      "target": 11,
+      "text": null,
+      "option": null,
+      "key": null,
+      "probabilities": {},
+      "confidence": null,
+      "latency_ms": 374,
+      "usage": {
+        "prompt_tokens": 1115,
+        "completion_tokens": 7,
+        "total_tokens": 1122,
+        "cost": 0.000352,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.000352,
+          "upstream_inference_prompt_cost": 0.0003345,
+          "upstream_inference_completions_cost": 1.75e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "cost": 0.000352,
+      "model": "google/gemini-2.5-flash",
+      "provider": "Google",
+      "raw": "{\"CLICK\": 11}",
+      "request_chars": 4357,
+      "fingerprint": "468ce462fb9419f61b144b77df971402e7df686ad94a02a935d91ae422eca378",
+      "elapsed_ms": 2713,
+      "valid": true,
+      "outcome": "executed"
+    },
+    {
+      "op": "DONE",
+      "target": null,
+      "text": null,
+      "option": null,
+      "key": null,
+      "probabilities": {},
+      "confidence": null,
+      "latency_ms": 382,
+      "usage": {
+        "prompt_tokens": 889,
+        "completion_tokens": 6,
+        "total_tokens": 895,
+        "cost": 0.0002817,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0002817,
+          "upstream_inference_prompt_cost": 0.0002667,
+          "upstream_inference_completions_cost": 1.5e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "cost": 0.0002817,
+      "model": "google/gemini-2.5-flash",
+      "provider": "Google",
+      "raw": "{\"op\": \"DONE\"}",
+      "request_chars": 3656,
+      "fingerprint": "cb9fe6878dfd06f1b19fdbe5cc5aa2a23dc001dc91aa90662123ef97159354c9",
+      "elapsed_ms": 3274,
+      "valid": true,
+      "outcome": "executed"
+    }
+  ],
+  "totals": {
+    "requests": 6,
+    "actions": 5,
+    "waits": 0,
+    "stale": 0,
+    "invalid": 0,
+    "model_ms": 2381,
+    "model_median_ms": 394,
+    "input_tokens": 6314,
+    "output_tokens": 89,
+    "cost_usd": 0.002117,
+    "request_chars": 24947,
+    "cdp_calls": 50
+  },
+  "error": null,
+  "verification": {
+    "passed": true,
+    "checks": {
+      "submitted": true,
+      "text": true,
+      "textarea": true,
+      "dropdown": true,
+      "both_checkboxes": true
+    },
+    "query": {
+      "my-text": [
+        "dejevu"
+      ],
+      "my-textarea": [
+        "hello from dejevu"
+      ],
+      "my-readonly": [
+        "Readonly input"
+      ],
+      "my-select": [
+        "2"
+      ],
+      "my-check": [
+        "on",
+        "on"
+      ],
+      "my-radio": [
+        "on"
+      ],
+      "my-colors": [
+        "#563d7c"
+      ],
+      "my-range": [
+        "5"
+      ]
+    }
+  },
+  "final_url": "https://www.selenium.dev/selenium/web/submitted-form.html?my-text=dejevu&my-password=&my-textarea=hello+from+dejevu&my-readonly=Readonly+input&my-select=2&my-datalist=&my-file=&my-check=on&my-check=on&my-radio=on&my-colors=%23563d7c&my-date=&my-range=5&my-hidden=",
+  "wall_ms": 4098,
+  "setup_ms": 686,
+  "browser": "Chrome/153.0.8010.53"
+}
