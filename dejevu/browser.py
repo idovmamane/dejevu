@@ -249,7 +249,7 @@ class Tab:
                 if type(node) is not int:
                     return False
                 current = self.evaluate(
-                    "(() => { const c = window.__jevless; return c ? [c.pageKey(), c.guard(c.nodes.get(%d))] : null; })()" % node
+                    "(() => { const c = window.__dejevu; return c ? [c.pageKey(), c.guard(c.nodes.get(%d))] : null; })()" % node
                 )
                 return current == [page["page_key"], page["guards"].get(str(node))]
             return self.evaluate(MARKER) == page["marker"]
@@ -280,7 +280,7 @@ class Tab:
             # Code-owned node ids name observed elements; the page resolves them to current geometry and hit-tests occlusion.
             try:
                 point = self.evaluate(
-                    "window.__jevless ? window.__jevless.point(%d, %s, %s, %s) : null"
+                    "window.__dejevu ? window.__dejevu.point(%d, %s, %s, %s) : null"
                     % (node, json.dumps(kind), json.dumps(action.get("value")), json.dumps(action.get("index")))
                 )
             except ContextDestroyed:

@@ -5,7 +5,7 @@ uv run python examples/wikipedia.py [--headed] [--json artifacts/wikipedia.json]
 
 import sys
 
-from jevless.cli import main
+from dejevu.cli import main
 
 if __name__ == "__main__":
     main(["--task", "wikipedia", *sys.argv[1:]])

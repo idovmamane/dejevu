@@ -1,5 +1,5 @@
 [project]
-name = "jevless"
+name = "dejevu"
 version = "0.1.0"
 description = "A browser agent that decides in one glance: one model call per step, any OpenAI-compatible model, self-launched Chrome."
 readme = "README.md"
@@ -8,7 +8,7 @@ requires-python = ">=3.12"
 dependencies = ["websockets>=13,<17", "httpx[http2]>=0.28,<1"]
 
 [project.scripts]
-jevless = "jevless.cli:main"
+dejevu = "dejevu.cli:main"
 
 [build-system]
 requires = ["hatchling"]

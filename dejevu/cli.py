@@ -1,4 +1,4 @@
-"""jevless --url URL --goal '...'   |   jevless --task flights"""
+"""dejevu --url URL --goal '...'   |   dejevu --task flights"""
 
 import argparse
 import json
@@ -13,7 +13,7 @@ from .tasks import TASKS
 
 def build_parser():
     parser = argparse.ArgumentParser(
-        prog="jevless", description="One glance, one action: a browser agent on any OpenAI-compatible model."
+        prog="dejevu", description="One glance, one action: a browser agent on any OpenAI-compatible model."
     )
     parser.add_argument("--task", choices=sorted(TASKS), help="a reference task with an independent outcome check")
     parser.add_argument("--url")
@@ -50,7 +50,7 @@ def main(argv=None):
         logprobs=True if args.logprobs else None,
         reasoning=args.reasoning,
     )
-    print(f"jevless · {policy.name} · {url}", flush=True)
+    print(f"dejevu · {policy.name} · {url}", flush=True)
     started = time.perf_counter()
     agent = Agent(
         url,

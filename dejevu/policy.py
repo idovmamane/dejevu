@@ -147,7 +147,7 @@ class LLMPolicy:
         self.max_tokens = max_tokens
         self.text_chars = text_chars
         self.openrouter = "openrouter.ai" in self.base_url
-        headers = {"Authorization": f"Bearer {api_key}", "Content-Type": "application/json", "X-Title": "jevless"}
+        headers = {"Authorization": f"Bearer {api_key}", "Content-Type": "application/json", "X-Title": "dejevu"}
         self.client = httpx.Client(http2=True, timeout=httpx.Timeout(timeout, connect=10.0), headers=headers)
 
     @property

@@ -45,14 +45,14 @@ CHROME_CANDIDATES = {
 
 
 def find_chrome():
-    explicit = os.environ.get("JEVLESS_CHROME") or os.environ.get("CHROME_PATH")
+    explicit = os.environ.get("DEJEVU_CHROME") or os.environ.get("CHROME_PATH")
     if explicit:
         return explicit
     for candidate in CHROME_CANDIDATES.get(platform.system(), []):
         found = shutil.which(candidate) or (candidate if Path(candidate).exists() else None)
         if found:
             return found
-    raise FileNotFoundError("No Chrome/Chromium found; set JEVLESS_CHROME=/path/to/chrome")
+    raise FileNotFoundError("No Chrome/Chromium found; set DEJEVU_CHROME=/path/to/chrome")
 
 
 def free_port():
@@ -62,7 +62,7 @@ def free_port():
 
 
 class Chrome:
-    """A Chrome we own (fresh temp profile, headless by default) or an existing one we attach to via JEVLESS_CDP_URL."""
+    """A Chrome we own (fresh temp profile, headless by default) or an existing one we attach to via DEJEVU_CDP_URL."""
 
     def __init__(self, *, headless=True, cdp_url=None, profile=None, window=(1120, 780), extra_args=()):
         self.proc = None
@@ -71,12 +71,12 @@ class Chrome:
         self.calls = 0
         self.listeners = {}  # sessionId -> callable(method, params)
         self.responses = {}  # replies that arrived while a nested call was waiting
-        cdp_url = cdp_url or os.environ.get("JEVLESS_CDP_URL")
+        cdp_url = cdp_url or os.environ.get("DEJEVU_CDP_URL")
         if cdp_url:
             self.http = cdp_url.rstrip("/")
         else:
             port = free_port()
-            self.profile_dir = Path(profile) if profile else Path(tempfile.mkdtemp(prefix="jevless-profile-"))
+            self.profile_dir = Path(profile) if profile else Path(tempfile.mkdtemp(prefix="dejevu-profile-"))
             self._own_profile = profile is None
             args = [
                 find_chrome(),

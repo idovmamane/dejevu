@@ -1,4 +1,4 @@
-"""Repeat a reference task and write comparable numbers: python -m jevless.measure --task flights --runs 3 --out bench/flights"""
+"""Repeat a reference task and write comparable numbers: python -m dejevu.measure --task flights --runs 3 --out bench/flights"""
 
 import argparse
 import hashlib

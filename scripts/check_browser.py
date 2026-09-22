@@ -3,8 +3,8 @@
 import time
 from urllib.parse import quote
 
-from jevless.browser import StalePage, Tab
-from jevless.cdp import Chrome
+from dejevu.browser import StalePage, Tab
+from dejevu.cdp import Chrome
 
 HTML = """<!doctype html><title>Guard checks</title>
 <style>body{margin:30px;font:16px sans-serif}button{width:180px;height:50px}#outside{position:absolute;top:3000px}</style>

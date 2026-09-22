@@ -2,7 +2,7 @@
 
 import sys
 
-from jevless.cli import main
+from dejevu.cli import main
 
 if __name__ == "__main__":
     main(sys.argv[1:])

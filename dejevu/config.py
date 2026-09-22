@@ -46,46 +46,46 @@ def load_env():
 
 
 def api_key():
-    return os.environ.get("JEVLESS_API_KEY") or os.environ.get("OPENROUTER_API_KEY") or os.environ.get("okey")
+    return os.environ.get("DEJEVU_API_KEY") or os.environ.get("OPENROUTER_API_KEY") or os.environ.get("okey")
 
 
 def make_policy(*, backend=None, preset=None, model=None, provider=None, logprobs=None, reasoning=None, base_url=None, key=None):
     load_env()
-    backend = backend or os.environ.get("JEVLESS_BACKEND", "llm")
+    backend = backend or os.environ.get("DEJEVU_BACKEND", "llm")
     if backend == "typesafe":
-        text = PRESETS[preset or os.environ.get("JEVLESS_PRESET", DEFAULT_PRESET)]
+        text = PRESETS[preset or os.environ.get("DEJEVU_PRESET", DEFAULT_PRESET)]
         typesafe_key = os.environ.get("TYPESAFE_API_KEY")
         if not typesafe_key:
             raise PolicyConfigError("TYPESAFE_API_KEY is required for the typesafe backend")
         return TypeSafePolicy(
             api_key=typesafe_key,
             model=os.environ.get("TYPESAFE_MODEL", "jev-latest"),
-            text_model=model or os.environ.get("JEVLESS_TEXT_MODEL", text["model"]),
+            text_model=model or os.environ.get("DEJEVU_TEXT_MODEL", text["model"]),
             text_api_key=key or api_key(),
-            text_base_url=base_url or os.environ.get("JEVLESS_BASE_URL", "https://openrouter.ai/api/v1"),
+            text_base_url=base_url or os.environ.get("DEJEVU_BASE_URL", "https://openrouter.ai/api/v1"),
         )
-    chosen = dict(PRESETS[preset or os.environ.get("JEVLESS_PRESET", DEFAULT_PRESET)])
-    if model or os.environ.get("JEVLESS_MODEL"):
+    chosen = dict(PRESETS[preset or os.environ.get("DEJEVU_PRESET", DEFAULT_PRESET)])
+    if model or os.environ.get("DEJEVU_MODEL"):
         chosen = {
-            "model": model or os.environ.get("JEVLESS_MODEL"),
-            "provider": provider or os.environ.get("JEVLESS_PROVIDER"),
+            "model": model or os.environ.get("DEJEVU_MODEL"),
+            "provider": provider or os.environ.get("DEJEVU_PROVIDER"),
             "logprobs": False,
         }
     if provider is not None:
         chosen["provider"] = provider or None
     if logprobs is not None:
         chosen["logprobs"] = logprobs
-    elif os.environ.get("JEVLESS_LOGPROBS"):
-        chosen["logprobs"] = os.environ["JEVLESS_LOGPROBS"] not in ("0", "false", "no")
+    elif os.environ.get("DEJEVU_LOGPROBS"):
+        chosen["logprobs"] = os.environ["DEJEVU_LOGPROBS"] not in ("0", "false", "no")
     if reasoning is not None:
         chosen["reasoning"] = reasoning
     key = key or api_key()
     if not key:
-        raise PolicyConfigError("Set OPENROUTER_API_KEY (or JEVLESS_API_KEY for another OpenAI-compatible endpoint)")
+        raise PolicyConfigError("Set OPENROUTER_API_KEY (or DEJEVU_API_KEY for another OpenAI-compatible endpoint)")
     return LLMPolicy(
         model=chosen["model"],
         api_key=key,
-        base_url=base_url or os.environ.get("JEVLESS_BASE_URL", "https://openrouter.ai/api/v1"),
+        base_url=base_url or os.environ.get("DEJEVU_BASE_URL", "https://openrouter.ai/api/v1"),
         provider=chosen.get("provider"),
         logprobs=chosen.get("logprobs", False),
         reasoning=chosen.get("reasoning"),
