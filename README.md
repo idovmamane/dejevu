@@ -107,7 +107,9 @@ As a library:
 ```python
 from dejevu import Agent
 
-with Agent("https://en.wikipedia.org/wiki/Main_Page", "Find and open the article about Godel's incompleteness theorems.") as agent:
+with Agent(
+    "https://en.wikipedia.org/wiki/Main_Page", "Find and open the article about Godel's incompleteness theorems."
+) as agent:
     for state in agent.run():
         print(state["elapsed_ms"], state["status"])
     print(agent.page["url"])
